@@ -1,0 +1,1156 @@
+@charset 'utf-8';
+
+/* hao123主页css样式 */
+
+body {
+    font: 14px/100% arial, 'Hiragino Sans GB', 'Hiragino Sans GB W3', \5b8b\4f53;
+    background: url(../img/body_bg.png);
+}
+
+
+/* 设置整个wrapper大小 */
+
+.wrapper {
+    min-width: 960px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+/* 设置整个header通用的字体属性和间距 */
+
+.wrapper header {
+    font-family: 'Tahoma';
+    font-size: 12px;
+    line-height: 22px;
+    width: 100%;
+    border-bottom: 1px solid #f5f3f3;
+    background: url(../img/body_bg.png);
+}
+
+
+/* 设置header左边样式 */
+
+.wrapper header .header-left {
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+    margin-left: 3%;
+}
+
+
+/* 设置header中a标签样式 */
+
+.wrapper header .header-left a {
+    display: block;
+    float: left;
+    width: 168px;
+    height: 60px;
+}
+
+.wrapper header .header-left a :after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* 设置设为主页样式 */
+
+.wrapper header #set-index {
+    line-height: 1.7;
+    display: block;
+    float: left;
+    width: 60px;
+    height: 25px;
+    margin-top: 20px;
+    margin-right: 8px;
+    text-align: center;
+    color: #fff;
+    background: url(../img/index_cssspirate.png) no-repeat -20px -172px;
+}
+
+.wrapper header #set-index:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.wrapper header #set-index:hover {
+    text-decoration: underline;
+}
+
+
+/* 设置工具栏大小 */
+
+.wrapper header .hao123-tool {
+    float: left;
+    height: 60px;
+    margin-left: 10px;
+    padding: 0 3px;
+}
+
+.wrapper header .hao123-tool:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* 设置工具栏中天气大小 */
+
+.wrapper header .hao123-tool .weather {
+    line-height: 60px;
+    float: left;
+    height: 60px;
+    cursor: pointer;
+}
+
+.wrapper header .hao123-tool .weather:hover {
+    background: #f7f7f7;
+}
+
+
+/* 设置工具栏天气中a链接样式 */
+
+.wrapper header .hao123-tool .weather a {
+    width: auto;
+    margin-right: 10px;
+    color: #999;
+}
+
+
+/* 设置工具栏天气中下拉箭头样式 */
+
+.wrapper header .hao123-tool .weather a .arrow {
+    width: 5px;
+    border-width: 5px;
+    background: url(../img/index_cssspirate.png) no-repeat -52px -99px;
+}
+
+
+/* 设置今日天气图标 */
+
+.wrapper header .hao123-tool .weather a .today-weather {
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin-top: 15px;
+    margin-right: 5px;
+    background: url(../img/rainy.png);
+}
+
+
+/* 设置日历样式 */
+
+.wrapper header .hao123-tool .calendar {
+    line-height: 60px;
+    float: left;
+    height: 60px;
+    cursor: pointer;
+}
+
+.wrapper header .hao123-tool .calendar:hover {
+    background: #f7f7f7;
+}
+
+.wrapper header .hao123-tool .calendar a {
+    width: auto;
+    margin-left: 10px;
+    color: #999;
+}
+
+
+/* 头部导航栏属性 */
+
+.wrapper header nav {
+    width: auto;
+    height: 60px;
+}
+
+.wrapper header nav ul {
+    float: right;
+    margin-right: 3%;
+}
+
+.wrapper header nav ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.wrapper header nav ul li {
+    display: inline-block;
+    width: 69px;
+    height: 60px;
+}
+
+.wrapper header nav ul li:hover {
+    background: #f7f7f7;
+}
+
+.wrapper header nav ul li a {
+    display: inline-block;
+    margin: 18px 5px;
+    vertical-align: center;
+    color: #999;
+}
+
+.wrapper header nav ul li a span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: center;
+}
+
+.wrapper header nav ul li ul {
+    width: 57px;
+    height: 90px;
+    display: none;
+}
+
+.wrapper header nav ul li ul li{
+    width: 67px;
+    height: 30px;
+    background: #fff;
+    float: left;
+    display: block;
+    z-index: -1;
+    margin-left: -9px;
+    text-align: center;
+}
+
+.wrapper header nav ul li ul li a{
+    line-height: 30px;
+    display: inline;
+    margin:0;
+}
+
+.wrapper header nav ul li ul li #green{
+    color:#13DA33;
+}
+
+.wrapper header nav ul li ul li #blue{
+    color:#1390DA;
+}
+.wrapper header nav ul li ul li #red{
+    color:#F82A08;
+}
+/* 设置login图标 */
+
+.wrapper header nav ul li a .login {
+    background: url(../img/index_cssspirate.png) no-repeat;
+    background-position: -39px -129px;
+}
+
+
+/* 设置Email图标 */
+
+.wrapper header nav ul li a .email {
+    background: url(../img/index_cssspirate.png) no-repeat;
+    background-position: -105px -127px;
+}
+
+
+/* browser */
+
+.wrapper header nav ul li a .browser {
+    background: url(../img/index_cssspirate.png) no-repeat;
+    background-position: -173px -129px;
+}
+
+
+/* skin */
+
+.wrapper header nav ul li a .skin {
+    background: url(../img/index_cssspirate.png) no-repeat;
+    background-position: -253px -129px;
+}
+
+
+/*===================== 搜索部分样式 ============================*/
+
+
+/* 搜索部分总的宽高和背景 */
+
+.wrapper .search {
+    width: 100%;
+    height: 150px;
+    background: url(../img/body_bg.png);
+}
+
+
+/* 设置包裹百度Logo的a标签格式 */
+
+.wrapper .search a {
+    display: inline-block;
+    margin: 55px 5px 0 15%;
+}
+
+.wrapper .search a span {
+    display: block;
+    width: 120px;
+    height: 40px;
+    background: url(../img/index_cssspirate.png) no-repeat -10px -212px;
+}
+
+
+/* 设置提交表单样式 */
+
+.wrapper .search form {
+    display: inline-block;
+    height: 40px;
+    margin: 55px 5px 0 5px;
+}
+
+
+/* 设置搜索菜单背景 */
+
+.wrapper .search form .search-wrapper {
+    float: left;
+    width: 660px;
+    height: 44px;
+    background: url(../img/index_cssspirate.png) no-repeat -159px -207px #fff;
+}
+
+
+/* input输入框位置 */
+
+.wrapper .search form .search-wrapper input {
+    position: absolute;
+    width: 475px;
+    height: 30px;
+    margin: 6px auto;
+    border: 0;
+}
+
+
+/* 设置outline为0 */
+
+.wrapper .search form .search-wrapper input:focus {
+    outline: 0;
+}
+
+
+/* 设置提交按钮button的样式 */
+
+.wrapper .search form .search-wrapper button {
+    position: absolute;
+    width: 118px;
+    height: 42px;
+    margin-left: 480px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+
+/* 设置button按钮的outline为0 */
+
+.wrapper .search form .search-wrapper button:focus {
+    outline: 0;
+}
+
+
+/* 点击新闻的一系列下拉菜单样式 */
+
+.wrapper .search form .search-wrapper ul {
+    display: inline-block;
+    width: 58px;
+    height: 242px;
+    z-index: 1;
+}
+
+.wrapper .search form .search-wrapper ul li ul {
+    display: none;
+}
+
+.wrapper .search form .search-wrapper ul li {
+    font: normal 12px/45px simsun;
+    width: 58px;
+    height: 44px;
+    cursor: pointer;
+    color: #999;
+}
+
+.wrapper .search form .search-wrapper ul li span:first-child {
+    margin-left: 7px;
+}
+
+.wrapper .search form .search-wrapper ul li .triangle {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-width: 5px;
+    background: url(../img/index_cssspirate.png) no-repeat -52px -95px;
+}
+
+.wrapper .search form .search-wrapper ul li ul li {
+    line-height: 22px;
+    width: 45px;
+    height: 22px;
+    padding: 0;
+    background: #fff;
+    z-index: -50;
+}
+
+.wrapper .search form .search-wrapper ul li ul li:hover {
+    background: #f0efef;
+}
+
+.wrapper .search form .search-wrapper ul li ul li a {
+    font: normal 12px simsun;
+    margin: 0;
+    padding-left: 7px;
+    color: #999;
+}
+
+
+/* 设置form表单下热搜导航栏样式 */
+
+.wrapper .search .hotsearch {
+    width: 670px;
+    height: 20px;
+    margin-top: 8px;
+    margin-left: 25%;
+}
+
+
+/* 热搜导航栏a标签样式 */
+
+.wrapper .search .hotsearch a {
+    font-size: 12px;
+    line-height: 20px;
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+    color: #666;
+}
+
+
+/* 热搜导航栏a标签hover样式 */
+
+.wrapper .search .hotsearch a:hover {
+    text-decoration: underline;
+    color: #f42525;
+}
+
+
+/* 热搜导航栏最后一个a标签hover样式 */
+
+.wrapper .search .hotsearch a:last-child {
+    color: #32da4a;
+}
+
+
+/* 热搜按钮 */
+
+.wrapper .search .hotsearch a span {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background: url(../img/index_cssspirate.png) no-repeat -159px -260px;
+}
+
+
+/* 红色热搜 */
+
+.wrapper .search .hotsearch .fontcolor-red {
+    color: #f42525;
+}
+
+
+/* 绿色更多 */
+
+.wrapper .search .hotsearch .fontcolor-green {
+    float: right;
+    color: #32da4a;
+}
+
+
+/* ================div class="search"样式结束=============== */
+
+
+/* ================article样式开始 ==========================*/
+
+article {
+    width: 100%;
+    overflow: hidden;
+}
+
+article a {
+    line-height: 30px;
+    color: #333;
+}
+
+article a:hover {
+    text-decoration: underline;
+    color: #febd0f;
+}
+
+
+/* 设置导航栏上框线 */
+
+article .article-nav {
+    width: 94%;
+    height: 38px;
+    margin: 0 auto;
+    border-top: 1px solid #EA1901;
+    background: #fff;
+}
+
+
+/* 设置导航栏ul宽高 */
+
+article .article-nav ul {
+    overflow: hidden;
+    width: 100%;
+    height: 38px;
+    text-align: center;
+}
+
+
+/* 设置每个li的宽高 */
+
+article .article-nav ul li {
+    font-family: 'Microsoft Yahei';
+    font-size: 16px;
+    float: left;
+    width: 10%;
+    height: 38px;
+}
+
+
+/* 设置li中a样式 */
+
+article .article-nav ul li a {
+    line-height: 38px;
+    color: #333;
+}
+
+
+/* 设置lizhong ahover样式 */
+
+article .article-nav ul li a:hover {
+    text-decoration: none;
+    color: #EA1901;
+}
+
+
+/* 设置分割线样式 */
+
+article .article-nav ul li span {
+    display: inline-block;
+    float: right;
+    width: 1px;
+    height: 20px;
+    margin: 9px 0 9px auto;
+    background: #ccc;
+}
+
+
+/* 设置激活状态li样式 */
+
+article .article-nav .active {
+    background: #EA1901;
+}
+
+
+/* 设置激活状态li下a样式 */
+
+article .article-nav .active a {
+    color: #fff;
+}
+
+
+/* 设置激活状态li的Hover */
+
+article .article-nav .active:hover {
+    color: #fff;
+}
+
+
+/* 设置article中第一个block样式 */
+
+article .firstblock {
+    float: right;
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 3%;
+    background: #fff;
+}
+
+
+/* 设置article中第一个block的第一个ul列表样式 */
+
+article .firstblock .first-1 {
+    width: 96%;
+    height: 90px;
+    margin: 10px auto;
+}
+
+article .firstblock .first-1 li {
+    float: left;
+    box-sizing: border-box;
+    width: 16.6%;
+    height: 30px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+article .firstblock .first-1 li a span {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: center;
+}
+
+
+/* 设置百度icon */
+
+article .firstblock .first-1 li a .baiduicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -198px;
+}
+
+
+/* 设置新浪icon */
+
+article .firstblock .first-1 li a .xinlangicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -278px;
+}
+
+
+/* 设置搜狐icon */
+
+article .firstblock .first-1 li a .sohuicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -318px;
+}
+
+
+/* 设置腾讯icon */
+
+article .firstblock .first-1 li a .tencenticon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -38px;
+}
+
+
+/* 设置网易icon */
+
+article .firstblock .first-1 li a .wangyiicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -157px;
+}
+
+
+/* 设置优酷icon */
+
+article .firstblock .first-1 li a .youkuicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -398px;
+}
+
+
+/* 设置tmallicon */
+
+article .firstblock .first-1 li a .tmallicon {
+    position: absolute;
+    float: left;
+    width: 24px;
+    height: 22px;
+    margin-top: 1px;
+    margin-left: -22px;
+    background: url(../img/tmall.gif) no-repeat;
+}
+
+
+/* 设置凤凰网icon */
+
+article .firstblock .first-1 li a .phoenixicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -238px;
+}
+
+
+/* 设置淘宝网icon */
+
+article .firstblock .first-1 li a .taobaoicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -358px;
+}
+
+
+/* 设置免费游戏icon */
+
+article .firstblock .first-1 li a .freegameicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+    margin-left: -20px;
+    background: url(../img/freegame.png) no-repeat;
+}
+
+
+/* 设置4399icon */
+
+article .firstblock .first-1 li a .game4399icon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px 2px;
+}
+
+
+/* 设置新华网icon */
+
+article .firstblock .first-1 li a .xinhuaicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+    margin-left: -20px;
+    background: url(../img/xinhua.png) no-repeat;
+}
+
+
+/* 设置京东icon */
+
+article .firstblock .first-1 li a .jdicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+    margin-left: -20px;
+    background: url(../img/jd.png) no-repeat;
+}
+
+
+/* 设置聚划算icon */
+
+article .firstblock .first-1 li a .jutaobaoicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+    margin-left: -20px;
+    background: url(../img/jutaobao.png) no-repeat;
+}
+
+
+/* 设置今日特价icon */
+
+article .firstblock .first-1 li a .tejiaicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+    margin-left: -20px;
+    background: url(../img/tejia.png) no-repeat;
+}
+
+
+/* 设置hao123影视icon */
+
+article .firstblock .first-1 li a .movieicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+    margin-left: -20px;
+    background: url(../img/icon.png) no-repeat;
+}
+
+
+/* 设置汽车之家icon */
+
+article .firstblock .first-1 li a .caricon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -518px;
+}
+
+
+/* 设置彩票开奖icon */
+
+article .firstblock .first-1 li a .bonusicon {
+    position: absolute;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: -20px;
+    background: url(../img/logo-spirate.png) no-repeat 2px -558px;
+}
+
+
+/* 设置水平分割线样式 */
+
+article .hr {
+    width: 90%;
+    height: 1px;
+    margin: 5px auto;
+    background: #e8e5e5;
+}
+
+
+/* 设置第一个section中第二个ul列表样式 */
+
+article .firstblock .first-2 {
+    width: 96%;
+    height: 160px;
+    margin: 10px auto;
+}
+
+article .firstblock .first-2 li {
+    float: left;
+    box-sizing: border-box;
+    width: 16.6%;
+    height: 30px;
+    text-align: left;
+}
+
+article .firstblock .first-2 .orange {
+    color: #fc8d08;
+}
+
+article .firstblock .first-2 .green {
+   color: #EA1901;
+}
+
+
+/* ===============设置侧边栏样式================ */
+
+article aside {
+    float: left;
+    width: 23%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 3%;
+    background: #fff;
+}
+
+article aside .aside-top {
+    width: 100%;
+    height: auto;
+}
+
+article aside .aside-top .astop-1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+article aside .aside-top .astop-1 li {
+    width: 40%;
+    box-sizing: border-box;
+    height: 30px;
+    /*     background: #000; */
+    float: left;
+    text-align: left;
+    padding: 5px 0 5px 5px;
+    margin-left: 20px;
+}
+
+article aside .aside-top .astop-1 li a {
+    line-height: 30px;
+}
+
+article aside .aside-top .astop-1 li .split {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+}
+
+
+/* 设置侧边栏menu图标 */
+
+
+/* tv */
+
+article aside .aside-top .astop-1 li .tv {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -81px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 游戏 */
+
+article aside .aside-top .astop-1 li .sgame {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -19px -301px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 电影 */
+
+article aside .aside-top .astop-1 li .smovie {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -160px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 动画 */
+
+article aside .aside-top .astop-1 li .scartoon {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -381px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 头条 */
+
+article aside .aside-top .astop-1 li .stop {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -100px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 旅游 */
+
+article aside .aside-top .astop-1 li .stravel {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -261px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 彩票 */
+
+article aside .aside-top .astop-1 li .sbonus {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -21px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 搞笑 */
+
+article aside .aside-top .astop-1 li .sfunny {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -121px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 特价 */
+
+article aside .aside-top .astop-1 li .sstrip {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -281px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+
+/* 教育 */
+
+article aside .aside-top .astop-1 li .seducation {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -362px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -20px;
+}
+
+article aside .aside-top .astop-1 .hr {
+    margin-top: 153px;
+    width: 100%;
+}
+
+article aside .aside-top .astop-2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+article aside .aside-top .astop-2 li {
+    width: 11%;
+    box-sizing: border-box;
+    height: 30px;
+    /*     background: #000; */
+    float: left;
+    text-align: left;
+    margin-left: 19px;
+}
+
+article aside .aside-top .astop-2 li a {
+    font-size: 12px;
+}
+
+article aside .aside-top .astop-2 li .weather {
+    display: inline-block;
+    background: url(../img/index_menus.png) no-repeat -20px -221px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -17px;
+}
+
+article aside .aside-image {
+    width: 100%;
+    height: 100px;
+    background: url(../img/aside-image.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* ===============================脚部信息============================= */
+
+footer {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+footer .footer-logo {
+    display: block;
+    float: left;
+    width: 228px;
+    height: 28px;
+    margin: 11px 3%;
+    background: url(../img/footer.jpg);
+}
+
+
+/* 设置ul样式 */
+
+footer ul {
+    width: 600px;
+    height: 50px;
+    float: right;
+    margin-right: 3%;
+}
+
+footer ul li {
+    width: 120px;
+    height: 50px;
+    float: left;
+    text-align: center;
+}
+
+footer ul li a {
+    font: normal 14px/28px "Microsoft YaHei";
+    line-height: 50px;
+    color: #999;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer ul li .default {
+    cursor: default;
+}
+
+footer ul li .default:hover {
+    text-decoration: none;
+}

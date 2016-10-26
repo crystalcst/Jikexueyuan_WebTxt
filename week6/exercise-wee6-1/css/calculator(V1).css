@@ -1,0 +1,207 @@
+@charset 'utf-8';
+
+/* 高级计算器css样式 */
+
+html,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/* 壁纸设置为Iphone外形 */
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 554px;
+    margin-top: -277px;
+    margin-left: -200px;
+    background: url(../img/iphonebg.png);
+    background-size: 100% 100%;
+}
+
+
+/* 设置中间灰色区域 */
+
+.container {
+    width: 200px;
+    height: 339px;
+    margin-top: 96px;
+    margin-left: 100px;
+    text-align: center;
+    background: #cccbca;
+}
+
+
+/* 设置计算器标题栏的宽 */
+
+.container #calculator-header {
+    position: relative;
+    width: 200px;
+    text-align: center;
+}
+
+
+/* 设置h1标题样式 */
+
+h1 {
+    font-family: 'Microsoft Yahei';
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/* 设置显示屏样式 */
+
+.container #calculator-screen {
+    width: 180px;
+    height: 33px;
+    margin-left: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #bcbcbb;
+    background-color: #000;
+    background-image: -webkit-linear-gradient(bottom, );
+    background-image: -moz-linear-gradient(bottom, );
+    background-image: -o-linear-gradient(bottom, );
+    background-image: -ms-linear-gradient(bottom, );
+    background-image: linear-gradient(to top, );
+    -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, .38), inset 0 1px 1px rgba(0, 0, 0, .29);
+    -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, .38), inset 0 1px 1px rgba(0, 0, 0, .29);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, .38), inset 0 1px 1px rgba(0, 0, 0, .29);
+    \ background: #bcbcbb;
+}
+
+
+/* 设置输入框样式 */
+
+.container #calculator-screen input {
+    font-size: 20px;
+    width: 174px;
+    margin-top: 2px;
+    text-align: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #c4c3ac;
+}
+
+
+/* 设置按钮部分ul的样式 */
+
+.container #calculator-btn ul {
+    overflow: hidden;
+    width: 180px;
+    height: 296px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+/* 设置ul下哥哥li样式 */
+
+.container #calculator-btn ul li {
+    font-family: 'Microsoft Yahei';
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    background: #5e5e5e;
+}
+
+.container #calculator-btn ul .tool {
+    background: #818181;
+}
+
+.container #calculator-btn ul .number {
+    color: #000;
+    background: #fff;
+}
+
+.container #calculator-btn ul .number1 {
+    color: #000;
+    background: #fff;
+}
+
+.container #calculator-btn ul .equal {
+    background: #f2c386;
+}
+
+
+/* 设置鼠标经过样式 */
+
+#calculator-btn ul li:hover {
+    cursor: pointer;
+    background: #b3a7a7;
+}
+
+#calculator-btn ul .tool:hover {
+    cursor: pointer;
+    background: #b3a7a7;
+}
+
+#calculator-btn ul .number:hover {
+    cursor: pointer;
+    background: #b3a7a7;
+}
+
+#calculator-btn ul .number1:hover {
+    cursor: pointer;
+    background: #b3a7a7;
+}
+
+#calculator-btn ul .equal:hover {
+    cursor: pointer;
+    background: #b3a7a7;
+}
+
+
+/* 设置鼠标点击样式 */
+
+#calculator-btn ul li:active {
+    cursor: pointer;
+    background: #ff6700;
+}
+
+#calculator-btn ul .tool:active {
+    cursor: pointer;
+    background: #ff6700;
+}
+
+#calculator-btn ul .number:active {
+    cursor: pointer;
+    background: #ff6700;
+}
+
+#calculator-btn ul .number1:active {
+    cursor: pointer;
+    background: #ff6700;
+}
+
+#calculator-btn ul .equal:active {
+    cursor: pointer;
+    background: #ff6700;
+}
