@@ -1,0 +1,85 @@
+/*
+* @Author: lenovo
+* @Date:   2016-04-26 18:37:15
+* @Last Modified by:   lenovo
+* @Last Modified time: 2016-04-26 19:28:47
+*/
+
+/* 推荐部分整个外墙样式 */
+.article-recommend-wrapper{
+    width: 100%;
+    height: auto;
+}
+
+/* 顶部轮播banner样式 */
+.article-recommend-wrapper .topic-banner-wrapper{
+    background: #ccc;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 10px;
+    width: 355px;
+    height: 221px;
+    box-sizing: border-box;
+}
+
+.topic-banner-wrapper .topic-banner-box{
+    width: 1775px;
+    height: 221px;
+}
+
+.topic-banner-wrapper .topic-banner-box li{
+    width: 355px;
+    height: 221px;
+    float: left;
+    position: relative;
+}
+
+.topic-banner-wrapper .topic-banner-box li img{
+    width: 355px;
+    height: 221px;
+}
+
+.topic-banner-wrapper .topic-banner-box li>div{
+    width: 355px;
+    height: 28px;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.topic-banner-wrapper .topic-banner-box li>div>h3{
+    color: #fff;
+    font-size: 13px;
+    line-height: 28px;
+    height: 28px;
+    display:block;
+    margin-left: 10px;
+}
+.cf:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility:hidden;
+}
+
+/* 轮播下方滚动List样式 */
+
+.article-recommend-wrapper .topic-banner-list{
+    margin-top: -10px;
+    width:355px;
+    height: 3px;
+    margin-left: 10px;
+}
+
+.topic-banner-list{
+    width: 33.3%;
+    background: #ccc;
+}
+
+.list-active{
+    background: #37BCF3 !important;
+}

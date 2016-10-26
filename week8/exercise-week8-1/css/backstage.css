@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+/*用户自己的indexcss样式*/
+
+
+/*左右内边距设置为0*/
+
+.padding-none {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*白色的背景颜色*/
+
+.bg-white {
+    background: #fff;
+}
+
+
+/*设置body的背景颜色*/
+
+body {
+    color: #34495e;
+}
+
+
+/*设置内容正文的大小*/
+
+.font-size {
+    font-size: 16px;
+}
+
+
+.addmysql-container form .btn{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Microsoft Yahei";
+    line-height: 20px;
+    margin-right: 50px;
+}
+
+.addmysql-container form .btn-submit{
+    position: absolute;
+    left: 140px;
+    bottom: 100px;
+}
+
+.addmysql-container form .btn-reset{
+    position: absolute;
+    left: 280px;
+    bottom: 100px;
+}
+
+.addmysql-container form .btn-close{
+    position: absolute;
+    left: 420px;
+    bottom: 100px;
+}
+
+
+.modmysql-container form .btn{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Microsoft Yahei";
+    line-height: 20px;
+    margin-right: 50px;
+}
+
+.modmysql-container form .btn-submit{
+    position: absolute;
+    left: 140px;
+    bottom: 100px;
+}
+
+.modmysql-container form .btn-reset{
+    position: absolute;
+    left: 280px;
+    bottom: 100px;
+}
+
+.modmysql-container form .btn-close{
+    position: absolute;
+    left: 420px;
+    bottom: 100px;
+}
+
+
+.searchmysql-container form .btn{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Microsoft Yahei";
+    line-height: 20px;
+    margin-right: 50px;
+}
+
+.searchmysql-container form .btn-submit{
+    position: absolute;
+    left: 140px;
+    bottom: 100px;
+}
+
+.searchmysql-container form .btn-reset{
+    position: absolute;
+    left: 280px;
+    bottom: 100px;
+}
+
+.searchmysql-container form .btn-close{
+    position: absolute;
+    left: 420px;
+    bottom: 100px;
+}
+/* 表格样式 */
+
+table{
+    font-size: 16px;
+    text-align: center;
+    table-layout: fixed;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+thead{
+    width: 100%;
+}
+th{
+    font-weight: bold;
+/*     border:1px solid #ccc; */
+    border-collapse: collapse;
+    text-align: center;
+    background: #4bacff;
+    font-size: 14px;
+    width: 40px;
+}
+tr{
+    background: #eaf5ff;
+    height: 40px;
+    overflow:hidden;
+}
+
+td{
+    border:1px solid #ccc;
+    border-collapse: collapse;
+    font-size: 12px;
+    overflow: hidden;
+    height: 40px;
+    word-wrap:break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+td:nth-child(1){
+    width: 40px;
+    height: 40px;
+}
+
+td:nth-child(2){
+    width: 40px;
+    height: 40px;
+}
+
+td:nth-child(3){
+    width: 160px;
+    height: 40px;
+}
+
+td:nth-child(4){
+    width:80px;
+    height: 40px;
+}
+
+td:nth-child(5){
+    width: 450px;
+    height: 40px;
+}
+
+td:nth-child(6){
+    width: 65px;
+    height: 40px;
+}
+
+tr:nth-child(2n+1) {
+    background: #c7e5ff;
+}
+
+td>a:first-child{
+    color:#22A31D;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+td>a:last-child{
+    color:#EF0D2D;
+    cursor: pointer;
+}
+td>a:hover{
+    color:#F0C127;
+}
+
+div .addsql, .searchsql{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    float: right;
+    margin-left: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    background:#CCC6C6;
+    text-align:center;
+    line-height: 40px;
+}
+
+.searchsql:hover{
+    background: #B3AAAA;
+}
+
+.addsql:hover{
+    background: #B3AAAA;
+}
+
+.addmysql-container{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    width: 600px;
+    height: 800px;
+    background: #fff;
+    border: 1px solid #D3CDCD;
+    margin-left: -300px;
+    margin-top: -400px;
+    display: none;
+}
+
+.addmysql-container label{
+    margin-left: 10px;
+    margin-top: 60px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.modmysql-container{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    width: 600px;
+    height: 800px;
+    background: #fff;
+    border: 1px solid #D3CDCD;
+    margin-left: -300px;
+    margin-top: -400px;
+    display: none;
+}
+
+.modmysql-container label{
+    margin-left: 10px;
+    margin-top: 60px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.searchmysql-container{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    width: 600px;
+    height: 800px;
+    background: #fff;
+    border: 1px solid #D3CDCD;
+    margin-left: -300px;
+    margin-top: -400px;
+    display: none;
+}
+
+.searchmysql-container label{
+    margin-left: 10px;
+    margin-top: 60px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#newstitle{
+    width: 262px;
+}
+
+#newsimg{
+    margin-left: 92px;
+    margin-top: -39px;
+}
+
+#newsaddtime{
+    margin-top: 5px;
+}
