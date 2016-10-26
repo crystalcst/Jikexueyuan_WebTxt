@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/*css弹性盒子模型*/
+
+.column {
+    width: 600px;
+    height: 400px;
+    background-color: #eee;
+    border: 3px solid #029;
+    box-shadow: 3px 2px 0 #38f;
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 1px solid #fc0;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -webkit-column-rule-style: 1px solid #fc0;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -moz-column-rule-style: 1px solid #fc0;
+    -ms-column-count: 3;
+    -ms-column-gap: 10px;
+    -ms-column-rule-style: 1px solid #fc0;
+    text-align: justify;
+}
+
+.column .img {
+    display: inline;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.column .p {
+    display: inline;
+    float: left;
+    padding: 2px;
+}
+
+
+/*弹性盒模型的column分栏样式*/
+
+.nbox_box {
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: #eee;
+    border: 10px solid #436;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0CC;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    box-pack: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    -ms-box-pack: center;
+    -ms-box-align: center;
+}
+
+.nbox_box .nbox_shoes {
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/newbalance.png);
+}
+
+
+/*  旧版伸缩盒垂直水平居中样式*/
+
+.vertical {
+    height: 400px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    background-color: #38f;
+}
+
+.vertical .number1 {
+    height: 200px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #eee;
+}
+
+.vertical .number2 {
+    height: 300px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #789;
+}
+
+.vertical .number3 {
+    height: 400px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #4ee;
+}
+
+
+/*  弹性盒模型垂直分栏样式*/
+
+.level {
+    height: 400px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    background-color: #38f;
+}
+
+.level .number4 {
+    width: 200px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #eee;
+}
+
+.level .number5 {
+    width: 300px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #789;
+}
+
+.level .number6 {
+    width: 100px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #4ee;
+}
+
+
+/*  弹性盒模型水平分栏样式*/
+
+.order {
+    height: 400px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    background-color: #38f;
+}
+
+.order .number7 {
+    width: 300px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #eee;
+    -webkit-order: 3;
+}
+
+.order .number8 {
+    width: 100px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #789;
+    -webkit-order: 1;
+}
+
+.order .number9 {
+    width: 200px;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    background-color: #4ee;
+    -webkit-order: 2;
+}
+
+
+/*  弹性盒模型flex排序样式*/

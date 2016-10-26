@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* style */
+
+body {
+    background: url(../image/body.png) repeat;
+    margin:0;
+}
+
+article {
+    text-align: center;
+    width: 318px;
+    height: 318px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -159px;
+    margin-top: -159px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    /*设置阴影*/
+    background-color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    /*设置边框圆角和渐变*/
+    border: 3px solid #999;
+    border-radius: 25px;
+    border-bottom: #999 #600;
+    border-top: #999 #666;
+    border-left: #999 #666;
+    border-right: #999 #666;
+}
+
+#bar1 {
+    text-align: center;
+    background: url(../image/background.png) no-repeat;
+}
+
+#bar2 {
+    text-align: center;
+    background: url(../image/background.png) no-repeat;
+    float: left;
+}
+
+#bar3 {
+    text-align: center;
+    float: left;
+    background: url(../image/background.png) no-repeat;
+}
+
+#bar4 {
+    text-align: center;
+    background: url(../image/background.png) no-repeat;
+    float: left;
+}
+
+#bar5 {
+    clear: both;
+    text-align: center;
+    background: url(../image/background.png) no-repeat;
+}
+
+
+/*清除浮动*/
+
+.clear:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    content: "";
+}
+
+
+/*设置中间的小icon*/
+
+#icon {
+    width: 24px;
+    height: 24px;
+    margin: 38px;
+}

@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+/*百度首页CSS样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*初始化页面边距和内边距*/
+
+html，body {
+    height: 100%;
+    width: 100%;
+}
+
+div #container {
+    text-align: center;
+    min-width: 810px;
+    height: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    height: 50px;
+}
+
+header .navagation_header {
+    margin: 15px 0 auto auto;
+    padding: 0;
+    float: right;
+}
+
+header nav .nav_right {
+    height: 28px;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+}
+
+
+/*设置导航栏的绝对位置*/
+
+ul li .anav {
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: underline;
+    color: #333;
+}
+
+header nav .nav_right a:hover {
+    color: #38f;
+}
+
+
+/*导航栏前六个样式*/
+
+ul li .bnav {
+    float: left;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: underline;
+    color: #333;
+}
+
+
+/*导航栏第7,8样式*/
+
+ul li .cnav {
+    float: left;
+    font-size: 13px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #3385ff;
+    text-decoration: none;
+    padding: 2px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+    background: #fff;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul ul {
+    float: left;
+    font-size: 13px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #3385ff;
+    text-decoration: none;
+    padding: 2px;
+}
+
+nav ul ul li {
+    float: none;
+    width: 54px;
+    height: 38px;
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+    position: relative;
+}
+
+nav ul ul {
+    background: #555;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none;
+    border-top: 0;
+    border-bottom: 1px solid #eff;
+    border-left: 1px solid #eff;
+    background-color: #eee;
+    width: 56px;
+    height: 30px;
+}
+
+nav ul ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*导航栏更多产品样式*/
+
+article {
+    text-align: center;
+}
+
+article form div .input_text {
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 534px;
+    height: 36px;
+    border-right-width: 0;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    border: 1px solid #b6b6b6;
+    border-width: 1px;
+    float: left;
+    margin-top: 32px;
+    padding-left: 5px;
+    outline: none;
+}
+
+article form div .input_text:hover {
+    border: 1px solid #777;
+    border-right-color: transparent;
+}
+
+article form div .input_text:focus {
+    border: 1px solid #3385ff;
+}
+
+
+/*输入框样式*/
+
+article form div .submitbutton {
+    border: 0;
+    padding: 0;
+    width: 100px;
+    height: 38px;
+    background-color: #3385ff;
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+article form div .submitbutton:hover {
+    background-color: #25f;
+}
+
+
+/*提交按钮样式*/
+
+form {
+    height: 70px;
+    text-align: center;
+}
+
+article form .input {
+    width: 641px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+
+/*控制input外层div垂直水平居中*/
+
+footer {
+    height: 100px;
+    position: absolute;
+    bottom: 30px;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer-container {
+    width: 683px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+footer div .code-container {
+    display: inline-block;
+    width: 268px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+footer div .code-container #code-text1 {
+    float: left;
+    height: 60px;
+}
+
+footer div .code-container .code {
+    float: left;
+    margin-right: 10px;
+}
+
+footer div .code-container .text {
+    height: 60px;
+    float: left;
+    text-align: left;
+}
+
+p {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 3px;
+    padding-top: 10px;
+}
+
+span {
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+footer div .code-container #code-text2 {
+    float: left;
+    height: 60px;
+    margin-left: 30px;
+}
+
+footer div #footer-right-top {
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 33px;
+}
+
+footer div #footer-right-top .link1 {
+    display: inline-block;
+    vertical-align: bottom;
+    color: #333333;
+    margin-right: 5px;
+    line-height: 150%;
+}
+
+footer div #footer-right-top .link2 {
+    display: inline-block;
+    vertical-align: bottom;
+    color: #000;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+footer div #footer-right-top #footer-right-bottom {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 5px;
+    text-align: center;
+    color: #333333;
+    margin-top: 0;
+    line-height: 150%;
+}
+
+footer div #footer-right-top #footer-right-bottom .icon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url(../image/footer.png) no-repeat;
+    top: 3px;
+}
+
+footer div #footer-right-top #footer-right-bottom .link3 {
+    color: #333333;
+    font-weight: normal;
+    line-height: 150%;
+    vertical-align: bottom;
+}
+
+
+/*底部利用inlinblock和float实现垂直水平居中*/
