@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+</head>
+<body>
+<!--承载层-->
+<div id="wrapper">
+    <!--头部-->
+    <div class="head">
+        <div class="top_wrap"></div>
+        <!--顶部左侧-->
+        <div class="top_left">
+            <!--天气部分-->
+            <div class="weather-wrap">
+                <div class="weather">
+                    <a class="city-weather" href="#">
+                        <div class="show-weather">
+                            <span class="show-city">郑州：</span>
+                                <span class="show-icon">
+                                    <span class="weather-icon"></span>
+                                    <em>8℃</em>
+                                </span>
+                        </div>
+                        <div class="show-pollution">
+                                <span class="show-air">
+                                    <em class="pollution-name">重度</em>
+                                    <em class="pollution-num">254</em>
+                                </span>
+                            <span class="show-vertical">|</span>
+                        </div>
+                    </a>
+                    <!--天气隐藏部分-->
+                    <div class="set_weather">
+                        <div class="set_weather_content">
+                            <div class="warn_mod">
+                                <div class="warn_pic"></div>
+                                <a href="#" class="warn_title">河南省发布霾橙色预警</a>
+                            </div>
+                            <div class="lunar_mod">
+                                <span class="lunar_calendar">12月24日</span>
+                                <span class="lunar_festival">农历 十一月十四(平安夜)</span>
+                                <span class="lunar_sevenday">
+                                    <a href="#">未来七天天气</a>
+                                </span>
+                                <span class="lunar_set">设置</span>
+                            </div>
+                            <div class="every_mod">
+                                <div class="every_item today">
+                                    <a href="#">
+                                        <p class="every_title">今天(周四)</p>
+                                        <img src="images/a1.jpg"/>
+
+                                        <p>1℃</p>
+
+                                        <p>多云</p>
+
+                                        <p>西北风3-4级</p>
+                                    </a>
+                                </div>
+                                <div class="every_item">
+                                    <a href="#">
+                                        <p class="every_title">今天(周四)</p>
+                                        <img src="images/a1.jpg"/>
+
+                                        <p>1℃</p>
+
+                                        <p>多云</p>
+
+                                        <p>西北风3-4级</p>
+                                    </a>
+                                </div>
+                                <div class="every_item">
+                                    <a href="#">
+                                        <p class="every_title">今天(周四)</p>
+                                        <img src="images/a1.jpg"/>
+
+                                        <p>1℃</p>
+
+                                        <p>多云</p>
+
+                                        <p>西北风3-4级</p>
+                                    </a>
+                                </div>
+                                <div class="every_item">
+                                    <a href="#">
+                                        <p class="every_title">今天(周四)</p>
+                                        <img src="images/a1.jpg"/>
+
+                                        <p>1℃</p>
+
+                                        <p>多云</p>
+
+                                        <p>西北风3-4级</p>
+                                    </a>
+                                </div>
+                                <div class="every_item">
+                                    <a href="#">
+                                        <p class="every_title">今天(周四)</p>
+                                        <img src="images/a1.jpg"/>
+
+                                        <p>1℃</p>
+
+                                        <p>多云</p>
+
+                                        <p>西北风3-4级</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="warn_icon"></a>
+                        </div>
+                        <div class="weather_arrow"></div>
+                    </div>
+                </div>
+            </div>
+            <!--工具部分-->
+            <div class="tool-wrap">
+                <a href="#">宝箱</a>
+                <a href="#">换肤</a>
+                <a href="#">消息</a>
+            </div>
+        </div>
+        <!--顶部右侧-->
+        <div class="top_right">
+            <a href="#">糯米</a>
+            <a href="#">新闻</a>
+            <a href="#">hao123</a>
+            <a href="#">地图</a>
+            <a href="#">视频</a>
+            <a href="#">贴吧</a>
+            <a class="t_nom" id="top_right_user" href="#">梦想追逐0415</a>
+            <a class="t_nom" id="top_right_set" href="#">设置</a>
+            <a class="more_docu t_nom" href="#">更多产品</a>
+            <!--设置 隐藏部分-->
+            <div id="usename_menu" class="set_menu">
+                <div>
+                    <a href="#">我的VIP</a>
+                    <a href="#">个人中心</a>
+                    <a href="#">账号设置</a>
+                    <a href="#">意见反馈</a>
+                    <a href="#">退出</a>
+                </div>
+                <span class="menu_arrow">
+                    <span></span>
+                </span>
+            </div>
+            <div id="user_set_menu" class="set_menu">
+                <div>
+                    <a href="#">搜索设置</a>
+                    <a href="#">高级搜素</a>
+                    <a href="#">关闭预测</a>
+                    <a href="#">搜索历史</a>
+                </div>
+                <span class="menu_arrow">
+                    <span></span>
+                </span>
+            </div>
+        </div>
+        <!--右侧更多产品 隐藏部分-->
+        <div class="rg_more">
+            <div class="rg_more_title">
+                更多产品
+            </div>
+            <div class="rg_more_content">
+                <a href="#">
+                    <img src="images/music.png"/>音乐
+                </a>
+                <a href="#">
+                    <img src="images/image.png"/>图片
+                </a>
+                <a href="#">
+                    <img src="images/zhidao.png"/>知道
+                </a>
+                <a href="#">
+                    <img src="images/wenku.png"/>文库
+                </a>
+                <a href="#">
+                    <img src="images/bang.png"/>风云榜
+                </a>
+                <a href="#">
+                    <img src="images/tuiguang.png"/>百度推广
+                </a>
+
+                <div class="rg_more_bottom">
+                    <a href="#">全部产品>></a>
+                </div>
+            </div>
+        </div>
+        <!--头部wrapper-->
+        <div id="head_wrapper">
+            <div class="head_form">
+                <div class="head_form_wrapper">
+                    <!--LOGO-->
+                    <div class="logo">
+                        <img src="images/bd_logo.png"/>
+                    </div>
+                    <!--搜索框-->
+                    <form class="fm">
+                        <input type="text" class="input_ser" maxlength="100" autofocus="autofocus"/>
+                        <input type="submit" value="百度一下" class="input_btn"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--main-->
+        <div id="main-wrap">
+            <div class="main">
+                <!--菜单-->
+                <div class="main-menu">
+                    <!--我的关注-->
+                    <div class="menu_mine">
+                        <div class="mine_icon"></div>
+                        <div class="mine_text">我的关注</div>
+                    </div>
+                    <!--标签导航-->
+                    <div class="menu-nav">
+                        <div class="menu-nav-lf">
+                            <span class=" menu_hover">推荐</span>
+                            <span>导航</span>
+                            <span>视频</span>
+                            <span>购物</span>
+                        </div>
+                    </div>
+                    <!--设置-->
+                    <div class="set-icon-wrap">
+                        <div class="set-icon"></div>
+                    </div>
+                </div>
+                <!--main content-->
+                <div class="main_content">
+                    <!--内容1 推荐-->
+                    <div id="s_content_1">
+                        <div class="news_wrap">
+                            <!--右侧 时事热点-->
+                            <div class="news_rank">
+                                <!--头部-->
+                                <div class="news_rank_title">
+                                    <div class="rank_title_text">
+                                        <a href="#">实时热点</a>
+                                    </div>
+                                    <a class="hot_refresh">
+                                        <span class="hot_refresh_icon"></span>
+                                        <span class="hot_refresh_text">换一换</span>
+                                    </a>
+                                </div>
+                                <!--新闻列表-->
+                                <ul class="news_rank_content">
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">深圳山体滑坡</a>
+                                                <span class="new_identity"></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">男子跳入虎山</a>
+                                                <span class="new_identity"></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">黄磊小女儿庆生</a>
+                                                <span class="new_identity"></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">空姐卖带吻苹果</a>
+                                                <span class="new_identity"></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">女孩为寻自由离家</a>
+                                                <span class="new_identity"></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">深圳山体滑坡</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">刘景文默认恋情</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">女子找到幽灵姐妹</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">深圳山体滑坡</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">深圳山体滑坡</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">深圳山体滑坡</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">女子找到幽灵姐妹</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">刘景文默认恋情</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">卖煎饼开上豪车</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">巴萨世俱杯夺冠</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                    <li>
+                                        <span class="news_icon_dot"></span>
+                                            <span class="news_link">
+                                                <a class="link_content" href="#">张家界玻璃桥征名</a>
+                                                <span class=""></span>
+                                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--顶部 tip-->
+                            <div class="news_tip">
+                                <div class="tip_line"></div>
+                                <div class="tip_content">
+                                    <span class="tip_icon"></span>
+                                    <span class="tip_text">以下信息根据您的兴趣推荐</span>
+                                </div>
+                                <div class="tip_line"></div>
+                            </div>
+                            <!--content-->
+                            <div class="news_container">
+                                <!--新闻块儿 1-->
+                                <div class="news_list_wrapper">
+                                    <div class="news_item">
+                                        <!--新闻标题-->
+                                        <div class="news_item_content">
+                                            <h2><a href="#"> 深圳滑坡15家公司受灾 6家上市公司幸免</a></h2>
+                                        </div>
+                                        <!--新闻图片-->
+                                        <div class="news_item_pic">
+                                            <a href="#"><img src="images/u=1534886529,3093432839&fm=80.jpg"/></a>
+                                        </div>
+                                        <!--新闻时间-->
+                                        <div class="from">
+                                                <span class="src_net">
+                                                    <a href="#">搜狐新闻</a>
+                                                </span>
+                                            <span class="src_time">12-21 08:39</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--新闻块儿 2-->
+                                <div class="news_list_wrapper">
+                                    <div class="news_item">
+                                        <!--新闻标题-->
+                                        <div class="news_item_content">
+                                            <h2><a href="#"> A股史上最强贺岁档大片：《万科大战野蛮人》</a></h2>
+                                        </div>
+                                        <!--新闻图片-->
+                                        <div class="news_item_pic">
+                                            <a href="#"><img src="images/u=1164540773,3392594566&fm=80.jpg"/></a>
+                                        </div>
+                                        <!--新闻时间-->
+                                        <div class="from">
+                                                <span class="src_net">
+                                                    <a href="#">搜狐新闻</a>
+                                                </span>
+                                            <span class="src_time">12-21 08:39</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--内容2 导航-->
+                    <div id="s_content_2">
+                        <div class="nav_card">
+                            <h1>猜你喜欢</h1>
+
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/9483.png"/>
+                                    <span class="nav_txt">百度糯米</span>
+                                </a>
+
+                                <div class="rebate">
+                                    <a href="#">最高返利3.54%</a>
+                                </div>
+                                <div class="fanli_tag">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95541.png"/>
+                                    <span class="nav_txt">京东商城</span>
+                                </a>
+
+                                <div class="rebate">
+                                    <a href="#">最高返利3.54%</a>
+                                </div>
+                                <div class="fanli_tag">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95780.png"/>
+                                    <span class="nav_txt">1号店</span>
+                                </a>
+
+                                <div class="rebate">
+                                    <a href="#">最高返利3.54%</a>
+                                </div>
+                                <div class="fanli_tag">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95537.png"/>
+                                    <span class="nav_txt">苏宁易购</span>
+                                </a>
+
+                                <div class="rebate">
+                                    <a href="#">最高返利3.54%</a>
+                                </div>
+                                <div class="fanli_tag">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95693.png"/>
+                                    <span class="nav_txt">唯品会</span>
+                                </a>
+
+                                <div class="rebate">
+                                    <a href="#">最高返利3.54%</a>
+                                </div>
+                                <div class="fanli_tag">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95517.png"/>
+                                    <span class="nav_txt">当当网</span>
+                                </a>
+
+                                <div class="rebate">
+                                    <a href="#">最高返利3.54%</a>
+                                </div>
+                                <div class="fanli_tag">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/10295.png"/>
+                                    <span class="nav_txt">天气插件</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/6000.png"/>
+                                    <span class="nav_txt">w3school在线教程</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95561.png"/>
+                                    <span class="nav_txt">百度地图</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95659.png"/>
+                                    <span class="nav_txt">微信网页版</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95487.png"/>
+                                    <span class="nav_txt">淘宝网</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/200001.png"/>
+                                    <span class="nav_txt">斗鱼</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95511.png"/>
+                                    <span class="nav_txt">腾讯</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95502.png"/>
+                                    <span class="nav_txt">爱奇艺</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/2558.png"/>
+                                    <span class="nav_txt">东方卫视</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95489.png"/>
+                                    <span class="nav_txt">优酷</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95488.png"/>
+                                    <span class="nav_txt">新浪微博</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/81407.png"/>
+                                    <span class="nav_txt">铁路客户中心</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95511.png"/>
+                                    <span class="nav_txt">腾讯</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95487.png"/>
+                                    <span class="nav_txt">淘宝网</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95489.png"/>
+                                    <span class="nav_txt">优酷</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95488.png"/>
+                                    <span class="nav_txt">新浪微博</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/95502.png"/>
+                                    <span class="nav_txt">爱奇艺</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="nav_item">
+                                <a class="nav_block" href="#">
+                                    <img src="images/2558.png"/>
+                                    <span class="nav_txt">东方卫视</span>
+                                </a>
+
+                                <div class="">
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--内容3 视频-->
+                    <div id="s_content_3">
+                        <div class="video_wrap">
+                            <div class="video_col">
+                                <div class="video_item_wrap">
+                                    <div class="video_pic">
+                                        <a class="video_a_pic" href="#">
+                                            <img src="images/u=3047527983,2645153192&fm=58.jpg"/>
+                                        </a>
+                                        <a href="#" class="video_tag"></a>
+                                        <span class="v-tag">更新至12集</span>
+
+                                    </div>
+                                    <div class="video_text">
+                                        <div class="video_txt">
+                                            <a href="#">爱情碟中谍</a>
+                                        </div>
+                                        <div class="video_score">
+                                            <span class="score_star">
+                                                <span class="star_active"></span>
+                                            </span>
+                                            6.2
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video_col">
+                                <div class="video_item_wrap">
+                                    <div class="video_pic">
+                                        <a class="video_a_pic" href="#">
+                                            <img src="images/u=1811615692,3609781656&fm=58.jpg"/>
+                                        </a>
+                                        <a href="#" class="video_tag"></a>
+                                        <span class="v-tag">更新至34集</span>
+                                    </div>
+                                    <div class="video_text">
+                                        <div class="video_txt">
+                                            <a href="#">枪侠</a>
+                                        </div>
+                                        <div class="video_score">
+                                            <span class="score_star">
+                                                <span class="star_active" style="width: 44.2px"></span>
+                                            </span>
+                                            6.8
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video_col">
+                                <div class="video_item_wrap">
+                                    <div class="vedio_item_2">
+                                        <div class="video_pic_2">
+                                            <a href="#"><img src="images/u=929858418,2376116622&fm=58.jpg"/></a>
+                                            <a href="#" class="video_tag1"></a>
+                                            <span class="v-tag">01:30</span>
+                                        </div>
+                                        <div class="video_text_2">
+                                            <div class="v_text">
+                                                <a href="#">河北民警冰窟救人英勇牺牲 冰面破裂绳子断裂</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vedio_item_2">
+                                        <div class="video_pic_2">
+                                            <a href="#"><img src="images/u=3018154431,1329590259&fm=58.jpg"/></a>
+                                            <a href="#" class="video_tag1"></a>
+
+                                            <span class="v-tag">83:30</span>
+                                        </div>
+                                        <div class="video_text_2">
+                                            <div class="v_text">
+                                                <a href="#">金立M5 plus发布会全程回顾</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video_col">
+                                <div class="video_item_wrap">
+                                    <div class="vedio_item_2">
+                                        <div class="video_pic_2">
+                                            <a href="#"><img src="images/u=2235463856,4425198&fm=58.jpg"/></a>
+                                            <a href="#" class="video_tag1"></a>
+
+                                            <span class="v-tag">02:07</span>
+                                        </div>
+                                        <div class="video_text_2">
+                                            <div class="v_text">
+                                                <a href="#">秦时明月：白凤挑战卫庄</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vedio_item_2">
+                                        <div class="video_pic_2">
+                                            <a href="#"><img src="images/u=3506102935,1827759963&fm=58.jpg"/></a>
+                                            <a href="#" class="video_tag1"></a>
+
+                                            <span class="v-tag">00:47</span>
+                                        </div>
+                                        <div class="video_text_2">
+                                            <div class="v_text">
+                                                <a href="#">圣诞临近 美国居民过度装饰圣诞彩灯引争议</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--内容4 购物-->
+                    <div id="s_content_4">
+                        <div class="shop_wrap">
+                            <div class="shop_card">
+                                <div class="shop_card_pic">
+                                    <a href="#"><img src="images/9358d109b3de9c82ca2849ae6b81800a19d84345.jpg"/>
+
+                                        <div class="mask">
+                                            <span class="salenum">已售15173</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop_card_text">
+                                    <a href="#">奥斯卡电影票22点8元</a>
+                                    <span class="shop_card_price">
+                                        <span>¥</span>
+                                        <span>22.8</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop_card">
+                                <div class="shop_card_pic">
+                                    <a href="#"><img src="images/f636afc379310a55a65534b8b14543a98226100c.jpg"/>
+
+                                        <div class="mask">
+                                            <span class="salenum">已售15173</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop_card_text">
+                                    <a href="#">佑米造型</a>
+                                    <span class="shop_card_price">
+                                        <span>¥</span>
+                                        <span>88</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop_card">
+                                <div class="shop_card_pic">
+                                    <a href="#"><img src="images/574e9258d109b3de363d2730cabf6c81810a4cec.jpg"/>
+
+                                        <div class="mask">
+                                            <span class="salenum">已售15173</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop_card_text">
+                                    <a href="#">肯德基经典辣腿堡山河</a>
+                                    <span class="shop_card_price">
+                                        <span>¥</span>
+                                        <span>29</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop_card">
+                                <div class="shop_card_pic">
+                                    <a href="#"><img src="images/c8ea15ce36d3d5399c6510a23c87e950352ab072.jpg"/>
+
+                                        <div class="mask">
+                                            <span class="salenum">已售15173</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop_card_text">
+                                    <a href="#">岁岁羊火锅代金券</a>
+                                    <span class="shop_card_price">
+                                        <span>¥</span>
+                                        <span>78</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop_card">
+                                <div class="shop_card_pic">
+                                    <a href="#"><img src="images/f703738da97739126d759599fd198618377ae2f3.jpg"/>
+
+                                        <div class="mask">
+                                            <span class="salenum">已售15173</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop_card_text">
+                                    <a href="#">大鸭梨100元代金券</a>
+                                    <span class="shop_card_price">
+                                        <span>¥</span>
+                                        <span>89</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop_card">
+                                <div class="shop_card_pic">
+                                    <a href="#"><img src="images/b8014a90f603738da0e3ce0db51bb051f819ec70.jpg"/>
+
+                                        <div class="mask">
+                                            <span class="salenum">已售15173</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop_card_text">
+                                    <a href="#">奥斯卡单人影票含3D</a>
+                                    <span class="shop_card_price">
+                                        <span>¥</span>
+                                        <span>25</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop_card">
+                                <div class="shop_card_pic">
+                                    <a href="#"><img src="images/faedab64034f78f0e91d7da47f310a55b3191c56.jpg"/>
+
+                                        <div class="mask">
+                                            <span class="salenum">已售15173</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop_card_text">
+                                    <a href="#">釜山第一烤场午晚餐通用</a>
+                                    <span class="shop_card_price">
+                                        <span>¥</span>
+                                        <span>43</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="shop_card">
+                                <div class="shop_card_pic">
+                                    <a href="#">
+                                        <img src="images/a2cc7cd98d1001e9af96fe43be0e7bec55e797d0.jpg"/>
+
+                                        <div class="mask">
+                                            <span class="salenum">已售15173</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="shop_card_text">
+                                    <a href="#">佑米造型白领套餐</a>
+                                    <span class="shop_card_price">
+                                        <span>¥</span>
+                                        <span>48</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/lableSwich.js"></script>
+</body>
+</html>
