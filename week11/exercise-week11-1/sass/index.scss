@@ -1,0 +1,2125 @@
+/*
+* @Author: lenovo
+* @Date:   2016-07-25 09:57:24
+* @Last Modified by:   lenovo
+* @Last Modified time: 2016-08-16 12:11:18
+*/
+
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+@import "compass/utilities/general/float";
+$rel: relative;
+$abs: absolute;
+$text-l: left;
+$text-r: right;
+$text-c: center;
+$darkGray: #333;
+$lightGray: #ccc;
+$white: #fff;
+$black: #000;
+$lightGreen: #30a01a;
+$gray: #f3f3f3;
+html {
+    overflow-x: hidden;
+    body {
+        /* =================头部样式开始====================== */
+        header {
+            box-sizing: border-box;
+            min-height: 70px;
+            margin: 0 auto;
+            padding: 10px 0;
+            .wrap {
+                position: $rel;
+                overflow: hidden;
+                width: 1000px;
+                height: 50px;
+                margin: 7px auto 0 auto;
+                .logo {
+                    @include float(left);
+                    width: 113px;
+                }
+                /*搜索部分*/
+                .search {
+                    position: $rel;
+                    @include float(left);
+                    width: 383px;
+                    margin: 2px auto 0 180px;
+                    .search-text {
+                        font-size: 12px;
+                        line-height: 18px;
+                        @include float(left);
+                        @include box-sizing(border-box);
+                        width: 338px;
+                        height: 36px;
+                        padding: 9px 150px 9px 15px;
+                        text-align: $text-l;
+                        color: $darkGray;
+                        border: 1px solid $lightGray;
+                        border-right: 0;
+                        outline: none;
+                        background: $white;
+                    }
+                    .search-btn {
+                        @include float(left);
+                        width: 40px;
+                        height: 36px;
+                        border: 1px solid $lightGray;
+                        outline: none;
+                        background: url(../img/topsearch-icon.png) center center no-repeat $white;
+                        &:hover {
+                            border: 1px solid $lightGreen;
+                            background: url(../img/topsearch-icon1.png) center center no-repeat $lightGreen;
+                        }
+                    }
+                    .search-btn2 {
+                        border: 1px solid $lightGreen;
+                        background: url(../img/topsearch-icon1.png) center center no-repeat $lightGreen;
+                    }
+                    /*热搜词*/
+                    .hot-words {
+                        position: $abs;
+                        top: 5px;
+                        right: 60px;
+                        a {
+                            font-size: 12px;
+                            @include inline-block;
+                            margin-left: 5px;
+                            padding: 0 3px;
+                            color: $darkGray;
+                            background: $gray;
+                            &:hover {
+                                background: #bfbcbc;
+                            }
+                        }
+                    }
+                }
+                /*登录导航部分*/
+                .login {
+                    font-size: 12px;
+                    line-height: 50px;
+                    @include inline-block;
+                    @include box-sizing(border-box);
+                    @include float(right);
+                    text-align: $text-r;
+                    color: $darkGray;
+                    span {
+                        @include inline-block;
+                        width: 15px;
+                        height: 13px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        vertical-align: middle;
+                        background: url(../img/massage-icon.gif) left center no-repeat;
+                        background-size: 15px 13px;
+                    }
+                    a {
+                        margin: 0 10px;
+                        color: $darkGray;
+                    }
+                }
+            }
+        }
+        /* ==============头部样式结束===================== */
+        /* =================article样式开始====================== */
+        article {
+            .maincontainer {
+                width: 1000px;
+                margin: 0 auto;
+                &:after {
+                    @include clearfix;
+                }
+                .top-wrapper {
+                    /*主体左边导航栏*/
+                    .lesson-nav {
+                        position: $rel;
+                        @include float(left);
+                        width: 210px;
+                        height: 373px;
+                        border-top: 2px solid #35b558;
+                        border-right: 0;
+                        ul {
+                            position: $abs;
+                            z-index: 800;
+                            width: 210px;
+                            height: 371px;
+                            border: 1px solid #e4e4e4;
+                            border-top: 0;
+                            background: $white;
+                        }
+                        li {
+                            div {
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 37px;
+                                z-index: 1000;
+                                @include box-sizing(border-box);
+                                width: 208px;
+                                height: 37px;
+                                padding: 0 15px;
+                                cursor: pointer;
+                                color: $darkGray;
+                                border-bottom: 1px solid #f5f5f5;
+                                background: #fff url(../img/more-icon.png) 186px center no-repeat;
+                                background-size: 6px 10px;
+                                a {
+                                    color: $darkGray;
+                                }
+                            }
+                        }
+                    }
+                    /*主体中间重点关注*/
+                    .lesson-focus {
+                        @include float(left);
+                        overflow: hidden;
+                        width: 558px;
+                        height: 373px;
+                        margin-left: 10px;
+                        .index-banner {
+                            @include box-sizing(border-box);
+                            width: 558px;
+                            height: 260px;
+                            margin-left: auto;
+                            border-right: 0;
+                            background: $lightGray;
+                        }
+                        .focus-wrapper {
+                            position: $rel;
+                            overflow: hidden;
+                            @include box-sizing(border-box);
+                            width: 100%;
+                            width: 558px;
+                            height: 100px;
+                            margin-top: 13px;
+                            margin-left: auto;
+                            border: 1px solid #e2e2e2;
+                            .focus-left {
+                                position: $abs;
+                                z-index: 800;
+                                top: 30px;
+                                left: 0;
+                                display: inline-block;
+                                display: none;
+                                width: 24px;
+                                height: 40px;
+                                cursor: pointer;
+                                background: url(../img/focus-nav.png) 0 0 no-repeat;
+                                background-size: 48px 80px;
+                                &:hover {
+                                    background: url(../img/focus-nav.png) 0 -40px no-repeat;
+                                    background-size: 48px 80px;
+                                }
+                            }
+                            .focus-right {
+                                position: $abs;
+                                z-index: 800;
+                                top: 30px;
+                                right: 0;
+                                display: inline-block;
+                                display: none;
+                                width: 24px;
+                                height: 40px;
+                                cursor: pointer;
+                                background: url(../img/focus-nav.png) -24px 0 no-repeat;
+                                background-size: 48px 80px;
+                                &:hover {
+                                    background: url(../img/focus-nav.png) -24px -40px no-repeat;
+                                    background-size: 48px 80px;
+                                }
+                            }
+                            .focus-box {
+                                position: $abs;
+                                width: auto;
+                                height: 100px;
+                                li {
+                                    @include float(left);
+                                    width: 186.5px;
+                                    height: 100px;
+                                    a {
+                                        position: $rel;
+                                        display: block;
+                                        @include float(left);
+                                        width: 100%;
+                                        height: 100%;
+                                        border-right: 1px solid #f5f5f5;
+                                        img {
+                                            display: block;
+                                            width: 40px;
+                                            height: 40px;
+                                            margin: 8px auto;
+                                        }
+                                        .focus-title {
+                                            font-size: 12px;
+                                            text-align: center;
+                                            color: $darkGray;
+                                        }
+                                        .intro {
+                                            font-size: 12px;
+                                            text-align: center;
+                                            color: #666;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /*主体右边课程展示样式*/
+                    .lesson-show {
+                        @include float(left);
+                        overflow: hidden;
+                        width: 210px;
+                        height: 373px;
+                        margin-left: 10px;
+                        border: 1px solid #e4e4e4;
+                        .news {
+                            height: 125px;
+                            padding: 0 13px;
+                            border-bottom: 1px solid #e4e4e4;
+                            h3 {
+                                font-size: 14px;
+                                margin-top: 10px;
+                                color: $darkGray;
+                            }
+                        }
+                        .list {
+                            margin-top: 5px;
+                            a {
+                                font-size: 12px;
+                                line-height: 1.8;
+                                display: block;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                color: #666;
+                                &:hover {
+                                    color: #35b558;
+                                }
+                            }
+                        }
+                        .userinfo {
+                            overflow: hidden;
+                            height: 86px;
+                            border-bottom: 1px solid #e4e4e4;
+                            .head-box {
+                                @include float(left);
+                                width: 64px;
+                                margin-top: 10px;
+                                img {
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    margin: 0 auto;
+                                }
+                            }
+                            .name-wrap {
+                                @include float(left);
+                                width: 140px;
+                                .hello-world {
+                                    margin-top: 10px;
+                                    span {
+                                        font-size: 12px;
+                                        color: #666;
+                                    }
+                                }
+                                .operate {
+                                    margin-top: 7px;
+                                    a {
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                        display: block;
+                                        @include float(left);
+                                        width: 48px;
+                                        height: 20px;
+                                        text-align: center;
+                                        color: $white;
+                                    }
+                                    .login-btn {
+                                        margin-right: 10px;
+                                        background: #fb5d20;
+                                    }
+                                    .register-btn {
+                                        background: #35b558;
+                                    }
+                                }
+                            }
+                        }
+                        .recommend {
+                            margin-top: 20px;
+                            border-top: 1px solid #e4e4e4;
+                            @include box-sizing(border-box);
+                            .move-list {
+                                position: $abs;
+                                display: none;
+                                width: 210px;
+                                margin-top: -160px;
+                                background: $white;
+                                .type-list {
+                                    position: $rel;
+                                    li {
+                                        font-size: 12px;
+                                        line-height: 24px;
+                                        float: left;
+                                        width: 52px;
+                                        height: 24px;
+                                        cursor: pointer;
+                                        text-align: center;
+                                        border-right: 1px solid #f5f5f5;
+                                        border-bottom: 1px solid #f5f5f5;
+                                        background: #fcfcfc;
+                                    }
+                                }
+                                .content {
+                                    position: $rel;
+                                    height: 125px;
+                                    a {
+                                        line-height: 20px;
+                                        display: block;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        color: #666;
+                                    }
+                                }
+                            }
+                            .start-list {
+                                li {
+                                    font-size: 12px;
+                                    line-height: 23px;
+                                    display: block;
+                                    @include float(left);
+                                    width: 52px;
+                                    height: 76px;
+                                    text-align: center;
+                                    color: $black;
+                                    border-right: 1px solid #f5f5f5;
+                                    border-bottom: 1px solid #f5f5f5;
+                                    .icon {
+                                        display: block;
+                                        width: 25px;
+                                        height: 25px;
+                                        margin: 13px auto 0;
+                                        background-image: url(../img/recommend.png);
+                                        background-size: 71px 232px;
+                                    }
+                                    .question {
+                                        background-position: -5px -3px;
+                                    }
+                                    .wiki {
+                                        background-position: -5px -31px;
+                                    }
+                                    .lesson {
+                                        background-position: -5px -59px;
+                                    }
+                                    .group {
+                                        background-position: -5px -87px;
+                                    }
+                                    .download {
+                                        background-position: -5px -117px;
+                                    }
+                                    .known {
+                                        background-position: -5px -144px;
+                                    }
+                                    .occupation {
+                                        background-position: -5px -173px;
+                                    }
+                                    .vip {
+                                        background-position: -5px -202px;
+                                    }
+                                    .angle-bottom {
+                                        display: block;
+                                        @include box-sizing(content-box);
+                                        width: 0;
+                                        height: 0;
+                                        margin: 0 auto;
+                                        border-top: 6px solid #e4e4e4;
+                                        border-right: 6px solid transparent;
+                                        border-bottom: 6px solid transparent;
+                                        border-left: 6px solid transparent;
+                                    }
+                                    a {
+                                        display: block;
+                                        overflow: hidden;
+                                        width: 52px;
+                                        height: 76px;
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /*公开课*/
+                .open-class {
+                    font-size: 12px;
+                    width: 1000px;
+                    margin-top: 30px;
+                    padding-bottom: 15px;
+                    .open-header {
+                        margin-bottom: 16px;
+                        strong {
+                            font-size: 18px;
+                            font-weight: 500;
+                            @include float(left);
+                            color: $darkGray;
+                            a {
+                                color: #35b558;
+                            }
+                        }
+                        i {
+                            font-size: 12px;
+                            line-height: 13px;
+                            display: block;
+                            @include float(left);
+                            width: 13px;
+                            height: 13px;
+                            margin: 9px 8px 0;
+                            cursor: pointer;
+                            text-align: center;
+                            color: $white;
+                            border-radius: 50%;
+                            background: #999;
+                        }
+                        .more-class {
+                            font-size: 12px;
+                            @include float(right);
+                            margin-top: 4px;
+                            color: #2d85ca;
+                        }
+                    }
+                    .class-box {
+                        position: $rel;
+                        height: 200px;
+                        .swiper-container {
+                            width: 1020px;
+                            height: 200px;
+                            margin-left: -10px;
+                            ul {
+                                position: $rel;
+                                width: 100%;
+                                -webkit-transition-timing-function: ease;
+                                -webkit-transition-duration: 0s;
+                                -webkit-transition-property: -webkit-transform, left, top;
+                                -webkit-transform: translate3d(0px, 0, 0);
+                            }
+                        }
+                        ul {
+                            li {
+                                @include float(left);
+                                width: 255px;
+                                height: 200px;
+                            }
+                        }
+                    }
+                    .details {
+                        position: $rel;
+                        z-index: 1;
+                        width: 233px;
+                        height: 200px!important;
+                        margin: 0 auto;
+                        cursor: pointer;
+                        -webkit-transition: border-color .3s ease-in;
+                        -moz-transition: border-color .3s ease-in;
+                        -o-transition: border-color .3s ease-in;
+                        transition: border-color .3s ease-in;
+                        border: 1px solid #e4e4e4;
+                    }
+                    .bgimg {
+                        position: $abs;
+                        z-index: 1;
+                        width: 233px;
+                        height: 198px;
+                    }
+                    .intro {
+                        position: $abs;
+                        z-index: 2;
+                        bottom: 0;
+                        width: 234px;
+                        height: 43px;
+                        padding-top: 10px;
+                        -webkit-transition: opacity .3s ease-in;
+                        -moz-transition: opacity .3s ease-in;
+                        -o-transition: opacity .3s ease-in;
+                        transition: opacity .3s ease-in;
+                        opacity: 1;
+                        color: $white;
+                        background: url(../img/openclass_shadow.png) no-repeat;
+                        p {
+                            font-size: 14px;
+                            overflow: hidden;
+                            width: 233px;
+                            height: 20px;
+                            padding: 0 10px;
+                            text-align: center;
+                        }
+                        .date {
+                            font-size: 12px;
+                        }
+                    }
+                    .desc {
+                        font-size: 12px;
+                        position: $abs;
+                        z-index: 3;
+                        display: none;
+                        @include box-sizing(border-box);
+                        width: 233px;
+                        height: 200px;
+                        margin-top: -198px;
+                        padding: 20px;
+                        -webkit-transition: opacity .3s ease;
+                        -moz-transition: opacity .3s ease;
+                        -o-transition: opacity .3s ease;
+                        transition: opacity .3s ease;
+                        text-align: $text-l;
+                        color: $lightGray;
+                        background: rgba(255, 255, 255, .8);
+                        .a-line {
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        .multi-line {
+                            overflow: hidden;
+                            height: 54px;
+                        }
+                        a {
+                            font-size: 16px;
+                            line-height: 35px;
+                            display: block;
+                            width: 150px;
+                            height: 35px;
+                            margin: 20px auto 0;
+                            text-align: $text-c;
+                            color: $white;
+                            border-radius: 3px;
+                            background-color: #35b558;
+                        }
+                    }
+                }
+                #recommend-name {
+                    margin-top: 20px;
+                    ul {
+                        height: 46px;
+                        background: url(../img/hotnav_bc.jpg) 0 100% repeat-x;
+                        li {
+                            font-size: 14px;
+                            @include float(left);
+                            width: 16.6%;
+                            padding: 10px 0;
+                            cursor: pointer;
+                            text-align: $text-c;
+                            color: #666;
+                        }
+                    }
+                    .on {
+                        color: #35b558;
+                        border-bottom: 2px solid #35b558;
+                        background: url(../img/index-sj.png) center bottom no-repeat;
+                        background-size: 10px 4px;
+                    }
+                }
+                .hotlesson-box {
+                    display: none;
+                    width: 1000px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                }
+                .newlesson-box,
+                .freelesson-box,
+                .item-box,
+                .topclass-box,
+                .operateco-box {
+                    @extend .hotlesson-box;
+                }
+                .one-classify-lesson {
+                    ul {
+                        width: 1100px;
+                        margin-top: 0;
+                        li {
+                            position: $rel;
+                            @include float(left);
+                            width: 235px;
+                            height: 220px;
+                            margin-right: 20px;
+                            margin-bottom: 20px;
+                            background: 0 0;
+                        }
+                    }
+                    .lesson-box {
+                        width: 235px;
+                        border: 1px solid #e4e4e4;
+                        border-bottom: 0;
+                        .free-icon {
+                            position: $abs;
+                            z-index: 101;
+                            top: -2px;
+                            right: 8px;
+                            @include inline-block;
+                            width: 38px;
+                            height: 22px;
+                            background: url(../img/icon.png) -58px -43px no-repeat;
+                        }
+                        .lessonplay {
+                            position: $abs;
+                            z-index: 100;
+                            top: 0;
+                            left: 0;
+                            display: none;
+                            width: 100%;
+                            height: 128px;
+                            background: rgba(0, 0, 0, .4);
+                            .playericon {
+                                position: $abs;
+                                z-index: 800;
+                                top: 50%;
+                                left: 50%;
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                margin-top: -25px;
+                                margin-left: -25px;
+                                cursor: pointer;
+                                background: url(../img/player_icon.png) 0 0 no-repeat;
+                                background-size: 50px 50px;
+                            }
+                        }
+                    }
+                    .lesson-info {
+                        position: $rel;
+                        z-index: 300;
+                        @include box-sizing(border-box);
+                        width: 237px;
+                        height: 88px;
+                        padding: 10px;
+                        border: 1px solid #e4e4e4;
+                        border-top: 0;
+                        background: $white!important;
+                        .lesson-info-h2 {
+                            font-size: 14px;
+                            line-height: 18px;
+                            overflow: hidden;
+                            height: 36px;
+                            margin-bottom: 12px;
+                            color: $darkGray;
+                        }
+                        h2 {
+                            a {
+                                color: $darkGray;
+                            }
+                        }
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                            display: none;
+                            overflow: hidden;
+                            @include box-sizing(border-box);
+                            height: 38px;
+                            margin-bottom: 10px;
+                            color: gray;
+                        }
+                        .timeandicon {
+                            font-size: 12px;
+                            position: $rel;
+                            color: gray;
+                            dl {
+                                @include float(left);
+                                width: 120px;
+                                white-space: nowrap;
+                                dd {
+                                    @include float(left);
+                                    margin-bottom: 5px;
+                                    font-size: 12px;
+                                    i {
+                                        display: block;
+                                        @include float(left);
+                                        width: 14px;
+                                        height: 14px;
+                                        margin-right: 8px;
+                                        background: url(../img/clok.png) 0 0 no-repeat;
+                                        background-size: 14px 14px;
+                                    }
+                                }
+                            }
+                            em {
+                                font-style: normal;
+                            }
+                            .middle,
+                            .learn-number {
+                                display: none;
+                            }
+                            .lessonicon-box {
+                                position: $abs;
+                                right: 0;
+                                bottom: 4px;
+                                text-align: $text-r;
+                                a {
+                                    @include inline-block;
+                                    width: 16px;
+                                    height: 16px;
+                                    margin-left: 3px;
+                                    img {
+                                        display: block;
+                                        width: 16px;
+                                        height: 16px;
+                                        margin-top: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /*职业路径样式*/
+                #projectpath {
+                    .learnbox {
+                        width: 1000px;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        .index-public-title {
+                            margin-bottom: 16px;
+                            strong {
+                                font-size: 18px;
+                                font-weight: 500;
+                                @include float(left);
+                                color: $darkGray;
+                                a {
+                                    color: $darkGray;
+                                }
+                            }
+                            .way {
+                                font-size: 12px;
+                                line-height: 13px;
+                                display: block;
+                                @include float(left);
+                                width: 13px;
+                                height: 13px;
+                                margin: 8px 8px 0;
+                                cursor: pointer;
+                                text-align: $text-c;
+                                color: $white;
+                                border-radius: 50%;
+                                background: #999;
+                            }
+                            .more-lesson {
+                                font-size: 12px;
+                                @include float(right);
+                                margin-top: 4px;
+                                color: #2d85ca;
+                            }
+                        }
+                    }
+                    .learn-card {
+                        a {
+                            display: block;
+                            @include float(left);
+                            overflow: hidden;
+                            @include box-sizing(border-box);
+                            width: 20%;
+                            height: 300px;
+                            margin-top: 0;
+                            text-align: $text-c;
+                            border: 1px solid rgb(228, 228, 228);
+                            border-right: 0;
+                            border-right: 1px transparent;
+                            h2 {
+                                font-size: 15px;
+                                font-weight: 400;
+                                display: block;
+                                overflow: hidden;
+                                width: 198px;
+                                margin-bottom: 20px;
+                                color: $darkGray;
+                            }
+                            p {
+                                font-size: 12px;
+                                line-height: 20px;
+                                overflow: hidden;
+                                width: 199px;
+                                height: 20px;
+                                color: #666;
+                            }
+                            .greenbtn2 {
+                                line-height: 34px;
+                                width: 140px;
+                                height: 34px;
+                                margin-top: 20px;
+                                cursor: pointer;
+                                text-align: $text-c;
+                                outline: 0;
+                            }
+                            #waiting-btn {
+                                @extend .greenbtn2;
+                                color: gray;
+                                border: 1px solid #e4e4e4;
+                                outline: 0;
+                                background: #f5f5f5;
+                            }
+                        }
+                        img {
+                            margin-bottom: 24px;
+                            vertical-align: middle;
+                        }
+                        .projectpath-right {
+                            border-right: 1px solid rgb(228, 228, 228);
+                        }
+                        .projectpath-bottom {
+                            border-top: 1px solid transparent;
+                        }
+                    }
+                }
+                /*知识体系样式*/
+                #system {
+                    margin-top: 40px;
+                    .learnbox {
+                        width: 1000px;
+                        margin: 0 auto;
+                        strong {
+                            font-size: 18px;
+                            font-weight: 500;
+                            float: left;
+                            color: #333;
+                            a {
+                                color: #35b558;
+                            }
+                        }
+                    }
+                    .mapbox {
+                        overflow: hidden;
+                        @include box-sizing(border-box);
+                        height: 481px;
+                        width: 997px;
+                        border-right: 1px solid #e4e4e4;
+                        border-bottom: 1px solid #e4e4e4;
+                        .card-transform {
+                            position: $rel;
+                            @include float(left);
+                            overflow: hidden;
+                            width: 165px;
+                            height: 120px;
+                            text-align: $text-c;
+                            border: 1px solid #e4e4e4;
+                            border-right: 0;
+                            border-bottom: 0;
+                            a {
+                                overflow: hidden;
+                            }
+                            .front {
+                                position: $abs;
+                                top: 0;
+                                left: 0;
+                                @include box-sizing(border-box);
+                                width: 167px;
+                                height: 120px;
+                                @include transition-duration(.6s);
+                                @include backface-visibility(hidden);
+                                z-index: 2;
+                                padding: 15px 0;
+                                @include rotateY(0deg);
+                                background-color: $white;
+                                h2 {
+                                    font-size: 15px;
+                                    margin-bottom: 13px;
+                                    color: $darkGray;
+                                }
+                                span {
+                                    font-size: 14px;
+                                    display: block;
+                                    margin-top: -10px;
+                                    color: #35b558;
+                                }
+                            }
+                            .front-turn {
+                                @include rotateY(-180deg);
+                            }
+                            .back {
+                                @extend .front;
+                                padding-top: 30px;
+                                @include rotateY(-180deg);
+                                background-color: #f5f5f5;
+                                z-index: -2;
+                                &:hover {
+                                    @include rotateY(-360deg);
+                                }
+                                strong {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    display: block;
+                                    margin-bottom: 10px;
+                                    color: #666;
+                                    margin-left: 30px;
+                                }
+                                .greenbtn {
+                                    @include backface-visibility(hidden);
+                                    font-size: 16px;
+                                    @include inline-block;
+                                    width: 140px;
+                                    height: 36px;
+                                    cursor: pointer;
+                                    @include transition-duration(.8s);
+                                    @include transition-property(background);
+                                    @include translateZ(0);
+                                    text-align: $text-c;
+                                    color: $white;
+                                    @include border-radius(inherit);
+                                    background: #35b558;
+                                    &:hover {
+                                        background: #59d154;
+                                    }
+                                }
+                            }
+                            .back-turn {
+                                @include rotateY(-360deg);
+                            }
+                        }
+                    }
+                }
+                /*精品课程样式*/
+                #exellent {
+                    .exellent-way {
+                        margin-top: 40px;
+                        strong {
+                            font-size: 18px;
+                            font-weight: 500;
+                            @include float(left);
+                            color: #333;
+                            a {
+                                color: #35b558;
+                            }
+                        }
+                        .exellentbox {
+                            margin-top: 20px;
+                            .lesson-card {
+                                font-size: 12px;
+                                position: $rel;
+                                @include float(left);
+                                @include box-sizing(border-box);
+                                width: 230px;
+                                height: 261px;
+                                padding: 16px;
+                                margin-right: 26px;
+                                @include transition-property(border-color);
+                                @include transition-duration(.3s);
+                                border: 1px solid #e4e4e4;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                h2 {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 1;
+                                    overflow: hidden;
+                                    width: 80%;
+                                    margin-bottom: 15px;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                }
+                                .images {
+                                    overflow: hidden;
+                                    margin-bottom: 15px;
+                                    z-index: -20;
+                                    img {
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .other {
+                                    line-height: 18px;
+                                    position: $rel;
+                                    z-index: 20;
+                                    color: gray;
+                                    cursor: pointer;
+                                    .lesson-count {
+                                        max-width: 40px;
+                                    }
+                                    span {
+                                        @include inline-block;
+                                        overflow: hidden;
+                                        margin-right: 6px;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    .learn-count {
+                                        max-width: 90px;
+                                    }
+                                }
+                                .collect {
+                                    @include float(right);
+                                    width: 56px;
+                                    height: 20px;
+                                    margin-top: -24px;
+                                    text-align: $text-c;
+                                    cursor: pointer;
+                                    .greenbtn {
+                                        cursor: pointer;
+                                        @include transition-duration(.8s);
+                                        @include transition-property(background);
+                                        @include translateZ(0);
+                                        background: #35b558;
+                                        &:hover {
+                                            background: #8CEA97 !important;
+                                        }
+                                    }
+                                }
+                                .greenbtn {
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    @include inline-block;
+                                    width: 100%;
+                                    height: 20px;
+                                    padding: 0;
+                                    cursor: pointer;
+                                    @include transition-duration(.2s);
+                                    @include transition-property(background);
+                                    @include translateZ(0);
+                                    color: $white;
+                                    border-radius: 3px;
+                                    background: #35b558;
+                                    z-index: 200;
+                                    &:hover {
+                                        background: #8CEA97;
+                                    }
+                                }
+                                .describe {
+                                    position: $abs;
+                                    left: 0;
+                                    z-index: 120;
+                                    width: 100%;
+                                    background: rgba(255, 255, 255, .9);
+                                    top: 0;
+                                    height: 77%;
+                                    text-align: $text-c;
+                                    @include transition-duration(.3s);
+                                    overflow: hidden;
+                                    @include box-sizing(border-box);
+                                    display: none;
+                                    a {
+                                        width: 90px;
+                                        height: 32px;
+                                        line-height: 32px;
+                                        position: $abs;
+                                        bottom: 10px;
+                                        left: 70px;
+                                    }
+                                    .text {
+                                        a {
+                                            &:hover {
+                                                color: #6EC04D;
+                                            }
+                                        }
+                                    }
+                                    .name {
+                                        a {
+                                            &:hover {
+                                                color: #6ec04d;
+                                            }
+                                        }
+                                    }
+                                    .picture {
+                                        overflow: hidden;
+                                        position: $abs;
+                                        top: 20px;
+                                        left: 50%;
+                                        width: 50px;
+                                        height: 50px;
+                                        margin-left: -25px;
+                                        @include border-radius(50%);
+                                        a {
+                                            color: #666;
+                                            width: 50px;
+                                            height: 50px;
+                                            overflow: hidden;
+                                            position: $abs;
+                                            left: 0;
+                                            bottom: 0;
+                                        }
+                                        .name {
+                                            width: 100%;
+                                            height: 32px;
+                                            text-align: $text-c;
+                                            position: $abs;
+                                            top: 74px;
+                                            left: 0;
+                                            width: 100%;
+                                            a {
+                                                color: #666;
+                                                position: $abs;
+                                                margin-top: 200px;
+                                                bottom: 0;
+                                                left: 70px;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                                .text {
+                                    overflow: hidden;
+                                    position: $abs;
+                                    top: 100px;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 40px;
+                                    padding: 0 16px;
+                                    text-align: $text-l;
+                                    line-height: 20px;
+                                    word-wrap: break-word;
+                                    word-break: break-all;
+                                    .greenbtn {
+                                        width: 100px;
+                                        height: 30px;
+                                    }
+                                    a {
+                                        color: #666;
+                                        width: 190px;
+                                        height: 28px;
+                                        line-height: 20px;
+                                        left: 10px;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /*wiki样式*/
+                    #wiki {
+                        margin-top: 40px;
+                        .wiki-way {
+                            strong {
+                                font-size: 18px;
+                                font-weight: 500;
+                                @include float(left);
+                                color: #333;
+                                a {
+                                    color: #35b558;
+                                }
+                            }
+                        }
+                        .wikibox {
+                            margin-top: 20px;
+                            .one-wiki {
+                                @include float(left);
+                                @include box-sizing(border-box);
+                                width: 333.3px;
+                                height: 370px;
+                                padding: 15px;
+                                border: 1px solid #e4e4e4;
+                                border-left: 1px solid transparent;
+                                h2 {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                                ul {
+                                    @include box-sizing(border-box);
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                    li {
+                                        font-size: 12px;
+                                        line-height: 12px;
+                                        display: block;
+                                        @include box-sizing(border-box);
+                                        margin-bottom: 8px;
+                                        color: #999;
+                                        a {
+                                            color: #999;
+                                            &:hover {
+                                                color: #33B12E;
+                                            }
+                                        }
+                                        p {
+                                            display: block;
+                                            @include float(left);
+                                            overflow: hidden;
+                                            width: 200px;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            color: #33B12E;
+                                        }
+                                        span {
+                                            display: block;
+                                            @include float(right);
+                                            width: 90px;
+                                            text-align: $text-r;
+                                        }
+                                    }
+                                }
+                                .wiki-img {
+                                    @include box-sizing(border-box);
+                                    margin-top: 10px;
+                                }
+                                dl {
+                                    dd {
+                                        @include float(left);
+                                        @include box-sizing(border-box);
+                                        width: 142px;
+                                        margin-right: 15px;
+                                        text-align: $text-c;
+                                        &:last-child {
+                                            @include float(right);
+                                            margin-right: 0;
+                                        }
+                                        .imgbox {
+                                            position: $rel;
+                                            text-align: $text-l;
+                                            width: 142px;
+                                            height: 200px;
+                                            @include border-radius(5px);
+                                            background: #999;
+                                            -ms-border-radius: 5px;
+                                            @include box-sizing(border-box);
+                                            img {
+                                                width: 142px;
+                                                height: 200px;
+                                                border-radius: 5px;
+                                            }
+                                            .look {
+                                                position: $abs;
+                                                width: 40px;
+                                                z-index: 10;
+                                                right: -10px;
+                                                top: -13px;
+                                                background: url(../img/look.png) center center no-repeat;
+                                                background-size: 100% 100%;
+                                                height: 20px;
+                                                display: none;
+                                            }
+                                        }
+                                        h3 {
+                                            font-size: 13px;
+                                            line-height: 13px;
+                                            display: block;
+                                            overflow: hidden;
+                                            height: 13px;
+                                            margin: 10px auto;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                            color: $darkGray;
+                                        }
+                                        span {
+                                            font-size: 12px;
+                                            display: block;
+                                            color: #999;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    /*合作企业样式*/
+                    #enterprise {
+                        margin-top: 40px;
+                        .enterprise-way {
+                            margin-bottom: 20px;
+                            .strategy {
+                                position: $rel;
+                                overflow: hidden;
+                                @include box-sizing(border-box);
+                                width: 1000px;
+                                height: 90px;
+                                margin: 0 auto;
+                                margin-top: 16px;
+                                padding: 20px;
+                                border: 1px solid #e4e4e4;
+                                .strategy-wrapper {
+                                    overflow: hidden;
+                                }
+                                .strategy-box {
+                                    width: auto;
+                                    height: 50px;
+                                    li {
+                                        @include float(left);
+                                        width: 159.667px;
+                                        text-align: $text-c;
+                                        img {
+                                            width: 150px;
+                                            height: 50px;
+                                            border: 1px solid #e4e4e4;
+                                        }
+                                    }
+                                }
+                                .strategy-left {
+                                    position: $abs;
+                                    z-index: 800;
+                                    top: 30px;
+                                    left: 0;
+                                    @include inline-block;
+                                    display: none;
+                                    width: 24px;
+                                    height: 40px;
+                                    cursor: pointer;
+                                    background: url(../img/focus-nav.png) 0 0 no-repeat;
+                                    background-size: 48px 80px;
+                                    &:hover {
+                                        background: url(../img/focus-nav.png) 0 -40px no-repeat;
+                                        background-size: 48px 80px;
+                                    }
+                                }
+                                .strategy-right {
+                                    position: $abs;
+                                    z-index: 800;
+                                    top: 30px;
+                                    right: 0;
+                                    @include inline-block;
+                                    display: none;
+                                    width: 24px;
+                                    height: 40px;
+                                    cursor: pointer;
+                                    background: url(../img/focus-nav.png) 0 0 no-repeat;
+                                    background-size: 48px 80px;
+                                    background: url(../img/focus-nav.png) -24px 0 no-repeat;
+                                    &:hover {
+                                        background: url(../img/focus-nav.png) -24px -40px no-repeat;
+                                        background-size: 48px 80px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #school {
+                        margin-top: 40px;
+                        .school-way {
+                            margin-bottom: 20px;
+                            .schoolbox {
+                                position: $rel;
+                                @include box-sizing(border-box);
+                                height: 150px;
+                                padding: 20px;
+                                border: 1px solid #e4e4e4;
+                                .schoolbox-wrapper {
+                                    overflow: hidden;
+                                    height: 110px;
+                                    .school-box {
+                                        height: 110px;
+                                        li {
+                                            @include float(left);
+                                            width: 136.857px;
+                                            text-align: $text-c;
+                                            img {
+                                                width: 110px;
+                                                height: 110px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .school-left {
+                                    position: $abs;
+                                    z-index: 800;
+                                    top: 50px;
+                                    left: 0;
+                                    @include inline-block;
+                                    display: none;
+                                    width: 24px;
+                                    height: 40px;
+                                    cursor: pointer;
+                                    background: url(../img/focus-nav.png) 0 0 no-repeat;
+                                    background-size: 48px 80px;
+                                    &:hover {
+                                        background: url(../img/focus-nav.png) 0 -40px no-repeat;
+                                        background-size: 48px 80px;
+                                    }
+                                }
+                                .school-right {
+                                    position: $abs;
+                                    z-index: 800;
+                                    top: 50px;
+                                    right: 0;
+                                    @include inline-block;
+                                    display: none;
+                                    width: 24px;
+                                    height: 40px;
+                                    cursor: pointer;
+                                    background: url(../img/focus-nav.png) 0 0 no-repeat;
+                                    background-size: 48px 80px;
+                                    background: url(../img/focus-nav.png) -24px 0 no-repeat;
+                                    &:hover {
+                                        background: url(../img/focus-nav.png) -24px -40px no-repeat;
+                                        background-size: 48px 80px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #media {
+                        margin-top: 40px;
+                        .media-way {
+                            margin-bottom: 20px;
+                            .report {
+                                position: $rel;
+                                @include box-sizing(border-box);
+                                width: 1000px;
+                                height: 90px;
+                                margin: 0 auto;
+                                margin-top: 16px;
+                                padding: 20px;
+                                border: 1px solid #e4e4e4;
+                                .report-wrapper {
+                                    overflow: hidden;
+                                    height: 50px;
+                                    .report-box {
+                                        width: auto;
+                                        height: 50px;
+                                        li {
+                                            @include float(left);
+                                            width: 159.667px;
+                                            height: 50px;
+                                            text-align: $text-c;
+                                            img {
+                                                @include box-sizing(border-box);
+                                                width: 150px;
+                                                height: 50px;
+                                                border: 1px solid #e4e4e4;
+                                            }
+                                        }
+                                    }
+                                    .report-left {
+                                        position: $abs;
+                                        z-index: 800;
+                                        top: 20px;
+                                        left: 0;
+                                        @include inline-block;
+                                        display: none;
+                                        width: 24px;
+                                        height: 40px;
+                                        cursor: pointer;
+                                        background: url(../img/focus-nav.png) 0 0 no-repeat;
+                                        background-size: 48px 80px;
+                                        &:hover {
+                                            background: url(../img/focus-nav.png) 0 -40px no-repeat;
+                                            background-size: 48px 80px;
+                                        }
+                                    }
+                                    .report-right {
+                                        position: $abs;
+                                        z-index: 800;
+                                        top: 20px;
+                                        right: 0;
+                                        @include inline-block;
+                                        display: none;
+                                        width: 24px;
+                                        height: 40px;
+                                        cursor: pointer;
+                                        background: url(../img/focus-nav.png) 0 0 no-repeat;
+                                        background-size: 48px 80px;
+                                        background: url(../img/focus-nav.png) -24px 0 no-repeat;
+                                        &:hover {
+                                            background: url(../img/focus-nav.png) -24px -40px nos-repeat;
+                                            background-size: 48px 80px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /* ===================article样式结束================ */
+        /* ===================脚部样式开始=================== */
+        footer {
+            #jkinfo-block {
+                @include box-sizing(border-box);
+                border-top: 1px solid #e4e4e4;
+                border-bottom: 1px solid #e4e4e4;
+                background: #fafafa;
+                .jkinfo {
+                    width: 1000px;
+                    min-height: 200px;
+                    margin: 0 auto;
+                    dl {
+                        @include float(left);
+                        width: 185px;
+                        min-height: 175px;
+                        margin: 25px 0;
+                        padding-left: 30px;
+                        color: gray;
+                        border-left: 1px solid #e4e4e4;
+                        dt {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: $lightGray;
+                            a {
+                                padding-left: 5px;
+                                color: gray;
+                                &:hover {
+                                    color: #14AC3F;
+                                }
+                            }
+                        }
+                        dd {
+                            font-size: 12px;
+                            margin-top: 10px;
+                            a {
+                                color: gray;
+                                &:hover {
+                                    color: #14AC3F;
+                                }
+                            }
+                        }
+                    }
+                    .search-share {
+                        @include float(left);
+                        @include box-sizing(border-box);
+                        width: 260px;
+                        min-height: 226px;
+                        padding: 20px 0 0 40px;
+                        border-left: 1px solid #e4e4e4;
+                        .jktxt {
+                            font-size: 15px;
+                            font-weight: 500;
+                            display: block;
+                            margin-bottom: 15px;
+                            color: #35b558;
+                        }
+                        .app-download {
+                            img {
+                                display: block;
+                                @include float(left);
+                                margin-top: 10px;
+                                margin-right: 15px;
+                                vertical-align: middle;
+                            }
+                            strong {
+                                font-size: 18px;
+                                margin-bottom: 8px;
+                                color: #666;
+                            }
+                            p {
+                                font-size: 14px;
+                                color: gray;
+                                background: url(../img/more-icon.png) 160px center no-repeat;
+                                background-size: 7px 13px;
+                            }
+                        }
+                        .share {
+                            margin-top: 8px;
+                            a {
+                                position: $rel;
+                                @include inline-block;
+                                @include float(left);
+                                width: 32px;
+                                height: 32px;
+                                margin-right: 10px;
+                                background: url(../img/icon.png) -23px 0 no-repeat;
+                            }
+                            .tieba-icon {
+                                background-position: -145px 0;
+                            }
+                            .wechat-icon {
+                                background-position: -23px -82px;
+                            }
+                        }
+                        .kefu-online {
+                            margin-top: 15px;
+                            padding-left: 35px;
+                            p {
+                                font-size: 12px;
+                                padding-left: 5px;
+                                color: gray;
+                            }
+                            h5 {
+                                font-size: 14px;
+                                line-height: 22px;
+                                margin-bottom: 2px;
+                                padding-left: 5px;
+                                color: #666;
+                            }
+                            .kefu-online-icon {
+                                @include float(left);
+                                width: 40px;
+                                height: 40px;
+                                margin-left: -40px;
+                                background: url(../img/kefu.png) no-repeat 0 0/80px 40px;
+                                background-position: 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-bottom {
+                font-size: 12px;
+                width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: $text-c;
+                color: #999;
+                a {
+                    color: #999;
+                }
+            }
+        }
+        /* ===================脚部样式结束=================== */
+        .right-goto {
+            position: fixed;
+            bottom: 30px;
+            right: 86px;
+            .goto-top {
+                width: 34px;
+                height: 35px;
+                border-top: 1px solid #e0e0e0;
+                position: $rel;
+                background: #f7f7f7 url(../img/gotop.jpg) 0 0 no-repeat;
+                background-size: 100% 300%;
+                cursor: pointer;
+                display: none;
+                &:hover {
+                    background: #158E10 url(../img/gotop2.jpg) 0 0 no-repeat;
+                    background-size: 100% 300%;
+                }
+            }
+            .phone {
+                width: 34px;
+                height: 35px;
+                border-top: 1px solid #e0e0e0;
+                position: $rel;
+                background: #f7f7f7 url(../img/phone.png) center center no-repeat;
+                background-size: 40% 80%;
+                cursor: pointer;
+                .appewm {
+                    background: url(../img/appewm.png) center center no-repeat;
+                    background-size: 100%;
+                    width: 126px;
+                    height: 159px;
+                    position: $abs;
+                    z-index: 2100;
+                    left: -126px;
+                    top: -70px;
+                    display: none;
+                }
+            }
+            .wechat {
+                width: 34px;
+                height: 35px;
+                border-top: 1px solid #e0e0e0;
+                position: $rel;
+                background: #f7f7f7 url(../img/wechat.jpg) 50% 50% no-repeat;
+                background-size: 80% 80%;
+                cursor: pointer;
+                a {
+                    display: block;
+                    width: 34px;
+                    height: 35px;
+                    &:active {
+                        border: none;
+                    }
+                }
+            }
+            .service {
+                width: 34px;
+                height: 35px;
+                border-top: 1px solid #e0e0e0;
+                position: $rel;
+                background: #f7f7f7 url(../img/service.png) center center no-repeat;
+                z-index: 50000;
+                cursor: pointer;
+                .note {
+                    position: $abs;
+                    width: 200px;
+                    height: 50px;
+                    left: -210px;
+                    top: -5px;
+                    background: #EAE7E7;
+                    text-align: $text-c;
+                    display: none;
+                    p {
+                        font-size: 12px;
+                        line-height: 20px;
+                        z-index: 1000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*加载条样式*/
+
+#loading {
+    overflow: hidden;
+    width: 100%;
+    height: 2px;
+    margin-top: -2px;
+    background: #35b558;
+    background: -webkit-gradient(linear, 10% 10%, 100% 100%, color-stop(.14, #35b550), color-stop(.5, #8aca8c), color-stop(1, #2d85ca));
+}
+
+
+/*固定导航栏样式*/
+
+$midGray: #e8e8e8;
+@mixin icon {
+    @include inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+#navpositon {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $midGray;
+    background: rgba(255, 255, 255, .9);
+    @include box-shadow(rgba(0, 0, 0, .1) 0 1px 5px);
+    .nav-wrap {
+        position: $rel;
+        width: 1000px;
+        height: 42px;
+        margin: 0 auto;
+        .nav-left {
+            @include inline-block;
+            width: 740px;
+            a {
+                font-size: 14px;
+                line-height: 42px;
+                @include inline-block;
+                width: 116px;
+                padding: 0;
+                text-align: $text-c;
+                color: $darkGray;
+                &:first-child {
+                    width: auto;
+                    margin-right: 22px;
+                    padding: 0;
+                }
+            }
+        }
+        .nav-right {
+            position: $abs;
+            top: 10px;
+            @include inline-block;
+            a {
+                font-size: 12px;
+                @include inline-block;
+                margin-left: 5px;
+                padding: 0;
+                color: $darkGray;
+                &:hover {
+                    color: #13c525;
+                }
+            }
+            .vip {
+                @include inline-block;
+                width: 21px;
+                height: 14px;
+                vertical-align: middle;
+                background: url(../img/vip-icon.png);
+            }
+            .course {
+                @include icon;
+                background: url(../img/star-icon.png);
+            }
+            .download {
+                @include icon;
+                background: url(../img/dl-icon.png);
+            }
+            .new {
+                @include inline-block;
+                width: 15px;
+                height: 14px;
+                margin-top: -10px;
+                vertical-align: top;
+                background: url(../img/newicon.png);
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+
+/* nav-left导航栏面板样式 */
+
+.nav-wrap {
+    .nav-left-panel {
+        position: $abs;
+        z-index: 1000;
+        top: 42px;
+        display: none;
+        width: 100%;
+        height: 140px;
+        padding-left: 50px;
+        border: 1px solid #e8e8e8;
+        border-top: 0;
+        background: rgba(255, 255, 255, .97);
+        @include box-shadow(rgba(0, 0, 0, .1) 0 1px 5px);
+        .panel-item {
+            position: $rel;
+            @include float(left);
+            width: 120px;
+            height: 100%;
+            margin-left: -1px;
+            padding-top: 10px;
+            padding-bottom: 14px;
+            padding-left: 15px;
+            border-right: 1px solid #f7f7f7;
+            &:first-child {
+                border-left: 1px solid #f7f7f7;
+            }
+            .angle {
+                position: $abs;
+                top: -7px;
+                left: 54px;
+                display: none;
+                width: 12px;
+                height: 7px;
+                background-image: url(../img/nav-angle.png);
+                background-size: 100% 100%;
+            }
+            li {
+                a {
+                    font-size: 12px;
+                    line-height: 29px;
+                    display: block;
+                    margin-right: 0;
+                    text-align: $text-l;
+                    color: $lightGray;
+                    &:hover {
+                        color: #109e10;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 课程导航栏样式 */
+
+.lesson-nav {
+    .lesson-list-show {
+        position: $abs;
+        z-index: 100;
+        top: -2px;
+        left: 208px;
+        display: none;
+        overflow: hidden;
+        min-width: 401px;
+        min-height: 373px;
+        padding-bottom: 30px;
+        border: 1px solid #e4e4e4;
+        border-left: 0;
+        background: $white;
+        @include box-shadow(rgba(0, 0, 0, .1) 2px 2px 4px);
+        dl {
+            overflow: hidden;
+            margin: 0 10px;
+            dt {
+                line-height: 45px;
+                display: block;
+                height: 37px;
+                border-bottom: 1px solid #f5f5f5;
+                a {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: $lightGray;
+                    &:hover {
+                        color: #1e8b27;
+                    }
+                }
+            }
+            dd {
+                margin-left: -8px;
+                padding: 3px 0;
+                list-style: none;
+                a {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14px;
+                    @include inline-block;
+                    @include float(left);
+                    height: 14px;
+                    margin-top: 4px;
+                    margin-bottom: 10px;
+                    padding: 0 7px;
+                    white-space: nowrap;
+                    color: #666;
+                    border-left: 1px solid #e0e0e0;
+                    &:hover {
+                        color: #1e8b27;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 轮播Top上样式 */
+
+.index-banner {
+    position: $rel;
+    .banner-box {
+        width: 3906px;
+        height: 260px;
+        li {
+            @include float(left);
+            width: 558px;
+            height: 260px;
+        }
+        img {
+            width: 558px;
+            height: 260px;
+        }
+        .img-add {
+            @include float(left);
+            width: 558px;
+            height: 260px;
+        }
+    }
+    .banner-arrow {
+        position: $abs;
+        display: none;
+        width: 100%;
+        height: 260px;
+        .banner-left {
+            position: $abs;
+            z-index: 1000px;
+            top: 100px;
+            left: 0;
+            overflow: hidden;
+            width: 40px;
+            height: 50px;
+            cursor: pointer;
+            background: url(../img/banner-left.png) -10px -5px no-repeat;
+            &:hover {
+                background: url(../img/banner-left.png) -10px -65px no-repeat;
+            }
+        }
+        .banner-right {
+            position: $abs;
+            z-index: 1000px;
+            top: 100px;
+            right: 0;
+            overflow: hidden;
+            width: 40px;
+            height: 50px;
+            cursor: pointer;
+            background: url(../img/banner-right.png) -10px -5px no-repeat;
+            &:hover {
+                background: url(../img/banner-right.png) -10px -65px no-repeat;
+            }
+        }
+    }
+    .line-box {
+        position: $abs;
+        bottom: 17px;
+        left: 164px;
+        cursor: pointer;
+        .line {
+            z-index: 1000;
+            @include float(left);
+            width: 30px;
+            height: 2px;
+            margin-right: 15px;
+            cursor: pointer;
+            background: $white;
+        }
+    }
+}
+
+
+/*单独的样式*/
+
+.leftborder-green {
+    border-top: 1px solid #ede9e9;
+    border-right: 0;
+    border-bottom: 1px solid #ede9e9 !important;
+    border-left: 2px solid #2ab40f !important;
+    background: #fff !important;
+}
+
+.rightborder-gray {
+    border-right: 1px solid #ede9e9;
+}
+
+.content .question-tab-content,
+.wiki-tab-content,
+.class-tab-content,
+.group-tab-content {
+    position: $abs;
+    display: none;
+    float: left;
+    width: 210px;
+    height: 125px;
+}
+
+.border-green {
+    border: 1px solid #36962b !important;
+}
+
+.greenbtn2 {
+    font-size: 16px;
+    @include inline-block;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    color: #35b558;
+    border: 1px solid #35b558;
+    background: #f3fff6;
+}
+
+.greenbtn2-active {
+    color: $white;
+    background: #35b558;
+}
+
+.waitingbtn-active {
+    background: #ddd !important;
+}
+
+.cf:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    content: '';
+}
+
+.a-green {
+    color: #1ca827 !important;
+}
+
+.bg-gray {
+    background: #f7f4f4;
+}
+
+.bg-green {
+    background: #36c04f !important;
+}
+
+.active {
+    display: block !important;
+}
+
+.index-public-title {
+    margin-bottom: 16px;
+}
+
+.way {
+    font-size: 12px;
+    line-height: 13px;
+    display: block;
+    @include float(left);
+    width: 13px;
+    height: 13px;
+    margin: 8px 8px 0;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #999;
+}
+
+.more-lesson {
+    font-size: 12px;
+    @include float(right);
+    margin-top: 4px;
+    color: #2d85ca;
+}
