@@ -1,0 +1,715 @@
+/*
+* @Author: lenovo
+* @Date:   2016-04-13 19:47:44
+* @Last Modified by:   lenovo
+* @Last Modified time: 2016-04-14 11:02:35
+*/
+
+@charset 'utf-8';
+
+/*html5*/
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+    display: block;
+}
+
+
+/*百度首页CSS样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*初始化页面边距和内边距*/
+
+html,
+body {
+    width: 100%;
+}
+
+.container {
+    min-width: 810px;
+    min-height: 610px;
+    height: auto;
+    text-align: center;
+    background: url(../image/skin1.jpg);
+    background-size: 100% 100%;
+    padding-bottom: 40px;
+}
+
+header {
+    width: 100%;
+    min-width: 1000px;
+    height: 32px;
+    border-bottom: 0;
+}
+
+
+/* 天气预报的框架 */
+
+header iframe {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 565px;
+    height: 98px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+}
+
+
+/* 消息弹窗样式 */
+
+header .notice {
+    width: 221px;
+    height: 120px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 112px;
+    top: 32px;
+    text-align: center;
+}
+
+header .notice p {
+    line-height: 100px;
+}
+
+
+/* 换肤样式*/
+
+header .changeskin {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000;
+}
+
+nav {
+    height: 50px;
+}
+
+ul {
+    width: 500px;
+}
+
+header .changeskin .skin-top li {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .changeskin .skin-top li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: center;
+    text-decoration: none;
+    font-family: "Microsoft Yahei";
+}
+
+header .changeskin .skin-top li a:visited {
+    color: #000;
+}
+
+header .changeskin .skin-top li a:hover {
+    color: #fff;
+    background: #6197D6;
+}
+
+header .changeskin .skin-top #slideup {
+    color: #2485E5;
+    text-decoration: none;
+    font-size: 16px;
+    float: right;
+    margin-top: 17px;
+}
+
+.active {
+    background: #1E10F4;
+    color: #fff;
+}
+
+header .changeskin .skin-top li .active:visited {
+    color: #fff;
+}
+
+header .changeskin .skin-top li .active:hover {
+    background: #1E10F4;
+}
+
+
+/* 装皮肤的div样式 */
+
+div .content {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: none;
+}
+
+div .content img {
+    width: 200px;
+    height: 100px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+div .skin {
+    display: block;
+}
+
+
+/* 导航栏 */
+
+header .navagation_header {
+    overflow: hidden;
+    width: 100%;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header左导航栏样式 */
+
+header nav .nav_left {
+    font-size: 12px;
+    float: left;
+    margin-left: 10px;
+    color: #555;
+}
+
+header nav .nav_left li {
+    float: left;
+}
+
+header nav .nav_left a {
+    line-height: 32px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav .nav_left .a1 {
+    margin-right: 15px;
+    text-decoration: underline;
+}
+
+header nav .nav_right {
+    float: right;
+    height: 28px;
+    margin-right: 19px;
+    padding: 0;
+    *float: right;
+    width: 442px
+}
+
+header nav .nav_right a {
+    line-height: 28px;
+    color: #fff;
+}
+
+.split {
+    color: #ccc;
+}
+
+
+/*设置导航栏的绝对位置*/
+
+ul li .anav {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 24px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+    color: #333;
+}
+
+header nav .nav_right a:hover {
+    color: #38f;
+}
+
+header nav .nav_right .cnav:hover {
+    color: #fff;
+}
+
+
+/*导航栏前六个样式*/
+
+ul li .bnav {
+    font-size: 13px;
+    line-height: 24px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: underline;
+    color: #333;
+}
+
+
+/*导航栏第7,8样式*/
+
+ul li .cnav {
+    font-size: 13px;
+    line-height: 24px;
+    float: left;
+    padding: 2px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3385ff;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+    position: relative;
+    display: inline-table;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    content: '';
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul ul {
+    font-size: 13px;
+    line-height: 24px;
+    float: left;
+    padding: 2px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3385ff;
+}
+
+nav ul ul li {
+    position: relative;
+    float: none;
+    width: 54px;
+    height: 38px;
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    background: #555;
+}
+
+nav ul ul li {
+    float: none;
+    width: 56px;
+    height: 30px;
+    border-top: 0;
+    border-bottom: 1px solid #eff;
+    border-left: 1px solid #eff;
+    background-color: #eee;
+}
+
+nav ul ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*导航栏更多产品样式*/
+
+article {
+    text-align: center;
+}
+
+article form div .input_text {
+    display: inline-block;
+    float: left;
+    width: 534px;
+    height: 36px;
+    margin-top: 32px;
+    padding-left: 5px;
+    vertical-align: top;
+    border: 1px solid #b6b6b6;
+    border-width: 1px;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    border-right-width: 0;
+    outline: none;
+    background: #fff;
+}
+
+article form div .input_text:hover {
+    border: 1px solid #777;
+    border-right: 0;
+    border-right-color: transparent;
+    outline: none;
+}
+
+article form div .input_text:focus {
+    border: 1px solid #3385ff;
+    border-right: 0;
+}
+
+
+/*输入框样式*/
+
+article form div .submitbutton {
+    font-size: 15px;
+    float: left;
+    width: 100px;
+    height: 38px;
+    margin-top: 32px;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    background-color: #3385ff;
+}
+
+article form div .submitbutton:hover {
+    background-color: #25f;
+}
+
+
+/*提交按钮样式*/
+
+form {
+    height: 70px;
+    text-align: center;
+}
+
+article form .input {
+    width: 641px;
+    height: 70px;
+    margin: -26px auto;
+}
+
+
+/*控制input外层div垂直水平居中*/
+
+p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    padding-top: 10px;
+}
+
+span {
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+
+/* 更换导航栏字体的样式 */
+
+.white {
+    color: #fff !important;
+}
+
+
+/* 更多产品样式 */
+
+.moreproduct {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    width: 66px;
+    text-shadow: none;
+    height: 100%;
+    min-height: 610px;
+    overflow: hidden;
+}
+
+.moreproduct .btn {
+    display: block;
+    height: 32px;
+    width: 66px;
+    border: 0;
+    background-color: #4369D5;
+}
+
+.moreproduct .btn a {
+    color: #fff;
+    z-index: 30;
+    width: 66px;
+    height: 32px
+}
+
+.moreproduct .list {
+    height: auto;
+    border-left: 1px solid #e7e7e7;
+    display: none;
+    overflow: hidden;
+}
+
+.moreproduct .list a:last-child {
+    margin-top: 20px;
+}
+
+.moreproduct a {
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    font-size: 12px;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    line-height: 14px;
+}
+
+.moreproduct a img {
+    display: block;
+    height: 36px;
+    width: auto;
+    margin: 10px auto 5px;
+    cursor: pointer;
+}
+
+.moreproduct .btn a {
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 24px;
+    height: 32px;
+    border-bottom: 0;
+}
+
+.moreproduct .btn a:hover {
+    text-decoration: none;
+}
+
+.moreproduct a:hover {
+    text-decoration: underline;
+}
+
+.background {
+    background: #f9f9f9;
+}
+
+
+/* tab标签栏样式 */
+
+article section {
+    width: 800px;
+    height: 439px;
+    background: #fff;
+    margin: 60px auto 0 auto;
+    border: 1px solid #ccc;
+}
+
+article section nav {
+    border-bottom: 1px solid #ccc;
+    height: 39px;
+}
+
+article section ul {
+    text-align: center;
+    width: 400px;
+    margin-left: -399px;
+}
+
+article section a {
+    display: inline-block;
+    color: #333;
+    width: 70px;
+    height: 39px;
+    vertical-align: top;
+    text-decoration: center;
+    cursor: pointer;
+    line-height: 39px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+article section a:hover {
+    color: #fff;
+    background: #ccc;
+}
+
+article section .activate {
+    color: #fff;
+    background: #666;
+}
+
+article section .activate:hover {
+    color: #fff;
+    background: #666;
+}
+
+.clear {
+    clear: both;
+}
+
+section nav .settings {
+    display: inline-block;
+    vertical-align: center;
+    width: 18px;
+    height: 18px;
+    background: url(../image/card_setts.png) no-repeat -121px -44px;
+    position: absolute;
+    margin-left: 362px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+/* 添加settings图标 */
+
+
+/* 添加tab主导航栏对应的div样式 */
+
+article section div {
+    width: 800px;
+    height: 400px;
+}
+
+article section div .content1 {
+    display: none;
+    width: 760px;
+    height: 360px;
+    margin: 20px auto;
+}
+
+article section div .content1 p {
+    font-family: 'Microsoft Yahei';
+    font-size: 16px;
+    margin: 40px 0;
+    text-align: left;
+}
+
+article section div .content2 {
+    display: none;
+    width: 760px;
+    height: 360px;
+    margin: 20px auto;
+}
+
+article section .content2 p {
+    font-family: 'Microsoft Yahei';
+    font-size: 20px;
+    margin: 40px 0;
+    text-align: left;
+}
+
+article section .content3 {
+    display: none;
+    width: 760px;
+    height: 360px;
+    margin: 20px auto;
+}
+
+article section .content3 a {
+    line-height: 50px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin: 30px 30px;
+    text-decoration: none;
+    color: #fff;
+    background: #f6b710;
+}
+
+article section .content4 {
+    display: none;
+    width: 760px;
+    height: 360px;
+    margin: 20px auto;
+}
+
+article section .content4 img {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin: 5px 10px;
+}
+
+article section .content5 {
+    display: none;
+    width: 760px;
+    height: 360px;
+    margin: 20px auto;
+}
+
+article section .content5 img {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin: 5px 10px;
+}
+
+article section div .realcontent {
+    display: block;
+}
+
+/* 设置回到顶部样式 */
+
+#backto {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    background: #D9D5D5;
+    background-size: 30px 15px;
+    position: fixed;
+    bottom: 30px;
+    right: 165px;
+    display: none;
+    cursor: pointer;
+}
+
+#backto span {
+    display: block;
+    width: 30px;
+    height: 15px;
+    background: url(../image/arrow.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 20;
+    margin: 5px auto;
+}
+
+#backto p {
+    display: block;
+    width: 40px;
+    margin-top: -20px;
+    height: 25px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+
+#backto .text {
+    background: #D9D5D5;
+}
