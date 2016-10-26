@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网站后台管理系统</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="shortcut icon" href="image/login.ico">
+</head>
+
+<body>
+    <!-- 设置一个反色的导航栏 -->
+    <nav class="nav navbar-inverse navbar-fixed-top">
+        <div class="cotainer-fluid">
+            <!-- 导航栏最左边：MywebsiteLOGO,点击回到主页 -->
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">Mywebsite</a>
+            </div>
+            <!-- 访问本站和人数统计 -->
+            <ul class="nav navbar-nav">
+                <li role="presentation"><a href="#">访问本站</a></li>
+                <li role="presentation"><a href="#">访问人数</a></li>
+                <li>
+                    <form action="#" class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" placeholder="搜索" class="form-control" name="query">
+                        </div>
+                        <button type="submit" class="btn btn-default">提交</button>
+                    </form>
+                </li>
+            </ul>
+            <!-- 用户设置按钮下拉菜单 -->
+            <div class="btn-group pull-right vertical-center">
+                <button type="button" class="btn btn-default">用户设置</button>
+                <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">切换下拉菜单</span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">个人信息</a></li>
+                    <li><a href="#">账户安全</a></li>
+                    <li class="divider"></li>
+                    <li><a href="login.html">注销账户</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航栏部分结束 -->
+    <div class="main-container" id="main-container">
+        <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {}
+        </script>
+        <!-- 布局左边导航栏 -->
+        <div class="main-container-left">
+            <a class="menu-toggler" id="menu-toggler" href="#">
+                <span class="menu-text"></span>
+            </a>
+            <div class="sidebar" id="sidebar">
+                <script type="text/javascript">
+                try {
+                    ace.settings.check('sidebar', 'fixed')
+                } catch (e) {}
+                </script>
+                <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                    <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                        <span class="btn btn-success"></span>
+                        <span class="btn btn-info"></span>
+                        <span class="btn btn-warning"></span>
+                        <span class="btn btn-danger"></span>
+                    </div>
+                </div>
+                <!-- #sidebar-shortcuts -->
+                <!-- 左边导航栏 -->
+                <div class="sidenave-wrapper col-md-2">
+                    <ul class="nav nav-tabs nav-stacked ul-style col-md-12 bg-info">
+                        <li class="active">
+                            <a href="index.html" class="a-margin">
+                                <span class="glyphicon glyphicon-home"></span> 主页控制台
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-stats"></span> 房源管理
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                            </a>
+                            <ul class="nav nav-tabs nav-stacked dropdown-menu">
+                                <li><a href="#">发布房源</a></li>
+                                <li><a href="#">发布记录</a></li>
+                                <li><a href="#">刷新记录</a></li>
+                                <li><a href="#">复制房源</a></li>
+                                <li><a href="#">账号设置</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-user"></span> 账户管理
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                            </a>
+                            <ul class="nav nav-tabs nav-stacked dropdown-menu">
+                                <li><a href="#">余额充值</a></li>
+                                <li><a href="#">充值记录</a></li>
+                                <li><a href="#">密码设定</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-pencil"></span> 论坛管理
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                            </a>
+                            <ul class="nav nav-tabs nav-stacked dropdown-menu">
+                                <li><a href="#">发布公告</a></li>
+                                <li><a href="#">进入论坛</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 左边菜单栏开始 -->
+        </div>
+        <!-- 布局右边主体内容 -->
+        <div class="page-content">
+            <div class="page-header">
+                <h2> 主页控制台
+                    <small>
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                        <span class="glyphicon glyphicon-menu-right"></span>查看
+                    </small>
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="alert alert-block alert-success">
+                        <button type="button" class="close" data-dismiss="alert"></button>
+                            欢迎使用
+                            <strong class="green">***房源系统
+                                <small>(v1.2)</small>
+                            </strong>
+                            ,这里为你提供更更全面的房源信息管理.
+                    </div>
+                </div>
+            </div>
+
+        <!-- js -->
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ace-extra.min.js"></script>
+    </div>
+</body>
+
+</html>

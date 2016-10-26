@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*Login的样式表*/
+
+
+/*更改下列标签的默认字体样式*/
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Microsoft YaHei, '宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    color: #fff;
+}
+
+
+/*通用body背景样式*/
+
+.color-bg {
+    background: #2e363f;
+}
+
+
+/*设置通用灰色背景*/
+
+.color-grey {
+    background: #ccc;
+}
+
+
+/*设置网站登录界面header属性*/
+
+.header {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15%;
+    margin-top: 20%;
+}
+
+
+/*设置user-image*/
+
+.user-image {
+    background: #28b779;
+    height: 40px;
+}
+
+
+/*设置password-image*/
+
+.password-image {
+    background: #ffb848;
+    height: 40px;
+}
+
+
+/*设置input-image底层span的颜色和高度*/
+
+.input-image {
+/*    background: #fff;*/
+    height: 40px;
+}
+
+
+/*设置user-image和password-image大小*/
+
+.image-size {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+/*调整各个row之间的底部margin值*/
+
+.margin-bottom{
+    margin-bottom: 30px;
+}

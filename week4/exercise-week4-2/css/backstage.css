@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*主页样式*/
+
+
+/*设置块级元素在导航栏垂直居中*/
+
+.vertical-center {
+    margin-top: 7.5px;
+}
+
+
+/*设置左侧导航栏的内边距和外边距*/
+
+.ul-style {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+
+
+/*设置左边导航栏背景为灰色*/
+
+.sidenave-wrapper {
+    background: #ccc;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 600px;
+    margin-bottom: -600px;
+}
+
+
+/*取消a标签的右边距*/
+
+.a-margin {
+    margin-right: 0!important;
+}
+
+
