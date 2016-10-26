@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="calculator-head">
+            <h6>简易计算器</h6>
+        </div>
+        <form name="calculator" method="get" action="#">
+            <!-- 计算器屏幕，取消聚焦使文本框不可输入 -->
+            <div id="calculator-screen">
+                <input type="text" name="screenNumber" id="screenNumber" value="0" onfocus="this.blur();" />
+            </div>
+            <!-- 计算器按键：数字和工具栏 -->
+            <div id="calculator-button">
+                <ul>
+                    <li onclick="command(7)">7</li>
+                    <li onclick="command(8)">8</li>
+                    <li onclick="command(9)">9</li>
+                    <li class="tool" onclick="del()">←</li>
+                    <li class="tool" onclick="clearScreen()">C</li>
+                    <li onclick="command(4)">4</li>
+                    <li onclick="command(5)">5</li>
+                    <li onclick="command(6)">6</li>
+                    <li class="tool" onclick="times()">×</li>
+                    <li class="tool" onclick="divide()">÷</li>
+                    <li onclick="command(1)">1</li>
+                    <li onclick="command(2)">2</li>
+                    <li onclick="command(3)">3</li>
+                    <li class="tool" onclick="plus()">+</li>
+                    <li class="tool" onclick="minus()">-</li>
+                    <li onclick="command(0)">0</li>
+                    <li onclick="dzero()">00</li>
+                    <li onclick="dot()">.</li>
+                    <li class="tool" onclick="persent()">%</li>
+                    <li class="tool" onclick="equal()">=</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <!-- 引入js脚本 -->
+    <script type="text/javascript" src="js/calculator.js"></script>
+</body>
+
+</html>

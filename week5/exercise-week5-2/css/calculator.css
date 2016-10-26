@@ -1,0 +1,123 @@
+@charset 'utf-8';
+
+/* 简易计算器样式 */
+
+html,
+body,
+h6,
+ul,
+li
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li
+{
+    list-style: none;
+}
+
+
+/* 设置计算器外边大小 */
+
+#calculator
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 300px;
+    height: auto;
+    margin-top: -250px;
+    margin-left: -150px;
+
+    border: 1px solid #fff;
+    background: #f2f2f2;
+}
+
+
+/* 设置简易计算器标题字体和位置 */
+
+h6
+{
+    font-family: 'Microsoft Yahei';
+    font-size: 16px;
+
+    margin: 15px auto 15px 25px;
+}
+
+#calculator #calculator-screen input
+{
+    font-size: 20px;
+    line-height: 12px;
+
+    width: 250px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+
+    text-align: right;
+}
+
+
+/* 设置Ul边框和外边距 */
+
+#calculator ul
+{
+    overflow: hidden;
+
+    height: auto;
+    margin: 5px 20px;
+
+    border: 1px solid #fff;
+}
+
+
+/* 设置每一个btn的样式 */
+
+#calculator ul li
+{
+    font-family: 'Microsoft Yahei';
+    line-height: 42px;
+
+    display: inline;
+    float: left;
+
+    width: 41px;
+    height: 41px;
+    margin: 5px;
+
+    text-align: center;
+
+    background: #eaeaea;
+}
+
+
+/* 设置工具栏的按钮背景不同 */
+
+#calculator ul .tool
+{
+    background: #f2c386;
+}
+
+
+/* 设置鼠标经过样式 */
+
+#calculator ul li:hover
+{
+    cursor: pointer;
+
+    background: #b3a7a7;
+}
+
+
+/* 设置鼠标点击样式 */
+
+#calculator ul li:active
+{
+    cursor: pointer;
+
+    background: #ff6700;
+}
+
+
