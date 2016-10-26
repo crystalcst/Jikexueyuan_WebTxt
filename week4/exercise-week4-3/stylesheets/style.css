@@ -1,0 +1,1202 @@
+@charset "utf-8";
+
+/*html5pc端*/
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+    display: block
+}
+
+
+/*百度首页CSS样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*初始化页面边距和内边距*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*适配屏幕大于810的PC端*/
+
+@media screen and (min-width: 810px) {
+    .wrapper {
+        display: none;
+    }
+    .container {
+        text-align: center;
+        min-width: 810px;
+        height: 100%;
+        min-height: 600px;
+        overflow: hidden;
+        position: relative;
+    }
+    header {
+        height: 50px;
+    }
+    header .navagation_header {
+        margin: 15px 0 auto auto;
+        padding: 0;
+        float: right;
+    }
+    header nav .nav_right {
+        height: 28px;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0;
+        *float: right;
+    }
+    /*设置导航栏的绝对位置*/
+    ul li .anav {
+        float: left;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: #333;
+    }
+    header nav .nav_right a:hover {
+        color: #38f;
+    }
+    /*导航栏前六个样式*/
+    ul li .bnav {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: #333;
+    }
+    /*导航栏第7,8样式*/
+    ul li .cnav {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #3385ff;
+        text-decoration: none;
+        padding: 2px;
+    }
+    nav ul ul {
+        display: none;
+    }
+    nav ul li:hover > ul {
+        display: block;
+    }
+    nav ul {
+        background: #fff;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+    }
+    nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul ul {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #3385ff;
+        text-decoration: none;
+        padding: 2px;
+    }
+    nav ul ul li {
+        float: none;
+        width: 54px;
+        height: 38px;
+        border-top: 1px solid #6b727c;
+        border-bottom: 1px solid #575f6a;
+        position: relative;
+    }
+    nav ul ul {
+        background: #555;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+    }
+    nav ul ul li {
+        float: none;
+        border-top: 0;
+        border-bottom: 1px solid #eff;
+        border-left: 1px solid #eff;
+        background-color: #eee;
+        width: 56px;
+        height: 30px;
+    }
+    nav ul ul li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+    }
+    /*导航栏更多产品样式*/
+    article {
+        text-align: center;
+    }
+    article form div .input_text {
+        background: #fff;
+        display: inline-block;
+        vertical-align: top;
+        width: 534px;
+        height: 36px;
+        border-right-width: 0;
+        border-color: #b8b8b8 transparent #ccc #b8b8b8;
+        border: 1px solid #b6b6b6;
+        border-width: 1px;
+        float: left;
+        margin-top: 32px;
+        padding-left: 5px;
+        outline: none;
+    }
+    article form div .input_text:hover {
+        border: 1px solid #777;
+        border-right-color: transparent;
+    }
+    article form div .input_text:focus {
+        border: 1px solid #3385ff;
+    }
+    /*输入框样式*/
+    article form div .submitbutton {
+        border: 0;
+        padding: 0;
+        width: 100px;
+        height: 38px;
+        background-color: #3385ff;
+        color: #fff;
+        font-size: 15px;
+        float: left;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+    article form div .submitbutton:hover {
+        background-color: #25f;
+    }
+    /*提交按钮样式*/
+    form {
+        height: 70px;
+        text-align: center;
+    }
+    article form .input {
+        width: 641px;
+        height: 70px;
+        margin: 0 auto;
+    }
+    /*控制input外层div垂直水平居中*/
+    footer {
+        height: 100px;
+        position: absolute;
+        bottom: 30px;
+        text-align: left;
+        width: 100%;
+        margin: 0 auto;
+        *overflow: scroll;
+        *position: relative;
+        *width: 689px;
+        *margin-top: 250px;
+        top: 500px \9;
+        *top: 0px;
+        overflow: hidden;
+    }
+    .footer-container {
+        width: 689px;
+        height: 60px;
+        margin: 0 auto;
+        *margin: 0;
+    }
+    footer div .code-container {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 274px;
+        height: 60px;
+        vertical-align: middle;
+    }
+    footer div .code-container #code-text1 {
+        float: left;
+        height: 60px;
+        display: inline;
+    }
+    footer div .code-container .code {
+        float: left;
+        margin-right: 10px;
+        display: inline;
+    }
+    footer div .code-container .text {
+        height: 60px;
+        float: left;
+        text-align: left;
+        display: inline;
+    }
+    p {
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+    }
+    span {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    footer div .code-container #code-text2 {
+        float: left;
+        height: 60px;
+        margin-left: 30px;
+        display: inline;
+    }
+    footer div #footer-right-top {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        color: white;
+        font-size: 12px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    footer div #footer-right-top .link1 {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        color: #333333;
+        margin-right: 5px;
+        line-height: 150%;
+    }
+    footer div #footer-right-top .link2 {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        color: #000;
+        font-weight: bold;
+        line-height: 150%;
+    }
+    footer div #footer-right-top #footer-right-bottom {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        padding: 5px;
+        text-align: center;
+        color: #333333;
+        margin-top: 0;
+        line-height: 150%;
+    }
+    footer div #footer-right-top #footer-right-bottom .icon {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: middle;
+        overflow: hidden;
+        background: url(../image/footer.png) no-repeat;
+        top: 3px;
+    }
+    footer div #footer-right-top #footer-right-bottom .link3 {
+        color: #333333;
+        font-weight: normal;
+        line-height: 150%;
+        vertical-align: bottom;
+    }
+    /*底部利用inlinblock和float实现垂直水平居中*/
+}
+
+
+/*适配介于660~810之间的PC端*/
+
+@media screen and (min-width:660px) and (max-width: 810px) {
+    .wrapper {
+        display: none;
+    }
+    .container {
+        text-align: center;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    header {
+        height: 50px;
+    }
+    header .navagation_header {
+        margin: 15px 0 auto auto;
+        padding: 0;
+        float: right;
+    }
+    header nav .nav_right {
+        height: 28px;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0;
+        *float: right;
+    }
+    /*设置导航栏的绝对位置*/
+    ul li .anav {
+        float: left;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: #333;
+    }
+    header nav .nav_right a:hover {
+        color: #38f;
+    }
+    /*导航栏前六个样式*/
+    ul li .bnav {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: #333;
+    }
+    /*导航栏第7,8样式*/
+    ul li .cnav {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #3385ff;
+        text-decoration: none;
+        padding: 2px;
+    }
+    nav ul ul {
+        display: none;
+    }
+    nav ul li:hover > ul {
+        display: block;
+    }
+    nav ul {
+        background: #fff;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+    }
+    nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul ul {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #3385ff;
+        text-decoration: none;
+        padding: 2px;
+    }
+    nav ul ul li {
+        float: none;
+        width: 54px;
+        height: 38px;
+        border-top: 1px solid #6b727c;
+        border-bottom: 1px solid #575f6a;
+        position: relative;
+    }
+    nav ul ul {
+        background: #555;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+    }
+    nav ul ul li {
+        float: none;
+        border-top: 0;
+        border-bottom: 1px solid #eff;
+        border-left: 1px solid #eff;
+        background-color: #eee;
+        width: 56px;
+        height: 30px;
+    }
+    nav ul ul li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+    }
+    /*导航栏更多产品样式*/
+    article {
+        text-align: center;
+    }
+    article form div .input_text {
+        background: #fff;
+        display: inline-block;
+        vertical-align: top;
+        width: 403.2px;
+        height: 34px;
+        border-right-width: 0;
+        border-color: #b8b8b8 transparent #ccc #b8b8b8;
+        border: 1px solid #b6b6b6;
+        border-width: 1px;
+        float: left;
+        margin-top: 32px;
+        padding-left: 5px;
+        outline: none;
+    }
+    article form div .input_text:hover {
+        border: 1px solid #777;
+        border-right-color: transparent;
+    }
+    article form div .input_text:focus {
+        border: 1px solid #3385ff;
+    }
+    /*输入框样式*/
+    article form div .submitbutton {
+        border: 0;
+        padding: 0;
+        width: 76.8px;
+        height: 36px;
+        background-color: #3385ff;
+        color: #fff;
+        font-size: 15px;
+        float: left;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+    article form div .submitbutton:hover {
+        background-color: #25f;
+    }
+    /*提交按钮样式*/
+    form {
+        height: 70px;
+        text-align: center;
+    }
+    article form .input {
+        width: 490px;
+        height: 70px;
+        margin: 0 auto;
+    }
+    /*控制input外层div垂直水平居中*/
+    footer {
+        height: 100px;
+        position: absolute;
+        bottom: 30px;
+        text-align: left;
+        width: 100%;
+        margin: 0 auto;
+        *overflow: scroll;
+        *position: relative;
+        *width: 689px;
+        *margin-top: 250px;
+        top: 500px \9;
+        *top: 0px;
+        overflow: hidden;
+    }
+    .footer-container {
+        width: 689px;
+        height: 60px;
+        margin: 0 auto;
+        *margin: 0;
+    }
+    footer div .code-container {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 274px;
+        height: 60px;
+        vertical-align: middle;
+    }
+    footer div .code-container #code-text1 {
+        float: left;
+        height: 60px;
+        display: inline;
+    }
+    footer div .code-container .code {
+        float: left;
+        margin-right: 10px;
+        display: inline;
+    }
+    footer div .code-container .text {
+        height: 60px;
+        float: left;
+        text-align: left;
+        display: inline;
+    }
+    p {
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+    }
+    span {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    footer div .code-container #code-text2 {
+        float: left;
+        height: 60px;
+        margin-left: 30px;
+        display: inline;
+    }
+    footer div #footer-right-top {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        color: white;
+        font-size: 12px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    footer div #footer-right-top .link1 {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        color: #333333;
+        margin-right: 5px;
+        line-height: 150%;
+    }
+    footer div #footer-right-top .link2 {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        color: #000;
+        font-weight: bold;
+        line-height: 150%;
+    }
+    footer div #footer-right-top #footer-right-bottom {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        padding: 5px;
+        text-align: center;
+        color: #333333;
+        margin-top: 0;
+        line-height: 150%;
+    }
+    footer div #footer-right-top #footer-right-bottom .icon {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: middle;
+        overflow: hidden;
+        background: url(../image/footer.png) no-repeat;
+        top: 3px;
+    }
+    footer div #footer-right-top #footer-right-bottom .link3 {
+        color: #333333;
+        font-weight: normal;
+        line-height: 150%;
+        vertical-align: bottom;
+    }
+    /*底部利用inlinblock和float实现垂直水平居中*/
+}
+
+
+/*适配介于480~660之间的PAD端*/
+
+@media screen and (min-width:480px) and (max-width: 660px) {
+    .wrapper {
+        display: none;
+    }
+    .container {
+        text-align: center;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    header {
+        height: 50px;
+    }
+    header .navagation_header {
+        margin: 15px 0 auto auto;
+        padding: 0;
+        float: right;
+    }
+    header nav .nav_right {
+        height: 28px;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0;
+        *float: right;
+    }
+    /*设置导航栏的绝对位置*/
+    ul li .anav {
+        float: left;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: #333;
+    }
+    header nav .nav_right a:hover {
+        color: #38f;
+    }
+    /*导航栏前六个样式*/
+    ul li .bnav {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: underline;
+        color: #333;
+    }
+    /*导航栏第7,8样式*/
+    ul li .cnav {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #3385ff;
+        text-decoration: none;
+        padding: 2px;
+    }
+    nav ul ul {
+        display: none;
+    }
+    nav ul li:hover > ul {
+        display: block;
+    }
+    nav ul {
+        background: #fff;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        display: inline-table;
+    }
+    nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul ul {
+        float: left;
+        font-size: 13px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #3385ff;
+        text-decoration: none;
+        padding: 2px;
+    }
+    nav ul ul li {
+        float: none;
+        width: 54px;
+        height: 38px;
+        border-top: 1px solid #6b727c;
+        border-bottom: 1px solid #575f6a;
+        position: relative;
+    }
+    nav ul ul {
+        background: #555;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+    }
+    nav ul ul li {
+        float: none;
+        border-top: 0;
+        border-bottom: 1px solid #eff;
+        border-left: 1px solid #eff;
+        background-color: #eee;
+        width: 56px;
+        height: 30px;
+    }
+    nav ul ul li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+    }
+    /*导航栏更多产品样式*/
+    article {
+        text-align: center;
+    }
+    article form div .input_text {
+        background: #fff;
+        display: inline-block;
+        vertical-align: top;
+        width: 403.2px;
+        height: 34px;
+        border-right-width: 0;
+        border-color: #b8b8b8 transparent #ccc #b8b8b8;
+        border: 1px solid #b6b6b6;
+        border-width: 1px;
+        float: left;
+        margin-top: 32px;
+        padding-left: 5px;
+        outline: none;
+    }
+    article form div .input_text:hover {
+        border: 1px solid #777;
+        border-right-color: transparent;
+    }
+    article form div .input_text:focus {
+        border: 1px solid #3385ff;
+    }
+    /*输入框样式*/
+    article form div .submitbutton {
+        border: 0;
+        padding: 0;
+        width: 76.8px;
+        height: 36px;
+        background-color: #3385ff;
+        color: #fff;
+        font-size: 15px;
+        float: left;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+    article form div .submitbutton:hover {
+        background-color: #25f;
+    }
+    /*提交按钮样式*/
+    form {
+        height: 70px;
+        text-align: center;
+    }
+    article form .input {
+        width: 490px;
+        height: 70px;
+        margin: 0 auto;
+    }
+    /*控制input外层div垂直水平居中*/
+    footer {
+        height: 116px;
+        position: absolute;
+        bottom: 15%;
+        text-align: left;
+        width: 100%;
+        margin: 0 auto;
+        *overflow: scroll;
+        *position: relative;
+        *width: 689px;
+        *margin-top: 250px;
+        top: 500px \9;
+        *top: 0px;
+        overflow: hidden;
+    }
+    .footer-container {
+        width: 400px;
+        height: 60px;
+        margin: 0 auto;
+        *margin: 0;
+        text-align: center;
+    }
+    footer div .code-container {
+        width: 274px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    footer div .code-container #code-text1 {
+        float: left;
+        height: 60px;
+        display: inline;
+    }
+    footer div .code-container .code {
+        float: left;
+        margin-right: 10px;
+        display: inline;
+    }
+    footer div .code-container .text {
+        height: 60px;
+        float: left;
+        text-align: left;
+        display: inline;
+    }
+    p {
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+    }
+    span {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    footer div .code-container #code-text2 {
+        float: left;
+        height: 60px;
+        margin-left: 30px;
+        display: inline;
+    }
+    footer div #footer-right-top {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        color: white;
+        font-size: 12px;
+        vertical-align: middle;
+        margin-top: 15px;
+    }
+    footer div #footer-right-top .link1 {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        color: #333333;
+        margin-right: 5px;
+        line-height: 150%;
+    }
+    footer div #footer-right-top .link2 {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        color: #000;
+        font-weight: bold;
+        line-height: 150%;
+    }
+    footer div #footer-right-top #footer-right-bottom {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: bottom;
+        padding: 5px;
+        text-align: center;
+        color: #333333;
+        margin-top: 0;
+        line-height: 150%;
+    }
+    footer div #footer-right-top #footer-right-bottom .icon {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: middle;
+        overflow: hidden;
+        background: url(../image/footer.png) no-repeat;
+        top: 3px;
+    }
+    footer div #footer-right-top #footer-right-bottom .link3 {
+        color: #333333;
+        font-weight: normal;
+        line-height: 150%;
+        vertical-align: bottom;
+    }
+    /*底部利用inlinblock和float实现垂直水平居中*/
+}
+
+
+/*适配小于480的移动端*/
+
+@media screen and (max-width: 480px) {
+    /*隐藏PC端的DIV:开始*/
+    .container {
+        display: none;
+    }
+    /*隐藏PC端的DIV:结束*/
+    /*======移动端DIV的CSS样式：开始=====================================*/
+    /*设置整个外层wrapper宽高为100%，背景颜色为灰色*/
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: #eeeff0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*头部下内边距为10px*/
+    .wrapper #header {
+        padding-bottom: 10px;
+        position: relative;
+    }
+    /*设置用户信息栏和天气栏总的高度*/
+    .wrapper #header .user-info {
+        height: 54px;
+    }
+    /*设置天气栏绝对定位*/
+    .wrapper #header .user-info .weather {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 6px;
+        line-height: 40px;
+    }
+    /*设置天气栏rainy图标*/
+    .wrapper #header .user-info .weather .rainy {
+        width: 28px;
+        height: 35px;
+        background: url(../image/rainy.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    /*天气栏温度文字样式*/
+    .wrapper #header .user-info .weather .weather-number {
+        font-size: 20px;
+        color: #8c8c8c;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    /*天气栏地点湿度样式*/
+    .wrapper #header .user-info .weather .weather-status {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+    }
+    .wrapper #header .user-info .weather .weather-status a {
+        text-decoration: none;
+    }
+    .wrapper #header .user-info .weather .weather-status p {
+        height: 13px;
+        line-height: 13px;
+        font-size: 11px;
+        color: #999;
+    }
+    .wrapper #header .user-info .weather .icon-down {
+        width: 16px;
+        height: 8px;
+        background: url(../image/icon-down.ico) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 12px;
+    }
+    /*头部用户登录信息*/
+    .wrapper #header .user-info .user-login {
+        position: absolute;
+        top: 0;
+        right: 8px;
+        padding: 8px;
+        color: #9b9b9b;
+        font-size: 28px;
+        line-height: 20px;
+    }
+    .wrapper #header .user-info .user-login .user-image {
+        width: 24px;
+        height: 24px;
+    }
+    /*百度logo样式*/
+    .wrapper #header .web-image {
+        height: 55px;
+        padding: 17px 0 15px;
+    }
+    .wrapper #header .web-image .logo-image {
+        width: 175px;
+        height: 55px;
+    }
+    /*form表单样式*/
+    .wrapper #header .web-form {
+        margin: 0 10px;
+        height: 42px;
+        border: 0;
+        border-bottom-color: #bcbcbc;
+        text-align: center;
+        font-size: 0;
+    }
+    /*form中Input样式*/
+    .wrapper #header .web-form .web-input {
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 0;
+        margin: 0;
+        width: 70%;
+        height: 39px;
+        line-height: 39px;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    .wrapper #header .web-form .web-input:hover {
+        border: 1px solid #777;
+        border-right-color: transparent;
+    }
+    .wrapper #header .web-form .web-input:focus {
+        border: 1px solid #3385ff;
+    }
+    /*form中button样式*/
+    .wrapper #header .web-form .web-button {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -1px;
+        border: 0;
+        padding: 0;
+        width: 82px;
+        height: 42px;
+        background-color: #3385ff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .wrapper #header .web-form .web-button:hover {
+        background-color: #25f;
+    }
+    /*主导航栏样式，设置为弹性盒子*/
+    .wrapper #header .webnav-main {
+        width: 100%;
+        margin: 17px 0 14px;
+        overflow: hidden;
+        display: flex;
+        display: -webkit-flex;
+    }
+    .wrapper #header .webnav-main .col {
+        flex: 1;
+        -webkit-flex: 1;
+    }
+    /*设置DIV中a变成块级元素*/
+    .wrapper #header .webnav-main .col a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #666;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    /*统一设置图标ICON大小*/
+    .wrapper #header .webnav-main .col .webnavicon {
+        width: 24px;
+        height: 24px;
+        margin: 3px auto 8px auto;
+    }
+    /*分别设置icont图标*/
+    .wrapper #header .webnav-main .col .news {
+        background: url(../image/news.png);
+        background-size: 100% 100%;
+    }
+    .wrapper #header .webnav-main .col .read {
+        background: url(../image/read.png);
+        background-size: 100% 100%;
+    }
+    .wrapper #header .webnav-main .col .video {
+        background: url(../image/video.png);
+        background-size: 100% 100%;
+    }
+    .wrapper #header .webnav-main .col .life {
+        background: url(../image/life.png);
+        background-size: 100% 100%;
+    }
+    .wrapper #header .webnav-main .col .map {
+        background: url(../image/map.png);
+        background-size: 100% 100%;
+    }
+    .wrapper #header .webnav-main .col .more {
+        background: url(../image/more.png);
+        background-size: 100% 100%;
+    }
+    /*主体部分的常用导航栏*/
+    .wrapper #main .webnav-usually {
+        margin: 8px 5% 0 5%;
+        background: #fff;
+        text-align: left;
+    }
+    h2 {
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: normal;
+        color: #999;
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .wrapper #main .usually-more {
+        width: 4px;
+        height: 12px;
+        background: url(../image/more1.png);
+        background-size: 100% 100%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 70%;
+    }
+    /*设置常用网站导航内容栏为弹性盒子*/
+    .wrapper #main .webnav-usually .usually-body {
+        display: flex;
+        display: -webkit-flex;
+    }
+    /*设置常用网站导航a标签样式*/
+    .wrapper #main .webnav-usually .usually-body a {
+        display: block;
+        color: #262626;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 10px;
+    }
+    /*设置第一类a左边距为10px*/
+    .wrapper #main .webnav-usually .usually-body a:nth-child(1) {
+        margin-left: 10px;
+    }
+    .wrapper #main .webnav-usually div {
+        flex: 1;
+        -webkit-flex: 1;
+    }
+    .wrapper #main .webnav-usually .usually-body .more2 {
+        background: url(../image/more2.png);
+        background-size: 100% 100%;
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+    /*分隔栏*/
+    .divide {
+        width: 100%;
+        height: 10px;
+        background: #eeeff0;
+    }
+    /*尾部*/
+    #footer {
+        width: 100%;
+        height: 30px;
+        background: #eeeff0;
+    }
+    #footer a {
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        padding: 6px 0 0;
+        color: #999;
+        background: #eeeff0;
+    }
+    i {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: url(../image/jingbei.png) no-repeat;
+        background-size: 100% 100%;
+        margin-right: 5px;
+        vertical-align: top;
+    }
+        /*分隔栏1*/
+    .divide1 {
+        width: 100%;
+        height: 50px;
+        background: #eeeff0;
+    }
+}

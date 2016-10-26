@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*html5pad端*/
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+    display: block
+}
+
+
+/*百度首页CSS样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*初始化页面边距和内边距*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    min-width: 400px;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+}
