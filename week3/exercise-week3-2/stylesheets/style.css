@@ -1,0 +1,1012 @@
+@charset "utf-8";
+
+/*长草的颜文字样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 600px;
+    height: 520px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0000aa), to(#3388ff));
+    background: linear-gradient(0% 0%, 0% 100%, from(#0000aa), to(#3388ff));
+    background: gradient(linear, 0% 0%, 0% 100%, from(#0000aa), to(#3388ff));
+    background: -ms-linear-gradient(#0000aa 0%, #3388ff 100%);
+    background: -o-linear-gradient(top, #0000aa, #3388ff);
+    background: -moz-linear-gradient(top, #0000aa, #3388ff);
+    background: -webkit-linear-gradient(0% 0%, 0% 100%, from(#0000aa), to(#3388ff));
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#0000aa',endColorStr='#3388ff',gradientType='1');
+    -ms-filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#0000aa',endColorStr='#3388ff',gradientType='1');
+}
+
+
+/*设置背景渐变*/
+
+.wrapper .head {
+    position: absolute;
+    width: 310px;
+    height: 275px;
+    margin-left: 142px;
+    margin-top: 90px;
+    background: #fff;
+    border: 10px solid #a0522d;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+/*颜文字的头*/
+
+.wrapper .body {
+    position: absolute;
+    width: 150px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 220px solid #fff;
+    margin-top: 300px;
+    margin-left: 221px;
+    z-index: 1;
+}
+
+
+/*身子，白色梯形*/
+
+.wrapper .body_border {
+    position: absolute;
+    width: 170px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 220px solid #a0522d;
+    margin-top: 300px;
+    margin-left: 211px;
+    z-index: 0;
+}
+
+
+/*身子棕色边框，叠在白色梯形下方*/
+
+.wrapper .grass .grass_left {
+    position: absolute;
+    width: 55px;
+    height: 33px;
+    border-top-left-radius: 85%;
+    border-top-right-radius: 175%;
+    border-bottom-left-radius: 115%;
+    border-bottom-right-radius: 38%;
+    border: 5px solid #a0522d;
+    background: #00DD00;
+    margin-left: 229px;
+    margin-top: 36px;
+    z-index: 1;
+}
+
+
+/*头顶左边叶子*/
+
+.wrapper .grass .grass_right {
+    position: absolute;
+    width: 55px;
+    height: 33px;
+    border-top-left-radius: 175%;
+    border-top-right-radius: 85%;
+    border-bottom-left-radius: 38%;
+    border-bottom-right-radius: 115%;
+    border: 5px solid #a0522d;
+    background: #00DD00;
+    margin-left: 290px;
+    margin-top: 36px;
+    z-index: 2;
+}
+
+
+/*头顶左边叶子*/
+
+.wrapper .grass .stem {
+    position: absolute;
+    width: 6px;
+    height: 0;
+    border-bottom: 32px solid #a0522d;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    margin-left: 288px;
+    margin-top: 63px;
+    z-index: 0;
+}
+
+
+/*叶子主干*/
+
+.wrapper div div .stem_right {
+    position: absolute;
+    border-right: 6px solid #a0522d;
+    width: 54px;
+    height: 45px;
+    z-index: 0;
+    border-top-right-radius: 70px 70px;
+    z-index: 0;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    margin-top: 19px;
+    margin-left: -16px;
+}
+
+
+/*右边叶子的茎*/
+
+.wrapper div div .stem_left {
+    position: absolute;
+    border-left: 6px solid #a0522d;
+    width: 54px;
+    height: 45px;
+    z-index: 0;
+    border-top-left-radius: 70px 70px;
+    z-index: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    margin-top: 16px;
+    margin-left: 12px;
+}
+
+
+/*左边叶子的茎*/
+
+.wrapper .head .eyebow .eyebow_left {
+    position: absolute;
+    width: 31px;
+    height: 9px;
+    margin-left: 70px;
+    margin-top: 133px;
+    border-radius: 20px;
+    background: #a0522d;
+    z-index: -1;
+    transform: rotate(18deg);
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    -o-transform: rotate(18deg);
+}
+
+
+/*左边眉毛*/
+
+.wrapper .head .eyebow .eyebow_right {
+    position: absolute;
+    width: 32px;
+    height: 9px;
+    margin-left: 165px;
+    margin-top: 138px;
+    border-radius: 20px;
+    background: #a0522d;
+    z-index: -1;
+    transform: rotate(-18deg);
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -o-transform: rotate(-18deg);
+}
+
+
+/*右边眉毛*/
+
+.wrapper .head .eye .eye_left {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    margin-left: 63px;
+    margin-top: 149px;
+    background: #a0522d;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
+/*左边眼睛*/
+
+.wrapper .head .eye .eye_right {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    margin-left: 175px;
+    margin-top: 153px;
+    background: #a0522d;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+
+/*右边眼睛*/
+
+.wrapper .head .nose .nose_left {
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    margin-left: 105px;
+    margin-top: 162px;
+    background: #fff;
+    z-index: -1;
+    border-radius: 50%;
+    border-top: 5px solid #a0522d;
+    border-right: 5px solid #a0522d;
+    border-bottom: 5px solid #a0522d;
+    transform: rotate(113deg);
+    -webkit-transform: rotate(113deg);
+    -moz-transform: rotate(113deg);
+    -ms-transform: rotate(113deg);
+    -o-transform: rotate(113deg);
+}
+
+.wrapper .head .nose .nose_left .nose_leftborder {
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    margin-left: -21px;
+    margin-top: -4px;
+    background: #fff;
+    z-index: -2;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+
+
+/*左边鼻子*/
+
+.wrapper .head .nose .nose_right {
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    margin-left: 128px;
+    margin-top: 168px;
+    background: #fff;
+    z-index: -1;
+    border-radius: 50%;
+    border-top: 5px solid #a0522d;
+    border-right: 5px solid #a0522d;
+    border-bottom: 5px solid #a0522d;
+    transform: rotate(72deg);
+    -webkit-transform: rotate(72deg);
+    -moz-transform: rotate(72deg);
+    -ms-transform: rotate(72deg);
+    -o-transform: rotate(72deg);
+}
+
+.wrapper .head .nose .nose_right .nose_rightborder {
+    position: absolute;
+    width: 27px;
+    height: 20px;
+    margin-left: -21px;
+    margin-top: -4px;
+    background: #fff;
+    z-index: -2;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+
+
+/*左边鼻子*/
+
+.wrapper .head .face .face_left {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background: #FFB3FF;
+    margin-left: 30px;
+    margin-top: 172px;
+    z-index: -2;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+
+/*左边脸蛋*/
+
+.wrapper .head .face .face_right {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background: #FFB3FF;
+    margin-left: 189px;
+    margin-top: 180px;
+    z-index: -2;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+
+/*右边脸蛋*/
+
+.wrapper .head .face .face_left div:first-child {
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background: #fff;
+    margin-left: 8px;
+    margin-top: 12px;
+    z-index: -2;
+    border-radius: 15%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.wrapper .head .face .face_left div:last-child {
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background: #fff;
+    margin-left: 19px;
+    margin-top: 12px;
+    z-index: -2;
+    border-radius: 15%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+
+/*左脸修饰*/
+
+.wrapper .head .face .face_right div:first-child {
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background: #fff;
+    margin-left: 8px;
+    margin-top: 12px;
+    z-index: -2;
+    border-radius: 15%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.wrapper .head .face .face_right div:last-child {
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background: #fff;
+    margin-left: 19px;
+    margin-top: 12px;
+    z-index: -2;
+    border-radius: 15%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.wrapper .head .arm_left {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    border: 5px solid #a0522d;
+    border-top-left-radius: 37%;
+    border-top-right-radius: 110%;
+    border-bottom-left-radius: 102%;
+    border-bottom-right-radius: 35%;
+    transform: rotate(-53deg);
+    -webkit-transform: rotate(-53deg);
+    -moz-transform: rotate(-53deg);
+    -ms-transform: rotate(-53deg);
+    -o-transform: rotate(-53deg);
+    margin-left: 19px;
+    margin-top: 225px;
+}
+
+
+/*左手*/
+
+.wrapper .page {
+    position: absolute;
+    width: 153px;
+    height: 157px;
+    background: #FFAA33;
+    border: 5px solid #BB5500;
+    margin-left: 176px;
+    margin-top: 338px;
+    z-index: 5;
+    transform: skew(15deg);
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    -ms-transform: skew(15deg);
+    -o-transform: skew(15deg);
+}
+
+
+/*纸*/
+
+.wrapper .page .arm_right {
+    position: absolute;
+    width: 34px;
+    height: 50px;
+    background: #fff;
+    border: 5px solid #a0522d;
+    border-top-left-radius: 37%;
+    border-top-right-radius: 110%;
+    border-bottom-left-radius: 102%;
+    border-bottom-right-radius: 35%;
+    transform: rotate(-230deg);
+    -webkit-transform: rotate(-230deg);
+    -moz-transform: rotate(-230deg);
+    -ms-transform: rotate(-230deg);
+    -o-transform: rotate(-230deg);
+    margin-left: 140px;
+    margin-top: 50px;
+    z-index: 6;
+}
+
+.wrapper .page .arm_right_border {
+    position: absolute;
+    width: 47px;
+    height: 32px;
+    background: #fff;
+    margin-left: 164px;
+    margin-top: 64px;
+    z-index: 6;
+    transform: rotate(280deg);
+    -webkit-transform: rotate(280deg);
+    -moz-transform: rotate(280deg);
+    -ms-transform: rotate(280deg);
+    -o-transform: rotate(280deg);
+}
+
+
+/*右手*/
+
+.wrapper .grass .grass_left {
+    animation: wave1 2s linear 0.5s infinite;
+    -webkit-animation: wave1 2s linear 0.5s infinite;
+    -moz-animation: wave1 2s linear 0.5s infinite;
+    -ms-animation: wave1 2s linear 0.5s infinite;
+    -o-animation: wave1 2s linear 0.5s infinite;
+}
+
+@keyframes wave1 {
+    0% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+    50% {
+        width: 70px;
+        height: 33px;
+        margin-left: 223px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 30%;
+        margin-left:
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+}
+
+@-webkit-keyframes wave1 {
+    0% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+    50% {
+        width: 70px;
+        height: 33px;
+        margin-left: 223px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 30%;
+        margin-left:
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+}
+
+@-moz-keyframes wave1 {
+    0% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+    50% {
+        width: 70px;
+        height: 33px;
+        margin-left: 223px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 30%;
+        margin-left:
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+}
+
+@-ms-keyframes wave1 {
+    0% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+    50% {
+        width: 70px;
+        height: 33px;
+        margin-left: 223px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 30%;
+        margin-left:
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+}
+
+@-o-keyframes wave1 {
+    0% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+    50% {
+        width: 70px;
+        height: 33px;
+        margin-left: 223px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 80%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 30%;
+        margin-left:
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        margin-left: 229px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 175%;
+        border-bottom-left-radius: 115%;
+        border-bottom-right-radius: 38%;
+    }
+}
+
+
+/*左边叶子动画*/
+
+.wrapper .grass .grass_right {
+    animation: wave2 2s linear 0.5s infinite;
+    -webkit-animation: wave2 2s linear 0.5s infinite;
+    -moz-animation: wave2 2s linear 0.5s infinite;
+    -ms-animation: wave2 2s linear 0.5s infinite;
+    -o-animation: wave2 2s linear 0.5s infinite;
+}
+
+@keyframes wave2 {
+    0% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+    50% {
+        width: 60px;
+        height: 35px;
+        border-top-left-radius: 90%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 50%;
+        margin-left: 295px;
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+}
+
+@-webkit-keyframes wave2 {
+    0% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+    50% {
+        width: 60px;
+        height: 35px;
+        border-top-left-radius: 90%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 50%;
+        margin-left: 295px;
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+}
+
+@-moz-keyframes wave2 {
+    0% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+    50% {
+        width: 60px;
+        height: 35px;
+        border-top-left-radius: 90%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 50%;
+        margin-left: 295px;
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+}
+
+@-ms-keyframes wave2 {
+    0% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+    50% {
+        width: 60px;
+        height: 35px;
+        border-top-left-radius: 90%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 50%;
+        margin-left: 295px;
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+}
+
+@-o-keyframes wave2 {
+    0% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+    50% {
+        width: 60px;
+        height: 35px;
+        border-top-left-radius: 90%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 50%;
+        margin-left: 295px;
+    }
+    100% {
+        width: 55px;
+        height: 33px;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 85%;
+        border-bottom-left-radius: 38%;
+        border-bottom-right-radius: 115%;
+        margin-left: 290px;
+    }
+}
+
+/*右边叶子动画*/
+
+.wrapper .head .eyebow .eyebow_left {
+    animation: jump1 2s linear 0.5s infinite;
+    -webkit-animation: jump1 2s linear 0.5s infinite;
+    -moz-animation: jump1 2s linear 0.5s infinite;
+    -ms-animation: jump1 2s linear 0.5s infinite;
+    -o-animation: jump1 2s linear 0.5s infinite;
+}
+
+@keyframes jump1 {
+    0% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    50% {
+        margin-left: 65px;
+        margin-top: 128px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+}
+
+@-webkit-keyframes jump1 {
+    0% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    50% {
+        margin-left: 65px;
+        margin-top: 128px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+}
+
+@-moz-keyframes jump1 {
+    0% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    50% {
+        margin-left: 65px;
+        margin-top: 128px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+}
+
+@-ms-keyframes jump1 {
+    0% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    50% {
+        margin-left: 65px;
+        margin-top: 128px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+}
+
+@-o-keyframes jump1 {
+    0% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    50% {
+        margin-left: 65px;
+        margin-top: 128px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 70px;
+        margin-top: 133px;
+        position: absolute;
+    }
+}
+
+/*左边眉毛动画*/
+
+.wrapper .head .eyebow .eyebow_right {
+    animation: jump2 2s linear 0.5s infinite;
+    -webkit-animation: jump2 2s linear 0.5s infinite;
+    -moz-animation: jump2 2s linear 0.5s infinite;
+    -ms-animation: jump2 2s linear 0.5s infinite;
+    -o-animation: jump2 2s linear 0.5s infinite;
+}
+
+@keyframes jump2 {
+    0% {
+        position: absolute;
+        margin-left: 165px;
+        margin-top: 138px;
+    }
+    50% {
+        margin-left: 168px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 165px;
+        margin-top: 138px;
+        position: absolute;
+    }
+}
+
+@-webkit-keyframes jump2 {
+    0% {
+        position: absolute;
+        margin-left: 165px;
+        margin-top: 138px;
+    }
+    50% {
+        margin-left: 168px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 165px;
+        margin-top: 138px;
+        position: absolute;
+    }
+}
+
+@-moz-keyframes jump2 {
+    0% {
+        position: absolute;
+        margin-left: 165px;
+        margin-top: 138px;
+    }
+    50% {
+        margin-left: 168px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 165px;
+        margin-top: 138px;
+        position: absolute;
+    }
+}
+
+@-ms-keyframes jump2 {
+    0% {
+        position: absolute;
+        margin-left: 165px;
+        margin-top: 138px;
+    }
+    50% {
+        margin-left: 168px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 165px;
+        margin-top: 138px;
+        position: absolute;
+    }
+}
+
+@-o-keyframes jump2 {
+    0% {
+        position: absolute;
+        margin-left: 165px;
+        margin-top: 138px;
+    }
+    50% {
+        margin-left: 168px;
+        margin-top: 133px;
+        position: absolute;
+    }
+    100% {
+        margin-left: 165px;
+        margin-top: 138px;
+        position: absolute;
+    }
+}
+/*右边眉毛动画*/

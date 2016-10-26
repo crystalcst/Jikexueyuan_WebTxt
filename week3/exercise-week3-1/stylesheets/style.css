@@ -1,0 +1,441 @@
+@charset "utf-8";
+
+/*CSS3D魔方效果*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../image/background.jpg) no-repeat;
+}
+
+h1 {
+    margin: 25px;
+    text-align: center;
+}
+
+.stage {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 30px;
+}
+
+
+/*包裹魔方的stage样式*/
+
+.stage .cube {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform-style: preserve-3d;
+     -webkit-animation: 10s spin linear infinite;
+     -webkit-transform-origin: 150px 150px 150px;
+}
+
+.stage .cube .front {
+    width: 300px;
+    height: 300px;
+    /*background-color: rgba(28, 127, 17, 0.8);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-transform: translateZ(300px);
+}
+
+.stage .cube .back {
+    width: 300px;
+    height: 300px;
+    /*background-color: rgba(255, 240, 0, 0.8);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 4;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.stage .cube .left {
+    width: 300px;
+    height: 300px;
+    /*background-color: rgba(255, 30, 0, 0.8);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-transform: rotateY(-90deg) translateX(150px)translateZ(150px);
+}
+
+.stage .cube .right {
+    width: 300px;
+    height: 300px;
+    /*background-color: rgba(255, 150, 0, 0.8);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-transform: rotateY(90deg) translateX(-150px)translateZ(150px);
+}
+
+.stage .cube .top {
+    width: 300px;
+    height: 300px;
+    /*background-color: rgba(0, 156, 255, 0.8);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-transform: rotateX(90deg) translateY(150px)translateZ(150px);
+}
+
+.stage .cube .bottom {
+    width: 300px;
+    height: 300px;
+    /*background-color: rgba(252, 0, 255, 0.8);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 0;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-transform: rotateX(90deg) translateY(150px)translateZ(-150px);
+}
+
+
+/*设置立方体六个面的样式*/
+
+.stage .cube >div div {
+    width: 300px;
+    flex: 1;
+    display: flex;
+    display: -webkit-flex;
+}
+
+
+/*用弹性盒子给每个面分3栏*/
+
+.stage .cube >div div div {
+    height: 100px;
+    flex: 1;
+}
+
+
+/*用弹性盒子给每一行分三列*/
+
+.stage .cube div div div {
+    border: 1px solid #000;
+}
+
+
+/*设置边框*/
+
+
+
+.stage .cube div div .bar_f11 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_f12 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_f13 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_f21 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_f22 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_f23 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_f31 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_f32 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_f33 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+
+
+/*设置front每一小块颜色*/
+
+
+.stage .cube div div .bar_b11 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_b12 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_b13 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_b21 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_b22 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_b23 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_b31 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_b32 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_b33 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+
+
+/*设置back每一小块颜色*/
+
+
+.stage .cube div div .bar_l11 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_b12 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_l13 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_l21 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_l22 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_l23 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_l31 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_l32 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_l33 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+
+
+/*设置left每一小块颜色*/
+
+
+.stage .cube div div .bar_r11 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_b12 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_r13 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_r21 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_r22 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_r23 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_r31 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_r32 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_r33 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+
+
+/*设置right每一小块颜色*/
+
+
+.stage .cube div div .bar_t11 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_t12 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_t13 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_t21 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_t22 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_t23 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_t31 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_t32 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_t33 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+
+
+/*设置top每一小块颜色*/
+
+
+.stage .cube div div .bar_bt11 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_bt12 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_bt13 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_bt21 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+.stage .cube div div .bar_bt22 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_bt23 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_bt31 {
+    background: rgba(255, 150, 0, 0.8);
+}
+
+.stage .cube div div .bar_bt32 {
+    background: rgba(252, 0, 255, 0.8);
+}
+
+.stage .cube div div .bar_bt33 {
+    background: rgba(0, 156, 255, 0.8);
+}
+
+
+
+/*设置bottom每一小块颜色*/
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+/*设置旋转动画*/

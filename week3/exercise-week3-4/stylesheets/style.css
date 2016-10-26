@@ -1,0 +1,140 @@
+@charset "urf-8";
+
+/*双飞翼布局*/
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+header .logo {
+    width: 20%;
+    height: 80px;
+    text-align: center;
+    background: #38f;
+    float: left;
+    line-height: 80px;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
+}
+
+
+/*设置头部LOGO样式*/
+
+header .nav_wrapper {
+    width: 80%;
+    height: 80px;
+    float: right;
+    background: #ccc;
+    text-align: right;
+}
+
+header .nav_wrapper nav {
+    margin: 31px 5px 30px auto;
+}
+
+header .nav_wrapper nav ul li {
+    display: inline-block;
+    display: inline \9;
+    zoom: 1 \9;
+}
+
+header .nav_wrapper nav ul li a {
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+header .nav_wrapper nav ul li a:hover {
+    color: #38f;
+}
+
+
+/*设置头部导航栏样式*/
+
+article {
+    background: #BC8F8F;
+    height: 450px;
+    overflow: hidden;
+}
+
+
+/*设置中间高度和背景*/
+
+article .left {
+    background: #FF8C00;
+    width: 20%;
+    margin-left: -100%;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*中间：左边样式*/
+
+article .middle {
+    background: #F4A460;
+    width: 100%;
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*中间：中部样式*/
+
+article .right {
+    background: #CD853F;
+    width: 20%;
+    float: left;
+    margin-left: -20%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*中间：右边样式*/
+
+article .middle .inner {
+    margin: 0 20% 0 20%;
+}
+
+
+/*中间：中部div设置左右边距解决遮盖问题*/
+
+footer {
+    width: 100%;
+    height: 90px;
+    background: #666;
+}
+
+
+/*脚部样式*/
