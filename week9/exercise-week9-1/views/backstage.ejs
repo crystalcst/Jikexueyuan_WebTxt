@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/backstage.css">
+<!--     <link rel="stylesheet" href="/stylesheets/flat-ui.css"> -->
+    <link rel="stylesheet" href="/stylesheets/demo.css">
+    <link rel="shortcut icon" href="/images/login.ico">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!-- 整个页面设置container -->
+    <div class="container-fluid">
+        <!-- 第一行： -->
+        <div class="row-fluid">
+            <!-- 大栅格系统，设置内边距为0 -->
+            <div class="col-lg-12 padding-none">
+                <!-- 导航栏 -->
+                <div class="navbar navbar-inverse navbar-embossed" role="navigation">
+                    <!-- 导航栏头部 -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collaspe-01">
+                            <span class="sr-only">Toggle-navigation</span>
+                        </button>
+                        <a href="/#" class="navbar-brand">百度新闻后台管理</a>
+                    </div>
+                    <!-- 响应式布局的下拉菜单 -->
+                    <div class="navbar-collapse collapse in" id="navbar-collapse-01">
+                        <!-- 导航栏导航 -->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="/" class="homepage">主页</a>
+                            </li>
+                            <li>
+                                <a href="#" class="localnews-btn">本地新闻</a>
+                            </li>
+                            <li>
+                                <a href="#" class="imgnews-btn">图片新闻</a>
+                            </li>
+                            <li>
+                                <a href="#" class="playnews-btn">娱乐新闻</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二行： -->
+        <div class="row-fluid">
+            <!-- 侧边栏 -->
+            <div class="col-lg-3">
+                <ul class="nav nav-pills nav-embossed nav-stacked col-lg-12">
+                    <li class="localnews-btn active"><a href="#">本地新闻</a></li>
+                    <li class="imgnews-btn"><a href="#">图片新闻</a></li>
+                    <li class="playnews-btn"><a href="#">娱乐新闻</a></li>
+                </ul>
+            </div>
+            <!-- 主体 -->
+            <div class="maincontent col-lg-9">
+            </div>
+        </div>
+        <!-- 添加进入mySQL的container -->
+        <div class="addmysql-container">
+            <form action="/addmysql" method="post" enctype="multipart/form-data" id = "search-form">
+                <label for="classify">新闻类别:</label>
+                <select name="classify" id="classify">
+                    <option value="本地">本地</option>
+                    <option value="图片">图片</option>
+                    <option value="娱乐">娱乐</option>
+                </select>
+                <!-- <input type="text" name="classify" id="classify" placeholder="请输入'本地'或'图片'或'娱乐'" /> -->
+                <br />
+                <label for="newstitle">新闻标题:</label>
+                <input type="text" name="newstitle" id="newstitle" placeholder="例如：VR虚拟现实实现" />
+                <br />
+                <label for="newsimg">新闻图片:</label>
+                <input type="file" name="newsimg" id="newsimg" class="imgupload">
+                <br />
+                <label for="newscontent">新闻内容:</label>
+                <textarea name="newscontent" id="newscontent" placeholder="请在此输入新闻主要内容"></textarea>
+                <br />
+                <label for="newsaddtime">添加时间:</label>
+                <input type="date" name="newsaddtime" id="newsaddtime" placeholder="格式：2016-05-01" />
+                <br />
+                <input type="submit" class="btn btn-submit" value="提交">
+                <input type="reset" class="btn btn-reset" value="重置">
+                <input type="button" class="btn btn-close" value="关闭">
+            </form>
+        </div>
+        <!-- 修改mySQL中的container -->
+        <div class="modmysql-container">
+            <form action="/modify" method="post" enctype="multipart/form-data">
+                <label for="classifymod">新闻类别:</label>
+                <select name="classifymod" id="classifymod">
+                    <option value="本地">本地</option>
+                    <option value="图片">图片</option>
+                    <option value="娱乐">娱乐</option>
+                </select>
+                <!-- <input type="text" name="classify" id="classify" placeholder="请输入'本地'或'图片'或'娱乐'" /> -->
+                <br />
+                <label for="newsidmod">新闻ID:</label>
+                <input type="text" name="newsidmod" id="newsidmod" value='' readonly="readonly" />
+                <br />
+                <label for="newstitlemod">新闻标题:</label>
+                <input type="text" name="newstitlemod" id="newstitlemod" value='' />
+                <br />
+                <label for="newsimgmod">新闻图片:</label>
+                <input type="text" name="newsimgmod" id="newsimgmod"  value=''>
+                <br />
+                <label for="newscontentmod">新闻内容:</label>
+                <textarea name="newscontentmod" id="newscontentmod" value=''></textarea>
+                <br />
+                <label for="newsaddtimemod">添加时间:</label>
+                <input type="date" name="newsaddtimemod" id="newsaddtimemod" value='' />
+                <br />
+                <input type="submit" class="btn btn-submit" value="提交">
+                <input type="button" class="btn btn-close" value="关闭">
+            </form>
+        </div>
+        <!-- 查询mySQL中的container -->
+        <div class="searchmysql-container">
+            <form action="/searchmysql" method="post" enctype="multipart/form-data" id="searchform">
+                <label for="classifysearch">新闻类别:</label>
+                <select name="classifysearch" id="classifysearch">
+                    <option value="本地">本地</option>
+                    <option value="图片">图片</option>
+                    <option value="娱乐">娱乐</option>
+                </select>
+                <!-- <input type="text" name="classify" id="classify" placeholder="请输入'本地'或'图片'或'娱乐'" /> -->
+                <br />
+                <label for="newsidsearch">新闻ID:</label>
+                <input type="text" name="newsidsearch" id="newsidsearch"/>
+                <br />
+                <label for="newstitlesearch">新闻标题:</label>
+                <input type="text" name="newstitlesearch" id="newstitlesearch"/>
+                <br />
+                <label for="newsimgsearch">新闻图片:</label>
+                <input type="text" name="newsimgsearch" id="newsimgsearch">
+                <br />
+                <label for="newscontentsearch">新闻内容:</label>
+                <textarea name="newscontentsearch" id="newscontentsearch"></textarea>
+                <br />
+                <label for="newsaddtimesearch">添加时间:</label>
+                <input type="date" name="newsaddtimesearch" id="newsaddtimesearch"/>
+                <br />
+                <input type="button" class="btn btn-submit" id="search-submit" value="提交">
+                <input type="button" class="btn btn-close" value="关闭">
+            </form>
+        </div>
+    </div>
+    <script type=" text/javascript " src="/javascripts/sea.js "></script>
+    <script>
+    // Setconfiguration
+    seajs.config({
+        base: "/javascripts/",
+        alias: {
+            'jquery': 'jQuery-2.0.0.min',
+            'clickEvent': 'clickEvent',
+            'backstageEvent': 'backstageEvent'
+        },
+    });
+
+    seajs.use("main");
+    </script>
+</body>
+
+</html>

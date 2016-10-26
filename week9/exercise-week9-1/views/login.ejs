@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+    <link rel="shortcut icon" href="/images/login.ico">
+</head>
+
+<body>
+    <body class="color-bg">
+    <!-- 网站登录界面容器 -->
+    <div class="container text-center">
+        <!-- 第一行：login-header -->
+        <div class="row-fluid margin-bottom">
+            <div class="col-md-4 col-md-offset-4">
+                <h1 class="header">网站后台登录界面</h1>
+            </div>
+        </div>
+        <!-- 第二行：fieldset -->
+        <form class="form-horizonal" action="/backstage" method="post">
+            <!-- 用户登录栏：图标+input -->
+            <div class="row margin-bottom">
+                <div class="col-md-1 col-md-offset-4 col-xs-2 col-xs-offset-2 user-image">
+                    <img src="/images/user-image.png" alt="用户登录图片" class="img-responsive center-block image-size">
+                </div>
+                <div class="col-md-3 col-xs-6 input-image">
+                    <input type="text" class="form-control" id="username" placeholder="姓名" value="admin">
+                </div>
+            </div>
+            <!-- 输入密码栏：图标+input -->
+            <div class="row margin-bottom">
+                <div class="col-md-1 col-md-offset-4 col-xs-2 col-xs-offset-2 password-image">
+                    <img src="/images/password-image.png" alt="用户密码图片" class="img-responsive center-block image-size">
+                </div>
+                <div class="col-md-3 col-xs-6 input-image ">
+                    <input type="password" class="form-control" id="password" placeholder="密码" value="admin123456">
+                </div>
+            </div>
+            <!-- 按钮类：记住我和登录 -->
+            <div class="row margin-bottom">
+                <div class="col-md-1 col-md-offset-4 col-xs-3 col-xs-offset-2 text-left">
+                    <label>
+                        <input type="checkbox" id="remember" />&nbsp&nbsp记住我
+                    </label>
+                </div>
+                <div class="col-md-3 col-xs-5 text-right">
+                    <button type="submit" class="btn btn-primary">登录</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>
