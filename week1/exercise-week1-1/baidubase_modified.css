@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/* baidubase_modified */
+
+#container {
+    width: 810px;
+    height: 605px;
+    margin: 0 auto;
+}
+
+header {
+    width: 810px;
+    height: 40px;
+    z-index: 1;
+}
+
+#navagation_header {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;
+}
+
+.anav {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.bnav {
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+#content {
+    width: 810px;
+    height: 191px;
+    text-align: center;
+}
+
+#inputbar {
+    border: 1px solid #b6b6b6;
+    background-color: #fff;
+    width: 539px;
+    height: 34px;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    padding: 0;
+    float: left;
+}
+
+#submitbutton {
+    border: 0;
+    padding: 0;
+    width: 100px;
+    height: 36px;
+    background-color: #3385ff;
+    color: #fff;
+    font-size: 15px;
+    float: left;
+}
+
+#input {
+    text-align: center;
+    margin-left: 85px;
+    margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+    margin-top: 240px;
+}
+
+#code-text1 {
+    float: left;
+    height: 60px;
+    margin-left: 85px;
+}
+
+.code {
+    float: left;
+    margin-right: 10px;
+}
+
+.text {
+    height: 60px;
+    float: left;
+    text-align: left;
+}
+
+p {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+span {
+    font-size: 12px;
+}
+
+#code-text2 {
+    float: left;
+    height: 60px;
+    margin-left: 30px;
+}
+
+#footer-right-top {
+    color: white;
+    z-index: 1;
+    position: relative;
+    font-size: 12px;
+    padding-top: 10px;
+    margin-left: 400px;
+}
+
+.link1 {
+    color: #333333;
+    margin-right: 5px;
+}
+
+.link2 {
+    color: #000;
+    font-weight: bold;
+}
+
+#footer-right-bottom {
+    color: #333333;
+    margin-top: 0;
+}
+
+.link3 {
+    color: #333333;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>课程表</title>
+    <style type="text/css">
+    table{
+        text-align: center;
+        width:1000px;
+        margin: 0 auto;
+        line-height: 30px;
+        border-collapse: collapse;
+    }
+    table,tr,td,th{
+        border: 2px solid #f00;
+    }
+    caption{
+        font-size: 48px;
+        line-height: 100px;
+    }
+    thead{
+        font-size: 20px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <table>
+            <caption>
+                课程表
+            </caption>
+            <thead>
+               <tr>
+                <td>项目</td>
+                <td colspan="5" >上课</td>
+                <td colspan="2" >休息</td>
+            </tr>
+            </thead>
+
+        <tbody>
+
+            <tr>
+                <th >星期</th>
+                <th >星期一</th>
+                <th >星期二</th>
+                <th >星期三</th>
+                <th >星期四</th>
+                <th >星期五</th>
+                <th >星期六</th>
+                <th >星期天</th>
+            </tr>
+            <tr>
+                <td rowspan="4" >上午</td>
+                <td >语文</td>
+                <td >数学</td>
+                <td >英语</td>
+                <td >政治</td>
+                <td >体育</td>
+                <td >生物</td>
+                <td rowspan="4" >休息</td>
+            </tr>
+            <tr>
+                <td >数学</td>
+                <td >英语</td>
+                <td >政治</td>
+                <td >历史</td>
+                <td >地理</td>
+                <td >生物</td>
+            </tr>
+            <tr>
+                <td >英语</td>
+                <td >政治</td>
+                <td >历史</td>
+                <td >地理</td>
+                <td >生物</td>
+                <td >语文</td>
+            </tr>
+            <tr>
+                <td >政治</td>
+                <td >历史</td>
+                <td >地理</td>
+                <td >生物</td>
+                <td >语文</td>
+                <td >数学</td>
+            </tr>
+            <tr>
+                <td rowspan="2">下午</td>
+                <td >历史</td>
+                <td >地理</td>
+                <td >生物</td>
+                <td >语文</td>
+                <td >数学</td>
+                <td >英语</td>
+                <td rowspan="2" >休息</td>
+            </tr>
+            <tr>
+                <td >地理</td>
+                <td >生物</td>
+                <td >语文</td>
+                <td >数学</td>
+                <td >英语</td>
+                <td >政治</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+
+</html>
