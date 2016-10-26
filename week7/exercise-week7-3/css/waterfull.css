@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+/* 百度图片瀑布流布局 */
+
+html,
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+button:focus {
+    outline-style: none;
+}
+
+
+/* ===================header部分CSS样式开始===================== */
+
+
+/* 设置topnav右浮动 */
+
+header .topnav {
+    float: right;
+}
+
+
+/* 清除一下浮动 */
+
+header .topnav:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/* 设置右上角导航栏样式 */
+
+header .topnav ul {
+    width: 350px;
+    height: 30px;
+    clear: both;
+}
+
+header .topnav ul li {
+    display: block;
+    float: left;
+    padding: 3px;
+}
+
+header .topnav ul li a {
+    color: #555;
+    font: 12px Arial;
+    display: inline-block;
+}
+
+
+/* 设置分割线样式 */
+
+.split {
+    height: 14px;
+    color: #bbb;
+    width: 1px
+}
+
+
+/* 设置主导航栏样式 */
+
+header .nav {
+    position: relative;
+    margin-left: 194px;
+    padding-top: 12px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+header .nav ul {
+    height: 30px;
+    widows: 54px;
+    0px;
+}
+
+header .nav ul li {
+    width: auto;
+    height: 30px;
+    float: left;
+}
+
+header .nav ul li a {
+    color: #555;
+    margin-right: 10px;
+    font-family: 'Microsoft YaHei', arial, 'Hiragino Sans GB', sans-serif;
+}
+
+header .nav ul li .active {
+    font-weight: bold;
+}
+
+
+/* 设置搜索栏样式 */
+
+
+/* 百度图片Logo */
+
+header .searchwrapper img {
+    float: left;
+    margin-left: 40px;
+    margin-right: 16px;
+    margin-top: -15px;
+    、
+}
+
+
+/* input + span的外壁纸 */
+
+header .searchwrapper .searchbar .searchbarwrapper {
+    width: 453px;
+    height: 30px;
+    border: 1px solid #b8b8b8;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .searchwrapper .searchbar input {
+    display: inline-block;
+    width: 410px;
+    height: 16px;
+    border: 0;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+
+/* button按钮 */
+
+header .searchwrapper .searchbar button {
+    width: 98px;
+    height: 32px;
+    border: 1px solid #b8b8b8;
+    border-left: 0;
+    padding: 0;
+    padding-top: 1px;
+    line-height: 32px;
+    font-size: 16px;
+    font-family: 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', Tahoma, Arial, Helvetica, STHeiti;
+    background: url(../image/btn.png) 0 0 no-repeat;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -8px;
+    margin-top: 2px;
+}
+
+
+/* input上的小icon */
+
+header .searchwrapper .searchbar .shortcut {
+    display: inline-block;
+    width: 22px;
+    height: 17px;
+    background: url(../image/shortcut.png);
+    background-size: 100% 100%;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+
+/* 热搜 */
+
+header .hotsearch {
+    width: 100%;
+    height: 36px;
+    padding: 20px 0;
+}
+
+header .hotsearch span {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: -10px;
+}
+
+header .hotsearch .searchicon {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: -2px;
+    background: url(../image/lazy_img.png) no-repeat -191px -334px;
+}
+
+header .hotsearch a {
+    margin-right: 10px;
+    display: inline-block;
+    zoom: 1;
+    font-size: 14px;
+    color: #00c;
+    text-decoration: none;
+    padding-bottom: 5px;
+    margin-left: 7px;
+}
+
+header .hotsearch a:hover {
+    text-decoration: underline;
+}
+
+
+/*==================== header部分样式结束====================== */
+
+
+/* =========================article部分样式开始==================== */
+
+article {
+    width: 100%;
+    position: relative;
+}
+
+article:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+article .box {
+    position: relative;
+    float: left;
+}
+
+article .box .content {
+    padding: 9px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #ccc;
+    border-radius: 5px;
+}
+
+article .box .content img {
+    width: 290px;
+    height: auto;
+}
+
+
+.fixednav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1000;
+    background: #fff;
+}
