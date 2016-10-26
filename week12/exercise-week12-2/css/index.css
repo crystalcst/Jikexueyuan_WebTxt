@@ -1,0 +1,79 @@
+/*
+* @Author: lenovo
+* @Date:   2016-08-29 15:37:41
+* @Last Modified by:   lenovo
+* @Last Modified time: 2016-09-11 18:28:05
+*/
+@charset "utf-8";
+
+h3{
+    font-size: 20px;
+}
+/* 导航栏主页图标和文字样式 */
+.index-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/compass.png);
+    vertical-align: top;
+}
+
+.index-text {
+    display: inline-block;
+    width: 82px;
+    height: 30px;
+    vertical-align: top;
+    font-family: "Microsoft Yahei";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 侧边栏样式 */
+.navbar-left {
+    margin-top: 80px;
+    position: fixed;
+}
+
+/* 右边主体样式 */
+.content {
+    margin-top: 80px;
+    margin-left: 310px;
+}
+
+.content .panel-heading{
+    font-family: "Microsoft Yahei";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* html试题样式 */
+.html-content {
+    display: block;
+}
+
+/* css试题样式 */
+.css-content {
+    display: none;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+/* js试题样式 */
+.js-content {
+    display: none;
+}
+/* 回到顶部样式 */
+.arrow {
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrow.png) #89BEEB;
+    background-size: 50px 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}

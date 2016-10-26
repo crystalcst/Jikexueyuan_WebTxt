@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>高级前端工程师面试题</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="shortcut icon" href="img/index.ico">
+</head>
+
+<body>
+    <div class="maincontainer container-fluid">
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="index-icon"></span>
+                        <span class="index-text">前端面试</span>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">javascript</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- 左导航栏 -->
+        <div class="navbar-left list-group col-sm-3">
+            <a href="#" class="list-group-item active">html</a>
+            <a href="#" class="list-group-item">css</a>
+            <a href="#" class="list-group-item">javascript</a>
+        </div>
+        <!-- 主体内容 -->
+        <!-- html试题 -->
+        <div class="html-content content col-sm-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading">html面试题</div>
+                <div class="panel-body">
+                    <h3>Q1:Doctype作用？标准模式与兼容模式各有什么区别?</h3>
+                    <p>(1)&lt!DOCTYPE&gt声明位于HTML文档中的第一行，处于&lthtml&gt标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。</br>
+                        (2)标准模式的排版和JS运作模式都是以该浏览器支持的最高标准运行。在兼容模式中，页面以宽松的向后兼容的方式显示,模拟老式浏览器的行为以防止站点无法工作。
+                    </p>
+                    <h3>Q2:HTML5为什么只需要写&lt!DOCTYPE HTML&gt？</h3>
+                    <p> HTML5 不基于 SGML，因此不需要对DTD进行引用，但是需要doctype来规范浏览器的行为（让浏览器按照它们应该的方式来运行）； 而HTML4.01基于SGML,所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+                    </p>
+                    <h3>Q3:行内元素有哪些？块级元素有哪些？空(void)元素有那些</h3>
+                    <p>首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。</br>(1)行内元素有：a b span img input select strong（强调的语气)</br>(2)块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p</br>(3)常见的空元素： &ltbr&gt &lthr&gt &ltimg&gt &ltinput&gt &ltlink&gt &ltmeta&gt 鲜为人知的是： &ltarea&gt &ltbase&gt &ltcol&gt &ltcommand&gt &ltembed&gt &ltkeygen&gt &ltparam&gt &ltsource&gt &lttrack&gt &ltwbr&gt
+                    </p>
+                    <h3>Q4:页面导入样式时，使用link和@import有什么区别？</h3>
+                    <P>(1)link属于XHTML标签，除了加载CSS外，还能用于定义RSS, 定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS; </br>(2)页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;</br>(3)import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;
+                    </P>
+                    <h3>Q5:介绍一下你对浏览器内核的理解？</h3>
+                    <p>主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。</br> 渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。 </br>JS引擎则：解析和执行javascript来实现网页的动态效果。 最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。
+                    </p>
+                    <h3>Q6:常见的浏览器内核有哪些？</h3>
+                    <p>Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]</br> Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等</br> Presto内核：Opera7及以上。 [Opera内核原为：Presto，现为：Blink;] </br> Webkit内核：Safari,Chrome等。 [ Chrome的：Blink（WebKit的分支）]</p>
+                    <h3>Q7:html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5?</h3>
+                    <P>* HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。 绘画 canvas; 用于媒介回放的 video 和 audio 元素; 本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失; sessionStorage 的数据在浏览器关闭后自动删除; 语意化更好的内容元素，比如 article、footer、header、nav、section; 表单控件，calendar、date、time、email、url、search; 新的技术webworker, websocket, Geolocation; 移除的元素： 纯表现的元素：basefont，big，center，font, s，strike，tt，u; 对可用性产生负面影响的元素：frame，frameset，noframes；</br> * 支持HTML5新标签： IE8/IE7/IE6支持通过document.createElement方法产生的标签， 可以利用这一特性让这些浏览器支持HTML5新标签， 浏览器支持新标签后，还需要添加标签默认的样式。 当然也可以直接使用成熟的框架、比如html5shim;</br>
+                        &lt!--[if lt IE 9]&gt </br>
+                        &nbsp&nbsp&nbsp&nbsp&ltscript&gt src="http://html5shim.googlecode.com/svn/trunk/html5.js"&lt/script&gt</br>
+                        &lt![endif]--&gt </br>
+                        </br>* 如何区分HTML5： DOCTYPE声明\新增的结构元素\功能元素
+                    </P>
+                    <h3>Q8:简述一下你对HTML语义化的理解？</h3>
+                    <p>用正确的标签做正确的事情。 html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析; 即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的; 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO; 使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
+                    </p>
+                    <h3>Q9:HTML5的离线储存怎么使用，工作原理能不能解释一下？</h3>
+                    <p>在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。 原理：HTML5的离线存储是基于一个新建的.appcache文件的缓存机制(不是存储技术)，通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储了下来。之后当网络在处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。</br> 如何使用： </br>1、页面头部像下面一样加入一个manifest的属性；</br> 2、在cache.manifest文件的编写离线存储的资源； CACHE MANIFEST #v0.11 CACHE: js/app.js css/style.css NETWORK: resourse/logo.png FALLBACK: / /offline.html </br>3、在离线状态时，操作window.applicationCache进行需求实现。
+                    </p>
+                    <h3>Q10:浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？</h3>
+                    <p>在线的情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。 离线的情况下，浏览器就直接使用离线存储的资源。
+                    </p>
+                    <h3>Q11:请描述一下 cookies，sessionStorage 和 localStorage 的区别？</h3>
+                    <p>cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。</br> cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。</br> sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。</br> 存储大小： </br>cookie数据大小不能超过4k。 </br>sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。 </br>有期时间：</br> localStorage 存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；</br> sessionStorage 数据在当前浏览器窗口关闭后自动删除。</br> cookie 设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭</p>
+                    <h3>Q12:iframe有那些缺点？</h3>
+                    <P>*iframe会阻塞主页面的Onload事件；</br> *搜索引擎的检索程序无法解读这种页面，不利于SEO;</br> *iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。</br> 使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript 动态给iframe添加src属性值，这样可以绕开以上两个问题。
+                    </P>
+                    <h3>Q13:Label的作用是什么？是怎么用的?</h3>
+                    <P>label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。</br>
+                        &ltlabel for="Name"&gtNumber:&lt/label&gt</br>
+                        &ltinput type=“text“name="Name" id="Name" /&gt</br>
+                        &ltlabel&gtDate:</br>
+                        &nbsp&nbsp&nbsp&nbsp &ltinput type="text" name="B" /&gt </br>
+                        &lt/label&gt
+                    </P>
+                    <h3>Q14:HTML5的form如何关闭自动完成功能？</h3>
+                    <p>给不想要提示的 form 或某个 input 设置为 autocomplete=off</p>
+                    <h3>Q15:如何实现浏览器内多个标签页之间的通信? (阿里)</h3>
+                    <P>WebSocket、SharedWorker；</br>
+                        也可以调用localstorge、cookies等本地存储方式；</br>
+                        localstorge另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，</br>
+                        我们通过监听事件，控制它的值来进行页面信息通信；</br>
+                        注意quirks：Safari 在无痕模式下设置localstorge值时会抛出 QuotaExceededError 的异常
+                    </P>
+                    <h3>Q16:webSocket如何兼容低浏览器？(阿里)</h3>
+                    <P>Adobe Flash Socket 、</br>
+                        ActiveX HTMLFile (IE) 、</br>
+                        基于 multipart 编码发送 XHR 、</br>
+                        基于长轮询的 XHR
+                    </P>
+                    <h3>Q17:页面可见性（Page Visibility API） 可以有哪些用途？</h3>
+                    <P>通过 visibilityState 的值检测页面当前是否可见，以及打开网页的时间等;</br>
+                        在页面被切换到其他后台进程的时候，自动暂停音乐或视频的播放
+                    </P>
+                    <h3>Q18:如何在页面上实现一个圆形的可点击区域？</h3>
+                    <p>1、map+area或者svg</br>
+                        2、border-radius</br>
+                        3、纯js实现 需要求一个点在不在圆上简单算法、获取鼠标坐标等等
+                    </p>
+                    <h3>Q19:实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果?</h3>
+                    <p>
+                        &ltdiv style="height:1px;overflow:hidden;background:red"&gt&lt/div&gt
+                    </p>
+                    <h3>Q20:网页验证码是干嘛的，是为了解决什么安全问题?</h3>
+                    <p>区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；</br>
+                        有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试。
+                    </p>
+                    <h3>Q21:title与h1的区别、b与strong的区别、i与em的区别？</h3>
+                    <p>title属性没有明确意义只表示是个标题，H1则表示层次明确的标题，对页面信息的抓取也有很大的影响；</br>
+                        strong是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：<strong>会重读，而<B>是展示强调内容。</br>
+                        i内容展示为斜体，em表示强调的文本；</br>
+                        Physical Style Elements -- 自然样式标签</br>
+                        b, i, u, s, pre</br>
+                        Semantic Style Elements -- 语义样式标签</br>
+                        strong, em, ins, del, code</br>
+                        应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- css试题 -->
+        <div class="css-content content col-sm-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading">css面试题</div>
+                <div class="panel-body">
+                    <h3>Q1:介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</h3>
+                    <p>（1）有两种， IE 盒子模型、W3C 盒子模型；</br>
+                        （2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；</br>
+                        （3）区  别： IE的content部分把 border 和 padding计算了进去;
+                    </p>
+                    <h3>Q2:CSS选择符有哪些？哪些属性可以继承？</h3>
+                    <P>*   1.id选择器（ # myid）</br>
+                            2.类选择器（.myclassname）</br>
+                            3.标签选择器（div, h1, p）</br>
+                            4.相邻选择器（h1 + p）</br>
+                            5.子选择器（ul > li）</br>
+                            6.后代选择器（li a）</br>
+                            7.通配符选择器（ * ）</br>
+                            8.属性选择器（a[rel = "external"]）</br>
+                            9.伪类选择器（a:hover, li:nth-child）</br>
+                        *   可继承的样式： font-size font-family color, UL LI DL DD DT;</br>
+                        *   不可继承的样式：border padding margin width height ;
+                    </P>
+                    <h3>Q3:CSS优先级算法如何计算？</h3>
+                    <p>*   优先级就近原则，同权重情况下样式定义最近者为准;</br>
+                        *   载入样式以最后载入的定位为准;</br>
+                        优先级为:</br>
+                        !important >  id > class > tag</br>
+                        important 比 内联优先级高
+                    </p>
+                    <h3>Q4:CSS3新增伪类有那些？</h3>
+                    <p>    举例：</br>
+                        p:first-of-type 选择属于其父元素的首个 &ltp&gt 元素的每个 &ltp&gt 元素。</br>
+                        p:last-of-type  选择属于其父元素的最后 &ltp&gt 元素的每个 &ltp&gt 元素。</br>
+                        p:only-of-type  选择属于其父元素唯一的 &ltp&gt 元素的每个 &ltp&gt 元素。</br>
+                        p:only-child        选择属于其父元素的唯一子元素的每个 &ltp&gt 元素。</br>
+                        p:nth-child(2)  选择属于其父元素的第二个子元素的每个 &ltp&gt 元素。</br>
+                        :after          在元素之前添加内容,也可以用来做清除浮动。</br>
+                        :before         在元素之后添加内容</br>
+                        :enabled        </br>
+                        :disabled       控制表单控件的禁用状态。</br>
+                        :checked        单选框或复选框被选中
+                    </p>
+                    <h3>Q5:如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？</h3>
+                    <p>1.给div设置一个宽度，然后添加margin:0 auto属性</br>
+                        <code>
+                            div{</br>
+                            &nbsp&nbsp&nbsp&nbspwidth:200px;</br>
+                            &nbsp&nbsp&nbsp&nbspmargin:0 auto;</br>
+                            }
+                        </code></br>
+                        2.居中一个浮动元素:确定容器的宽高 宽500 高 300 的层,设置层的外边距</br>
+                        <code>
+                            .div {</br>
+                            &nbsp&nbsp&nbsp&nbspwidth:500px ; height:300px;//高度可以不设</br>
+                            &nbsp&nbsp&nbsp&nbspmargin: -150px 0 0 -250px;</br>
+                            &nbsp&nbsp&nbsp&nbspposition:relative;         //相对定位</br>
+                            &nbsp&nbsp&nbsp&nbspbackground-color:pink;     //方便看效果</br>
+                            &nbsp&nbsp&nbsp&nbspleft:50%;</br>
+                            &nbsp&nbsp&nbsp&nbsptop:50%;</br>
+                            }
+                        </code></br>
+                        3.让绝对定位的div居中</br>
+                        <code>
+                            position: absolute;</br>
+                            width: 1200px;</br>
+                            background: none;</br>
+                            margin: 0 auto;</br>
+                            top: 0;</br>
+                            left: 0;</br>
+                            bottom: 0;</br>
+                            right: 0;
+                        </code>
+                    </p>
+                    <h3>Q6:display有哪些值？说明他们的作用。</h3>
+                    <P>  block&nbsp&nbsp&nbsp&nbsp象块类型元素一样显示。</br>
+                        none&nbsp&nbsp&nbsp&nbsp缺省值。象行内元素类型一样显示。</br>
+                        inline-block&nbsp&nbsp&nbsp&nbsp象行内元素一样显示，但其内容象块类型元素一样显示。</br>
+                        list-item&nbsp&nbsp&nbsp&nbsp象块类型元素一样显示，并添加样式列表标记。</br>
+                        table&nbsp&nbsp&nbsp&nbsp此元素会作为块级表格来显示</br>
+                        inherit&nbsp&nbsp&nbsp&nbsp规定应该从父元素继承 display 属性的值
+                    </P>
+                    <h3>Q7:position的值relative和absolute定位原点是？</h3>
+                    <P>  absolute</br>
+                        &nbsp&nbsp&nbsp&nbsp生成绝对定位的元素，相对于值不为 static的第一个父元素进行定位。</br>
+                         fixed （老IE不支持）</br>
+                         &nbsp&nbsp&nbsp&nbsp生成绝对定位的元素，相对于浏览器窗口进行定位。</br>
+                        relative</br>
+                         &nbsp&nbsp&nbsp&nbsp生成相对定位的元素，相对于其正常位置进行定位。</br>
+                        static</br>
+                            &nbsp&nbsp&nbsp&nbsp默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right z-index 声明）。</br>
+                        inherit</br>
+                        &nbsp&nbsp&nbsp&nbsp规定从父元素继承 position 属性的值
+                    </P>
+                    <h3>Q8:CSS3有哪些新特性？</h3>
+                    <P>  新增各种CSS选择器&nbsp&nbsp&nbsp&nbsp  （: not(.input)：所有 class 不是“input”的节点）</br>
+                        圆角&nbsp&nbsp&nbsp&nbspborder-radius:8px）</br>
+                        多列布局&nbsp&nbsp&nbsp&nbsp（multi-column layout）</br>
+                        阴影和反射&nbsp&nbsp&nbsp&nbspShadow\Reflect）</br>
+                        文字特效&nbsp&nbsp&nbsp&nbsp（text-shadow、）</br>
+                        文字渲染&nbsp&nbsp&nbsp&nbsp（Text-decoration）</br>
+                        线性渐变&nbsp&nbsp&nbsp&nbsp（gradient）</br>
+                        旋转&nbsp&nbsp&nbsp&nbsp（transform）</br>
+                        增加了旋转,缩放,定位,倾斜,动画，多背景</br>
+                        transform:\scale(0.85,0.90)\ translate(0px,-30px)\ skew(-9deg,0deg)\Animation:
+                    </P>
+                    <h3>Q9:请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</h3>
+                    <P>Flexbox是布局模块，而不是一个简单的属性，它包含父元素和子元素的属性。</br>
+                        Flexbox布局的主要思想是使得元素可以改变大小以适应可用空间，当可用空间变大，Flex元素将伸展大小以填充可用空间，当Flex元素超出可用空间时将自动缩小。总之，Flex元素是可以让你的布局根据浏览器大小变化进行自动伸缩。</br>
+                        适用场景：</br>
+                        1.flexbox等分布局</br>
+                        2.flexbox不等分布局</br>
+                        3.flexbox基本页面布局</br>
+                        4.flexbox 的居中布局</br>
+                    </P>
+                    <h3>Q10:用纯CSS创建一个三角形的原理是什么？</h3>
+                    <p>把上、左、右三条边隐藏掉（颜色设为 transparent）</br>
+                    <code>
+                        #demo {</br>
+                        &nbsp&nbsp&nbsp&nbspwidth: 0;</br>
+                        &nbsp&nbsp&nbsp&nbspheight: 0;</br>
+                        &nbsp&nbsp&nbsp&nbspborder-width: 20px;</br>
+                        &nbsp&nbsp&nbsp&nbspborder-style: solid;</br>
+                        &nbsp&nbsp&nbsp&nbspborder-color: transparent transparent red transparent;</br>
+                        }
+                    </code>
+                    </p>
+                    <h3>Q11:一个满屏 品 字布局 如何设计?</h3>
+                    <P>简单的方式：</br>
+                        &nbsp&nbsp&nbsp&nbsp上面的div宽100%，</br>
+                        &nbsp&nbsp&nbsp&nbsp下面的两个div分别宽50%，</br>
+                        &nbsp&nbsp&nbsp&nbsp然后用float或者inline使其不换行即可
+                    </P>
+                    <h3>Q12:经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？</h3>
+                    <p>* png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.</br>
+                        * 浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。</br>
+                        * IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。</br>
+                        浮动ie产生的双倍距离 #box{ float:left; width:10px; margin:0 0 0 100px;}</br>
+                        这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入 ——_display:inline;将其转化为行内属性。(_这个符号只有ie6会识别)</br>
+                        渐进识别的方式，从总体中逐渐排除局部。</br>
+                        首先，巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。</br>
+                        接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。</br>
+                        css</br>
+                        <code>
+                         &nbsp&nbsp&nbsp&nbsp.bb{</br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspbackground-color:#f1ee18;/*所有识别*/</br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.background-color:#00deff\9; /*IE6、7、8识别*/</br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+background-color:#a200ff;/*IE6、7识别*/</br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp_background-color:#1e0bd1;/*IE6识别*/</br>
+                        &nbsp&nbsp&nbsp&nbsp}</br>
+                        </code>
+                        *  IE下,可以使用获取常规属性的方法来获取自定义属性,</br>
+                        也可以使用getAttribute()获取自定义属性;</br>
+                        Firefox下,只能使用getAttribute()获取自定义属性。</br>
+                        解决方法:统一通过getAttribute()获取自定义属性。</br>
+                        *  IE下,even对象有x,y属性,但是没有pageX,pageY属性;</br>
+                        Firefox下,event对象有pageX,pageY属性,但是没有x,y属性。</br>
+                        *  解决方法：（条件注释）缺点是在IE浏览器下可能会增加额外的HTTP请求数。</br>
+                        *  Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,</br>
+                        可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决。</br>
+                        超链接访问过后hover样式就不出现了 被点击访问过的超链接样式不在具有hover和active了解决方法是改变CSS属性的排列顺序:</br>
+                        L-V-H-A :  a:link {} a:visited {} a:hover {} a:active {}
+                    </p>
+                    <h3>Q13:li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法?</h3>
+                    <P>行框的排列会受到中间空白（回车\空格）等的影响，因为空格也属于字符,这些空白也会被应用样式，占据空间，所以会有间隔，把字符大小设为0，就没有空格了。
+                    </P>
+                    <h3>Q14:为什么要初始化CSS样式?</h3>
+                    <P>- 因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。</br>
+                        - 当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。</br>
+                        最简单的初始化方法： * {padding: 0; margin: 0;} （强烈不建议）</br>
+                        淘宝的样式初始化代码：</br>
+                        body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }</br>
+                        body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }</br>
+                        h1, h2, h3, h4, h5, h6{ font-size:100%; }</br>
+                        address, cite, dfn, em, var { font-style:normal; }</br>
+                        code, kbd, pre, samp { font-family:couriernew, courier, monospace; }</br>
+                        small{ font-size:12px; }</br>
+                        ul, ol { list-style:none; }</br>
+                        a { text-decoration:none; }</br>
+                        a:hover { text-decoration:underline; }</br>
+                        sup { vertical-align:text-top; }</br>
+                        sub{ vertical-align:text-bottom; }</br>
+                        legend { color:#000; }</br>
+                        fieldset, img { border:0; }</br>
+                        button, input, select, textarea { font-size:100%; }</br>
+                        table { border-collapse:collapse; border-spacing:0; }
+                    </P>
+                    <h3>Q15:absolute的containing block(容器块)计算方式跟正常流有什么不同?</h3>
+                    <P>无论属于哪种，都要先找到其祖先元素中最近的 position 值不为 static 的元素，然后再判断：</br>
+                        1、若此元素为 inline 元素，则 containing block 为能够包含这个元素生成的第一个和最后一个 inline box 的 padding box (除 margin, border 外的区域) 的最小矩形；</br>
+                        2、否则,则由这个祖先元素的 padding box 构成。</br>
+                        如果都找不到，则为 initial containing block。</br>
+                        补充：</br>
+                        1. static(默认的)/relative：简单说就是它的父元素的内容框（即去掉padding的部分）</br>
+                        2. absolute: 向上找最近的定位为absolute/relative的元素</br>
+                        3. fixed: 它的containing block一律为根元素(html/body)，根元素也是initial containing block
+                    </P>
+                    <h3>Q16:CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</h3>
+                    <P>当在表格元素中使用时，此值可删除一行或一列，但是它不会影响表格的布局。被行或列占据的空间会留给其他内容使用。如果此值被用在其他元素上，会呈现"hidden"。</br>
+                    谷歌浏览器里，使用collapse值和使用hidden值没有什么区别。 (Seethis bug report and comments)</br>
+                    在火狐浏览器、Opera和IE11里，使用collapse值的效果就如它的字面意思：table的行会消失，它的下面一行会补充它的位置。
+                    </P>
+                    <h3>Q17:对BFC规范(块级格式化上下文：block formatting context)的理解？</h3>
+                    <P>（W3C CSS 2.1 规范中的一个概念,它是一个独立容器，决定了元素如何对其内容进行定位,以及与其他元素的关系和相互作用。）</br>
+                    一个页面是由很多个 Box 组成的,元素的类型和 display 属性,决定了这个 Box 的类型。</br>
+                    不同类型的 Box,会参与不同的 Formatting Context（决定如何渲染文档的容器）,因此Box内的元素会以不同的方式渲染,也就是说BFC内部的元素和外部的元素不会互相影响。
+                    </P>
+                    <h3>Q18:css定义的权重</h3>
+                    <P>以下是权重的规则：标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：</br>
+                        /*权重为1*/</br>
+                        div{</br>
+                        }</br>
+                        /*权重为10*/</br>
+                        .class1{</br>
+                        }</br>
+                        /*权重为100*/</br>
+                        #id1{</br>
+                        }</br>
+                        /*权重为100+1=101*/</br>
+                        #id1 div{</br>
+                        }</br>
+                        /*权重为10+1=11*/</br>
+                        .class1 div{</br>
+                        }</br>
+                        /*权重为10+10+1=21*/</br>
+                        .class1 .class2 div{</br>
+                        }</br>
+                        如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现
+                    </P>
+                    <h3>Q19:如果需要手动写动画，你认为最小时间间隔是多久，为什么？（阿里）</h3>
+                    <P>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms</P>
+                    <h3>Q20:什么是Cookie 隔离？（或者说：请求资源的时候不要让它带cookie怎么做）</h3>
+                    <P>如果静态文件都放在主域名下，那静态文件请求的时候都带有的cookie的数据提交给server的，非常浪费流量，</br>
+                        所以不如隔离开。</br>
+                        因为cookie有域的限制，因此不能跨域提交请求，故使用非主要域名的时候，请求头中就不会带有cookie数据，</br>
+                        这样可以降低请求头的大小，降低请求时间，从而达到降低整体请求延时的目的。</br>
+                        同时这种方式不会将cookie传入Web Server，也减少了Web Server对cookie的处理分析环节，</br>
+                        提高了webserver的http请求的解析速度。
+                    </P>
+                    <h3>Q21:什么是CSS 预处理器 / 后处理器？</h3>
+                    <P>- 预处理器例如：LESS、Sass、Stylus，用来预编译Sass或less，增强了css代码的复用性，</br>
+                      还有层级、mixin、变量、循环、函数等，具有很方便的UI组件模块化开发能力，极大的提高工作效率。</br>
+                    -后处理器例如：PostCSS，通常被视为在完成的样式表中根据CSS规范处理CSS，让其更有效；目前最常做的</br>
+                      是给CSS属性添加浏览器私有前缀，实现跨浏览器兼容性的问题。
+                    </P>
+                </div>
+            </div>
+        </div>
+        <!-- js试题 -->
+        <div class="js-content content col-sm-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading">JavaScript面试题</div>
+                <div class="panel-body">
+                    <h3>Q1:介绍js的基本数据类型</h3>
+                    <P>Undefined、Null、Boolean、Number、String、Symbol(new in ECMAScript 2015)</P>
+                    <h3>Q2:介绍js有哪些内置对象？</h3>
+                    <p>Object 是 JavaScript 中所有对象的父对象</br>
+                        数据封装类对象：Object、Array、Boolean、Number 和 String</br>
+                        其他对象：Function、Arguments、Math、Date、RegExp、Error
+                    </p>
+                    <h3>Q3:说几条写JavaScript的基本规范？</h3>
+                    <P>1.不要在同一行声明多个变量。</br>
+                        2.请使用 ===/!==来比较true/false或者数值</br>
+                        3.使用对象字面量替代new Array这种形式</br>
+                        4.不要使用全局函数。</br>
+                        5.Switch语句必须带有default分支</br>
+                        6.函数不应该有时候有返回值，有时候没有返回值。</br>
+                        7.For循环必须使用大括号</br>
+                        8.If语句必须使用大括号</br>
+                        9.for-in循环中的变量 应该使用var关键字明确限定作用域，从而避免作用域污染。
+                    </P>
+                    <h3>Q4:JavaScript原型，原型链 ? 有什么特点</h3>
+                    <P>每个对象都会在其内部初始化一个属性，就是prototype(原型)，当我们访问一个对象的属性时，</br>
+                        如果这个对象内部不存在这个属性，那么他就会去prototype里找这个属性，这个prototype又会有自己的prototype，</br>
+                        于是就这样一直找下去，也就是我们平时所说的原型链的概念。</br>
+                        关系：instance.constructor.prototype = instance.__proto__</br>
+                        特点：</br>
+                        JavaScript对象是通过引用来传递的，我们创建的每个新对象实体中并没有一份属于自己的原型副本。当我们修改原型时，与之相关的对象也会继承这一改变。</br>
+                         当我们需要一个属性的时，Javascript引擎会先看当前对象中是否有这个属性， 如果没有的话，</br>
+                        就会查找他的Prototype对象是否有这个属性，如此递推下去，一直检索到 Object 内建对象。</br>
+                        <code>
+                            function Func(){}</br>
+                            Func.prototype.name = "Sean";</br>
+                            Func.prototype.getInfo = function() {</br>
+                            &nbsp&nbsp&nbsp&nbspreturn this.name;</br>
+                            }</br>
+                            var person = new Func();//现在可以参考var person = Object.create(oldObject);</br>
+                            console.log(person.getInfo());//它拥有了Func的属性和方法</br>
+                            //"Sean"</br>
+                            console.log(Func.prototype);</br>
+                            // Func { name="Sean", getInfo=function()}</br>
+                        </code>
+                    </P>
+                    <h3>Q5:JavaScript有几种类型的值？你能画一下他们的内存图吗？</h3>
+                    <P>栈：原始数据类型（Undefined，Null，Boolean，Number、String）</br>
+                        堆：引用数据类型（对象、数组和函数）</br>
+                        两种类型的区别是：存储位置不同；</br>
+                        原始数据类型直接存储在栈(stack)中的简单数据段，占据空间小、大小固定，属于被频繁使用数据，所以放入栈中存储；</br>
+                        引用数据类型存储在堆(heap)中的对象,占据空间大、大小不固定,如果存储在栈中，将会影响程序运行的性能；引用数据类型在栈中存储了指针，该指针指向堆中该实体的起始地址。当解释器寻找引用值时，会首先检索其
+                        在栈中的地址，取得地址后从堆中获得实体
+                    </P>
+                    <img src="img/code.gif">
+                    <h3>Q6:Javascript如何实现继承？</h3>
+                    <P>1、构造继承</br>
+                        2、原型继承</br>
+                        3、实例继承</br>
+                        4、拷贝继承</br>
+                        原型prototype机制或apply和call方法去实现较简单，建议使用构造函数与原型混合方式。</br>
+                        <code>
+                        function Parent(){</br>
+                            &nbsp&nbsp&nbsp&nbspthis.name = 'wang';</br>
+                        }</br>
+                        </br>
+                        function Child(){</br>
+                         &nbsp&nbsp&nbsp&nbspthis.age = 28;</br>
+                        }</br>
+                        Child.prototype = new Parent();//继承了Parent，通过原型</br>
+                        </br>
+                        var demo = new Child();</br>
+                        alert(demo.age);</br>
+                        alert(demo.name);//得到被继承的属性
+                        </code>
+                    </P>
+                    <h3>Q7:javascript创建对象的几种方式？</h3>
+                    <P>
+                        javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。</br>
+                    1、对象字面量的方式</br>
+                        <code>
+                            var person={firstname:"Mark",lastname:"Yun",age:25,eyecolor:"black"};</br>
+                        </code>
+                    2、用function来模拟无参的构造函数</br>
+                        <code>
+                            function Person(){}</br>
+                            var person=new Person();//定义一个function，如果使用new"实例化",该function可以看作是一个Class</br>
+                            person.name="Mark";</br>
+                            person.age="25";</br>
+                            person.work=function(){</br>
+                            alert(person.name+" hello...");</br>
+                            }</br>
+                            person.work();</br>
+                        </code>
+                    3、用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）</br>
+                        <code>
+                        function Pet(name,age,hobby){</br>
+                        this.name=name;//this作用域：当前对象</br>
+                        this.age=age;</br>
+                        this.hobby=hobby;</br>
+                        this.eat=function(){</br>
+                            alert("我叫"+this.name+",我喜欢"+this.hobby+",是个程序员");</br>
+                        }</br>
+                        }</br>
+                        var maidou =new Pet("麦兜",25,"coding");//实例化、创建对象</br>
+                        maidou.eat();//调用eat方法 </br>
+                        </code>
+                    4、用工厂方式来创建（内置对象）</br>
+                    <code>
+                        var wcDog =new Object();</br>
+                        wcDog.name="旺财";</br>
+                        wcDog.age=3;</br>
+                        wcDog.work=function(){</br>
+                          alert("我是"+wcDog.name+",汪汪汪......");</br>
+                        }</br>
+                         wcDog.work();</br>
+                    </code>
+                    5、用原型方式来创建</br>
+                    <code>
+                        function Dog(){</br>
+                         }</br>
+                         Dog.prototype.name="旺财";</br>
+                         Dog.prototype.eat=function(){</br>
+                         alert(this.name+"是个吃货");</br>
+                         }</br>
+                         var wangcai =new Dog();</br>
+                         wangcai.eat();</br>
+                    </code>
+                    6、用混合方式来创建</br>
+                    <code>
+                        function Car(name,price){</br>
+                        this.name=name;</br>
+                        this.price=price;</br>
+                        }</br>
+                        Car.prototype.sell=function(){</br>
+                        alert("我是"+this.name+"，我现在卖"+this.price+"万元");</br>
+                        }</br>
+                        var camry =new Car("凯美瑞",27);</br>
+                        camry.sell();</br>
+                    </code>
+                    </P>
+                    <h3>Q8:Javascript作用链域?</h3>
+                    <P>全局函数无法查看局部函数的内部细节，但局部函数可以查看其上层的函数细节，直至全局细节。</br>
+                        当需要从局部函数查找某一属性或方法时，如果当前作用域没有找到，就会上溯到上层作用域查找，</br>
+                        直至全局函数，这种组织形式就是作用域链。
+                    </P>
+                    <h3>Q9:谈谈This对象的理解</h3>
+                    <P>this总是指向函数的直接调用者（而非间接调用者）；</br>
+                        如果有new关键字，this指向new出来的那个对象；</br>
+                        在事件中，this指向触发这个事件的对象，特殊的是，IE中的attachEvent中的this总是指向全局对象Window；
+                    </P>
+                    <h3>Q10:eval是做什么的？</h3>
+                    <P>它的功能是把对应的字符串解析成JS代码并运行；</br>
+                        应该避免使用eval，不安全，非常耗性能（2次，一次解析成js语句，一次执行）。</br>
+                        由JSON字符串转换为JSON对象的时候可以用eval，var obj =eval('('+ str +')');
+                    </P>
+                    <h3>Q11:null，undefined 的区别？</h3>
+                    <P>
+                        null        表示一个对象被定义了，值为“空值”；</br>
+                        undefined   表示不存在这个值。</br>
+                        typeof undefined</br>
+                        &nbsp&nbsp&nbsp&nbsp//"undefined"</br>
+                        &nbsp&nbsp&nbsp&nbspundefined :是一个表示"无"的原始值或者说表示"缺少值"，就是此处应该有一个值，但是还没有定义。当尝试读取时会返回 undefined；</br>
+                        &nbsp&nbsp&nbsp&nbsp例如变量被声明了，但没有赋值时，就等于undefined</br>
+                        typeof null</br>
+                        &nbsp&nbsp&nbsp&nbsp//"object"</br>
+                        &nbsp&nbsp&nbsp&nbspnull : 是一个对象(空对象, 没有任何属性和方法)；</br>
+                        &nbsp&nbsp&nbsp&nbsp例如作为函数的参数，表示该函数的参数不是对象；</br>
+                        注意：</br>
+                        &nbsp&nbsp&nbsp&nbsp在验证null时，一定要使用　=== ，因为 == 无法分别 null 和　undefined</br>
+                    </P>
+                    <h3>Q12:写一个通用的事件侦听器函数。</h3>
+                    <P>
+                        <code>
+                        // event(事件)工具集，来源：github.com/markyun</br>
+                        markyun.Event = {</br>
+                        &nbsp&nbsp&nbsp&nbsp// 页面加载完成后</br>
+                        &nbsp&nbsp&nbsp&nbspreadyEvent : function(fn) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif (fn==null) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfn=document;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspvar oldonload = window.onload;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif (typeof window.onload != 'function') {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwindow.onload = fn;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} else {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwindow.onload = function() {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspoldonload();</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfn();</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp};</br>
+                        &nbsp&nbsp&nbsp&nbsp}</br>
+                        },</br>
+                        &nbsp&nbsp&nbsp&nbsp// 视能力分别使用dom0||dom2||IE方式 来绑定事件</br>
+                        &nbsp&nbsp&nbsp&nbsp// 参数： 操作的元素,事件名称 ,事件处理程序</br>
+                        &nbsp&nbsp&nbsp&nbspaddEvent : function(element, type, handler) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif (element.addEventListener) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp//事件类型、需要执行的函数、是否捕捉</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelement.addEventListener(type, handler, false);</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} else if (element.attachEvent) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelement.attachEvent('on' + type, function() {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsphandler.call(element);</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp});</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} else {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelement['on' + type] = handler;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                        &nbsp&nbsp&nbsp&nbsp},</br>
+                        &nbsp&nbsp&nbsp&nbsp// 移除事件</br>
+                        &nbsp&nbsp&nbsp&nbspremoveEvent : function(element, type, handler) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif (element.removeEventListener) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelement.removeEventListener(type, handler, false);</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} else if (element.datachEvent) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelement.detachEvent('on' + type, handler);</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} else {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspelement['on' + type] = null;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                        &nbsp&nbsp&nbsp&nbsp},</br>
+                        &nbsp&nbsp&nbsp&nbsp// 阻止事件 (主要是事件冒泡，因为IE不支持事件捕获)</br>
+                        &nbsp&nbsp&nbsp&nbspstopPropagation : function(ev) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif (ev.stopPropagation) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspev.stopPropagation();</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} else {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspev.cancelBubble = true;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                        &nbsp&nbsp&nbsp&nbsp},</br>
+                        &nbsp&nbsp&nbsp&nbsp// 取消事件的默认行为</br>
+                        &nbsp&nbsp&nbsp&nbsppreventDefault : function(event) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif (event.preventDefault) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspevent.preventDefault();</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp} else {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspevent.returnValue = false;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                        &nbsp&nbsp&nbsp&nbsp},</br>
+                        &nbsp&nbsp&nbsp&nbsp// 获取事件目标</br>
+                        &nbsp&nbsp&nbsp&nbspgetTarget : function(event) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn event.target || event.srcElement;</br>
+                        &nbsp&nbsp&nbsp&nbsp},</br>
+                        &nbsp&nbsp&nbsp&nbsp// 获取event对象的引用，取到事件的所有信息，确保随时能使用event；</br>
+                        &nbsp&nbsp&nbsp&nbspgetEvent : function(e) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspvar ev = e || window.event;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif (!ev) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspvar c = this.getEvent.caller;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwhile (c) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspev = c.arguments[0];</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspif (ev && Event == ev.constructor) {</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspbreak;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc = c.caller;</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspreturn ev;</br>
+                        &nbsp&nbsp&nbsp&nbsp}</br>
+                        };
+                        </code>
+                    </P>
+                    <h3>Q13:["1", "2", "3"].map(parseInt) 答案是多少？</h3>
+                    <P>
+                         [1, NaN, NaN] 因为 parseInt 需要两个参数 (val, radix)，</br>
+                        其中 radix 表示解析时用的基数。</br>
+                        map 传了 3 个 (element, index, array)，对应的 radix 不合法导致解析失败。
+                    </P>
+                    <h3>Q14:事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</h3>
+                    <P>
+                        1. 我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。</br>
+                        2. 事件处理机制：IE是事件冒泡、Firefox同时支持两种事件模型，也就是：捕获型事件和冒泡型事件；</br>
+                        3. ev.stopPropagation();（旧ie的方法 ev.cancelBubble = true;）
+                    </P>
+                </div>
+            </div>
+        </div>
+        <!-- 回到顶部 -->
+        <div class="arrow">
+            <img src="img/arrow.png">
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
