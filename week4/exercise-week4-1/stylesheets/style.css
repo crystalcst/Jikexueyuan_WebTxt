@@ -1,0 +1,835 @@
+@charset "utf-8";
+
+/*PC端首页样式表*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-X: hidden;
+}
+
+
+/*设置wrapper最小高度和宽度*/
+
+.wrapper {
+    min-width: 810px;
+    min-height: 600px;
+    height: 100%;
+    background: #fff;
+}
+
+
+/*设置banner图片，设置size为平铺*/
+
+header {
+    width: 100%;
+    height: 465px;
+    background: #38f url(../image/banner.png) no-repeat;
+    background-origin: 0 0;
+    background-size: cover;
+    position: relative;
+}
+
+
+/*设置head高度为28像素，设置颜色透明*/
+
+header .head {
+    width: 100%;
+    height: 24.5px;
+    background: transparent;
+}
+
+
+/*设置灰色的文字效果*/
+
+.color-grey {
+    font-family: SimSun;
+    font-size: 7.89px;
+    color: #898989;
+}
+
+
+/*设置欢迎标语左边距是21%，使用inlineblock和后面nav在同一行显示*/
+
+header .head .text {
+    margin: 0;
+    margin-left: 10%;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+
+/*设置nav为inline-block*/
+
+header .head .headnav1 {
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+
+/*设置a标签的hover样式*/
+
+a:hover {
+    color: #ccc;
+}
+
+
+/*设置nav为inline-block*/
+
+header .head .headnav2 {
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: bottom;
+    margin-left: 490px;
+}
+
+
+/*设置深蓝色导航栏背景*/
+
+header .nav-bg {
+    position: relative;
+    width: 100%;
+    height: 40.6px;
+    background: transparent url(../image/nav-bg.png);
+}
+
+
+/*设置logo的背景图片，并设置左边距*/
+
+header .nav-bg .logo {
+    position: absolute;
+    width: 89px;
+    height: 42px;
+    margin-left: 10%;
+}
+
+
+/*设置导航栏宽度、高度和左边距*/
+
+header .nav-bg .topnav {
+    width: 420px;
+    height: 40.6px;
+    margin-left: 23%;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: top;
+}
+
+
+/*设置ul高度*/
+
+header .nav-bg .topnav ul {
+    height: 40.6px;
+    width: 460px;
+    vertical-align: top;
+}
+
+
+/*清除浮动*/
+
+header .nav-bg .topnav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/*设置ul 中li宽度，高度，设置其中文字水平居中，左浮动*/
+
+header .nav-bg .topnav ul li {
+    height: 40.6px;
+    width: 90px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+
+
+/*设置一级菜单hover样式*/
+
+header .nav-bg .topnav ul li:hover {
+    height: 40.6px;
+    overflow: visible;
+    background: #3e8e32;
+}
+
+
+/*设置二级菜单样式*/
+
+header .nav-bg .topnav ul li ul li {
+    line-height: 36.4px;
+    display: block;
+    height: 36.4px;
+    width: 90px;
+    float: none;
+}
+
+header .nav-bg .topnav ul li ul li a {
+    line-height: 36.4px;
+    display: block;
+    height: 36.4px;
+    width: 90px;
+}
+
+
+/*设置二级标题的hover样式*/
+
+header .nav-bg .topnav ul li ul li:hover {
+    height: 36.4px;
+    width: 90px;
+    background: #ccc;
+}
+
+
+/*设置导航栏a标签样式*/
+
+header .nav-bg .topnav ul li a {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #fff;
+    line-height: 40.6px;
+    display: block;
+    height: 40.6px;
+    width: 90px;
+}
+
+
+/*绿色样式*/
+
+.color-green {
+    background: #3e8e32;
+}
+
+
+/*黄绿色样式*/
+
+.color-yellowgreen {
+    background: #bad200;
+}
+
+
+/*导航栏中间的白线*/
+
+.line {
+    height: 16px;
+    width: 2px;
+    background: #fff;
+    float: left;
+    margin-top: 12.3px;
+}
+
+
+/*设置导航栏右边联系电话图标和号码的父级div*/
+
+header .nav-bg .contact-number {
+    width: 430px;
+    height: 41px;
+    display: inline-block;
+}
+
+
+/*电话图标*/
+
+.telephone {
+    margin-left: 70px;
+    width: 25px;
+    height: 24px;
+    float: left;
+    padding-top: 8.3px;
+}
+
+
+/*索票方式*/
+
+.text1 {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #fff;
+    line-height: 40.6px;
+    float: left;
+    height: 40.6px;
+    margin-left: 10px;
+}
+
+
+/*95105531*/
+
+.text2 {
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    color: #fff;
+    line-height: 40.6px;
+    float: left;
+    height: 40.6px;
+}
+
+
+/*header 抢票block*/
+
+header .ticket {
+    width: 254px;
+    height: 260px;
+    background-color: rgba(0, 0, 0, .45);
+    position: absolute;
+    margin-left: 750px;
+    margin-top: 140px;
+}
+
+
+/*ticket图像设置绝对位置*/
+
+header .ticket .ticket-image {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+
+/*在线索票文字样式*/
+
+header .ticket .ticket-text1 {
+    font-family: "Microsoft YaHei";
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    left: 90px;
+    top: 15px;
+}
+
+
+/*FREE TICKET文字样式*/
+
+header .ticket .ticket-text2 {
+    font-family: "Arial";
+    font-size: 15.8px;
+    color: #ccc;
+    position: absolute;
+    left: 91px;
+    top: 60px;
+}
+
+
+/*2015中国·山东（济南）国际旅游交易会文字样式*/
+
+header .ticket .ticket-text3 {
+    font-family: "Microsoft YaHei";
+    font-size: 9.21px;
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 110px;
+}
+
+
+/*日期、地点文字样式*/
+
+header .ticket .ticket-text4 {
+    font-family: "Microsoft YaHei";
+    font-size: 9.21px;
+    color: #ccc;
+    position: absolute;
+    left: 20px;
+    top: 140px;
+}
+
+
+/*提交按钮样式*/
+
+header .ticket .submit {
+    width: 152px;
+    height: 42px;
+    background-color: #bad200;
+    -webkit-box-shadow: 2px 3px rgba(6, 0, 1, .45);
+    -moz-box-shadow: 2px 3px rgba(6, 0, 1, .45);
+    -ms-box-shadow: 2px 3px rgba(6, 0, 1, .45);
+    -o-box-shadow: 2px 3px rgba(6, 0, 1, .45);
+    box-shadow: 2px 3px rgba(6, 0, 1, .45);
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    left: 55px;
+    top: 200px;
+}
+
+
+/*body样式*/
+
+.body {
+    width: 100%;
+    height: 532px;
+    background: #fff;
+}
+
+
+/*第一个article高度*/
+
+.body .block1 {
+    width: 100%;
+    height: 258px;
+}
+
+
+/*第2.3个article墙纸高度和颜色*/
+
+.body .block-wrapper {
+    width: 100%;
+    height: 275px;
+    background: #f5f5f5;
+}
+
+
+/*设置h1样式*/
+
+h1 {
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    color: #434343;
+    display: inline;
+    padding: 0;
+}
+
+
+/*设置h1副标题样式*/
+
+.headline-sub {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #99a09b
+}
+
+
+/*设置h1旁竖线*/
+
+.line-h1 {
+    height: 17px;
+    width: 2px;
+    background: #99a09b;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+}
+
+
+/*设置headline部分水平居中*/
+
+.body .block1 .headline {
+    width: 880px;
+    height: 36px;
+    margin: 30px 10% 0 10%;
+    overflow: hidden;
+}
+
+
+/*文字more外层span样式*/
+
+.headline-add {
+    height: 21px;
+    float: right;
+    margin-top: 10px;
+}
+
+
+/*文字more样式*/
+
+.headline-add a {
+    font-family: "Microsoft YaHei";
+    color: #99a09b;
+}
+
+
+/*绿色分割线样式*/
+
+.body .block1 .green-bar {
+    width: 880px;
+    height: 3px;
+    background-color: #bad200;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+
+/*弹性盒子布局column*/
+
+.column {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    margin-left: 10%;
+    width: 880px;
+    height: 214px;
+}
+
+
+/*弹性盒子等分*/
+
+.row1,
+.row2,
+.row3,
+.row4 {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    background: #fff;
+    padding: 10px 5px 5px 5px;
+}
+
+
+/*游玩地点文字样式*/
+
+.black-title {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.black-title a {
+    color: #000;
+}
+
+
+/*设置游玩地点鼠标滑过下滑划线效果*/
+
+.black-title a:hover {
+    text-decoration: underline;
+}
+
+
+/*补充说明文字样式*/
+
+.gray-title {
+    font-family: "Microsoft YaHei";
+    color: #99a09b;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+/*红色钱的样式*/
+
+.red-title {
+    font-family: "Microsoft YaHei";
+    color: #ff5652;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+/*统一设置的右浮动*/
+
+.align-right {
+    margin-left: 53px;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+
+/*设置block2为弹性盒模型*/
+
+.body .block2 {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    width: 880px;
+    height: 240px;
+    margin-left: 10%;
+}
+
+
+/*2等分block2*/
+
+.body .block2 article {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+}
+
+
+/*蓝色分割线样式*/
+
+.body .block2 .block2-1 .blue-bar {
+    width: 400px;
+    height: 3px;
+    background-color: #0776bb;
+}
+
+
+/*设置弹性盒模型*/
+
+.body .block2 .block2-1 .column1 {
+    width: 400px;
+    height: 97px;
+    background: #f5f5f5;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    text-align: center;
+}
+
+
+/*设置一个灰色背景，适用于block2中所有元素*/
+
+.gray-bg {
+    background: #f5f5f5;
+}
+
+
+/*设置block中a标签的父级P上边距5px*/
+
+.text-block2 {
+    display: block;
+    margin-top: 5px;
+}
+
+
+/*设置block中a标签的样式*/
+
+.text-block2 a {
+    color: #0776bb;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.body .block2-2 .red-bar {
+    width: 400px;
+    height: 3px;
+    background-color: #c41023;
+}
+
+
+/*设置block2的column2为弹性盒模型，设置方向为横向分割*/
+
+.body .column2 {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    width: 440px;
+    height: 194px;
+}
+
+
+/*4等分column2*/
+
+.col1,
+.col2,
+.col3,
+.col4 {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+}
+
+
+/*30样式*/
+
+.col-redtext {
+    margin-top: 8px;
+    font-size: 30px;
+    line-height: 30px;
+    color: #e85719;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+
+/*分割线样式*/
+
+.column2 .line2 {
+    width: 3px;
+    height: 30px;
+    background: #ccc;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+
+/*新闻样式*/
+
+.column2 .date {
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.column2 .date .col-greytext {
+    color: #000;
+}
+
+.column2 .col-text a {
+    color: #000;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+    margin-left: 14px;
+}
+
+.column2 .col-text a:hover {
+    text-decoration: underline;
+}
+
+
+/*合作商家部分设置宽、高*/
+
+footer .cooperation {
+    width: 100%;
+    height: 125px;
+}
+
+footer .cooperation .coop-text {
+    width: 100%;
+    height: 38px;
+    margin-left: 10%;
+}
+
+
+/*设置合作展商文字样式*/
+
+footer .cooperation .coop-text .coop-greentext a {
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    color: #3e8e32;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+
+/*分割竖线*/
+
+footer .cooperation .coop-text .line3 {
+    width: 3px;
+    height: 20px;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    background: #7d7d7d;
+    vertical-align: middle;
+}
+
+
+/*设置合作展商文字样式*/
+
+footer .cooperation .coop-text .coop-graytext a {
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    color: #7d7d7d;
+    display: inline-block;
+    *display: line;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+
+/*灰色分割线*/
+
+footer .cooperation .gray-bar {
+    width: 880px;
+    height: 3px;
+    background: #f5f5f5;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+
+/*底部设置弹性盒模型*/
+
+.column4 {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    margin-left: 10%;
+    width: 880px;
+    height: 70px;
+}
+
+.coop-row1,
+.coop-row2,
+.coop-row3,
+.coop-row4,
+.coop-row5,
+.coop-row6 {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    padding: 10px;
+}
+
+.coop-row7 {
+    -webkit-flex: 0.5;
+    -moz-flex: 0.5;
+    -ms-flex: 0.5;
+    -o-flex: 0.5;
+    flex: 0.5;
+    padding: 10px;
+}
+
+
+/*底部版权声明样式*/
+
+footer .copyright {
+    width: 100%;
+    height: 60px;
+    background: #434343;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .copyright span,
+a {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #fff;
+}

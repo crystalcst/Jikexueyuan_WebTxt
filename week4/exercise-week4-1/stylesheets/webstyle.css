@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+/*移动端网页*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /*    width: 375px;
+    height: 667px;*/
+    font-size: 62.5%;
+    font-family: "Microsoft YaHei", Arial;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.viewport {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+
+/*设置容器的宽高，以iphone6为准*/
+
+.wrapper {
+    /*    width: 375px;
+    height: 667px;*/
+}
+
+
+/*设置搜索菜单宽高*/
+
+.wrapper .search {
+    width: 100%;
+    height: 6.4%;
+    background: #ff5a28;
+    position: relative;
+}
+
+.wrapper .search ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*设置主菜单中image大小和绝对位置*/
+
+.wrapper .search .mainmenu {
+    width: 32px;
+    height: 22px;
+    margin-left: 22.6%;
+    margin-top: 20.5%;
+}
+
+
+/*设置第一个li样式*/
+
+.wrapper .search ul .first {
+    width: 50px;
+    height: 43px;
+    overflow: hidden;
+}
+
+.wrapper .search ul .first:hover {
+    width: 50px;
+    height: 43px;
+    overflow: visible;
+}
+
+
+/*设置二级菜单样式*/
+
+.search ul li ul {
+    margin-top: 8px;
+}
+
+.search ul li ul li {
+    width: 50px;
+    height: 20px;
+    padding: 3px;
+    background: #FFAA33;
+    border: 0;
+    border-top: 1px solid #FFBB66;
+}
+
+.search .second:hover {
+    width: 50px;
+    height: 20px;
+    padding: 3px;
+    background: #FFBB00;
+    border: 0;
+    border-top: 1px solid #FFBB66;
+}
+
+
+/*设置二级菜单文字效果*/
+
+.search .second a {
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+}
+
+
+/*设置搜索菜单外层wrapper样式*/
+
+.wrapper .search .input-wrapper {
+    /*width: 107.1px;*/
+    width: 33%;
+    /*height: 26.7px;*/
+    height: 4%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 45%;
+}
+
+
+/*设置搜索菜单样式*/
+
+.wrapper .search .inputbar {
+    width: 81.1px;
+    height: 23.7px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    float: left;
+}
+
+.wrapper .search .inputbar:hover {
+    border: 1px solid #38f;
+}
+
+
+/*设置提交按钮样式*/
+
+.wrapper .search .buttontype {
+    padding: 1px 0;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    float: left;
+    background: #fff;
+    border: 0;
+}
+
+
+/*设置头部宽高*/
+
+.head {
+    /*  width: 100%;
+    /*height: 11.3%;*/
+    height: 75.4px;
+    background: url(../image/head.png) no-repeat;
+    background-size: cover;
+    */
+}
+
+
+/*设置菜单宽高*/
+
+.wrapper .menu {
+    width: 100%;
+    height: 41.8%;
+    margin-top: 4.5%;
+}
+
+
+/*设置column外的wrapper的内边距，怪异盒模型，弹性盒子*/
+
+.wrapper .menu .column-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 4.5%;
+    padding: 15px 40px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/*设置column为弹性盒模型*/
+
+.wrapper .menu .column-wrapper .column {
+    width: 100%;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.wrapper .menu .column-wrapper .column .row {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    padding: 5px;
+}
+
+
+/*设置a链接的雪碧图样式*/
+
+.column .row .button1 {
+    display: block;
+    background: url(../image/menu.png) 0 0;
+    width: 57px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+.column .row .button2 {
+    display: block;
+    background: url(../image/menu.png) -81px 0;
+    width: 61px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+.column .row .button3 {
+    display: block;
+    background: url(../image/menu.png) -162px 0;
+    width: 57px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+.column .row .button4 {
+    display: block;
+    background: url(../image/menu.png) -243px 0;
+    width: 57px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+.column .row .button5 {
+    display: block;
+    background: url(../image/menu.png) 0 80px;
+    width: 57px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+.column .row .button6 {
+    display: block;
+    background: url(../image/menu.png) -81px 80px;
+    width: 57px;
+    height: 80px;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.column .row .button7 {
+    display: block;
+    background: url(../image/menu.png) -162px 80px;
+    width: 57px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+.column .row .button8 {
+    display: block;
+    background: url(../image/menu.png) -243px 80px;
+    width: 57px;
+    height: 80px;
+    margin: 20px auto;
+}
+
+
+/*设置装饰宽高*/
+
+.wrapper .decorate {
+    width: 100%;
+    /*height: 3.1%;*/
+    height: 20.7px;
+    background: url(../image/decorate.png);
+    background-size: cover;
+}
+
+
+/*设置广告宽高*/
+
+.wrapper .ads {
+    width: 100%;
+    height: 32.9%;
+}
+
+
+/*设置弹性盒子*/
+
+.wrapper .ads .ads-container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/*设置每一部分的flex为1,平分底部弹性盒子，并设置水平、垂直居中*/
+
+.wrapper .ads .ads-container .ads-c {
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+/*把a标签转换为block,利用bg的position属性使用雪碧图*/
+
+.wrapper .ads .ads-container .ads-c1 {
+    display: block;
+    width: 117.3px;
+    height: 165px;
+    background: url(../image/ads.png) -35px 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.wrapper .ads .ads-container .ads-c2 {
+    display: block;
+    width: 117.3px;
+    height: 165px;
+    background: url(../image/ads.png) -150px 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.wrapper .ads .ads-container .ads-c3 {
+    display: block;
+    width: 117.3px;
+    height: 165px;
+    background: url(../image/ads.png) -260px 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
