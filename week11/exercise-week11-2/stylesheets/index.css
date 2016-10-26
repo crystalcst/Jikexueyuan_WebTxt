@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/* line 5, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/index.scss */
+.maincontainer {
+  width: 100%;
+  height: 600px;
+  background: #000;
+}
+
+/* line 18, ../sass/index.scss */
+.board-wrap {
+  width: 600px;
+  height: 330px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -300px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*头部样式*/
+/* line 33, ../sass/index.scss */
+header {
+  margin-top: 15px;
+  width: 600px;
+  height: 100px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 38, ../sass/index.scss */
+header .header-left {
+  width: 300px;
+  float: left;
+}
+/* line 41, ../sass/index.scss */
+header .header-left h1 {
+  font-family: "Microsoft Yahei";
+  font-size: 78px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 47, ../sass/index.scss */
+header .header-left h3 {
+  font-family: "Microsoft Yahei";
+  font-size: 21px;
+  text-align: center;
+}
+/* line 53, ../sass/index.scss */
+header .header-right {
+  float: left;
+}
+/* line 55, ../sass/index.scss */
+header .header-right .font-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 100px;
+  width: 45px;
+  font-family: "Microsoft Yahei";
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: bold;
+  color: #00A0FF;
+}
+/* line 65, ../sass/index.scss */
+header .header-right .right-base {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*头部右边下站信息样式*/
+/* line 76, ../sass/index.scss */
+.right-base .dec-line-blue {
+  display: block;
+  height: 3px;
+  width: 191px;
+  background: #00A0FF;
+}
+/* line 82, ../sass/index.scss */
+.right-base h2 {
+  font-family: "Microsoft Yahei";
+  font-size: 47px;
+  line-height: 61px;
+  font-weight: bold;
+  color: #BD1B1E;
+}
+
+/*article样式*/
+/* line 94, ../sass/index.scss */
+article {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 600px;
+  height: 140px;
+  padding: 10px 15px;
+}
+/* line 99, ../sass/index.scss */
+article .article-top {
+  height: 100px;
+  text-align: center;
+}
+/* line 102, ../sass/index.scss */
+article .article-top p {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-family: "宋体";
+  font-size: 14px;
+  margin-right: 3px;
+  line-height: 18px;
+}
+/* line 103, ../sass/index.scss */
+article .article-top p:first-child {
+  margin-left: 2px;
+}
+/* line 113, ../sass/index.scss */
+article .article-bottom {
+  position: relative;
+}
+/* line 115, ../sass/index.scss */
+article .article-bottom .arrowtxt-left, article .article-bottom .bus-info, article .article-bottom .arrowtxt-right {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-align: center;
+}
+
+/*四字公交站样式*/
+/* line 131, ../sass/index.scss */
+.four-type {
+  line-height: 23px !important;
+}
+
+/*六字公交站样式*/
+/* line 138, ../sass/index.scss */
+.six-type {
+  font-size: 12px !important;
+  line-height: 14px !important;
+}
+
+/*七字公交站样式*/
+/* line 146, ../sass/index.scss */
+.seven-type {
+  font-size: 12px !important;
+  line-height: 12px !important;
+}
+
+/* line 152, ../sass/index.scss */
+.arrowtxt-left .arrowtxt, article .article-bottom .bus-info .arrowtxt, article .article-bottom .arrowtxt-right .arrowtxt {
+  position: relative;
+  margin-left: 23px;
+  margin-bottom: 7px;
+}
+/* line 156, ../sass/index.scss */
+.arrowtxt-left .arrowtxt p, article .article-bottom .bus-info .arrowtxt p, article .article-bottom .arrowtxt-right .arrowtxt p {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  letter-spacing: 5px;
+  font-family: "Microsoft Yahei";
+  font-weight: bold;
+  color: #BD1B1E;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+/* line 167, ../sass/index.scss */
+.arrowtxt-left .arrow, article .article-bottom .bus-info .arrow, article .article-bottom .arrowtxt-right .arrow {
+  position: absolute;
+  bottom: 14px;
+  height: 3px;
+  width: 236px;
+  background: #BD1B1E;
+}
+
+/* line 176, ../sass/index.scss */
+.bus-info {
+  margin-left: 30px;
+}
+/* line 178, ../sass/index.scss */
+.bus-info p {
+  font-family: "Microsoft Yahei";
+  font-weight: bold;
+  color: #BD1B1E;
+  font-size: 32px;
+}
+
+/* line 187, ../sass/index.scss */
+.arrowtxt-right .tri {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #BD1B1E;
+  border-right: 18px solid transparent;
+  right: 26px;
+  bottom: 14px;
+}
+
+/*footer样式*/
+/* line 201, ../sass/index.scss */
+footer {
+  width: 600px;
+  height: 60px;
+  margin-top: 15px;
+}
+/* line 205, ../sass/index.scss */
+footer .footer-wrap {
+  background: #00A0FF;
+  width: 600px;
+  height: 45px;
+}
+
+/* line 213, ../sass/index.scss */
+.footer-wrap .footer-next {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 45px;
+  margin-right: 20px;
+}
+/* line 217, ../sass/index.scss */
+.footer-wrap .footer-next h2 {
+  display: block;
+  margin-left: 14px;
+  vertical-align: center;
+  width: 385px;
+  font-family: "Microsoft Yahei";
+  font-size: 30px;
+  letter-spacing: 25px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 45px;
+}
+/* line 230, ../sass/index.scss */
+.footer-wrap .footer-begin {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 45px;
+}
+/* line 233, ../sass/index.scss */
+.footer-wrap .footer-begin p {
+  display: block;
+  margin-top: 5px;
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 242, ../sass/index.scss */
+.footer-wrap .footer-bus {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 45px;
+}
+/* line 245, ../sass/index.scss */
+.footer-wrap .footer-bus p {
+  display: block;
+  margin-top: 5px;
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+/* line 255, ../sass/index.scss */
+.footer-wrap .footer-time {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 45px;
+}
+/* line 258, ../sass/index.scss */
+.footer-wrap .footer-time p {
+  display: block;
+  margin-top: 5px;
+  font-family: "Microsoft Yahei";
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/*清除浮动*/
+/* line 274, ../sass/index.scss */
+.cf:after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}

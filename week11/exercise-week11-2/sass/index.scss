@@ -1,0 +1,282 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+@import "compass/utilities/general/float";
+$black: #000;
+$white: #fff;
+$abs: absolute;
+$blue: #00A0FF;
+$red: #BD1B1E;
+.maincontainer {
+    width: 100%;
+    height: 600px;
+    background: $black;
+}
+
+.board-wrap {
+    width: 600px;
+    height: 330px;
+    background: $white;
+    position: $abs;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+    @include box-sizing(border-box);
+}
+
+
+/*头部样式*/
+
+header {
+    margin-top: 15px;
+    width: 600px;
+    height: 100px;
+    @include box-sizing(border-box);
+    .header-left {
+        width: 300px;
+        @include float(left);
+        h1 {
+            font-family: "Microsoft Yahei";
+            font-size: 78px;
+            font-weight: bold;
+            text-align: center;
+        }
+        h3 {
+            font-family: "Microsoft Yahei";
+            font-size: 21px;
+            text-align: center;
+        }
+    }
+    .header-right {
+        @include float(left);
+        .font-vertical {
+            @include inline-block;
+            height: 100px;
+            width: 45px;
+            font-family: "Microsoft Yahei";
+            font-size: 40px;
+            line-height: 47px;
+            font-weight: bold;
+            color: $blue;
+        }
+        .right-base {
+            @include inline-block;
+            @include box-sizing(border-box);
+        }
+    }
+}
+
+
+/*头部右边下站信息样式*/
+
+.right-base {
+    .dec-line-blue {
+        display: block;
+        height: 3px;
+        width: 191px;
+        background: $blue;
+    }
+    h2 {
+        font-family: "Microsoft Yahei";
+        font-size: 47px;
+        line-height: 61px;
+        font-weight: bold;
+        color: $red;
+    }
+}
+
+
+/*article样式*/
+
+article {
+    @include box-sizing(border-box);
+    width: 600px;
+    height: 140px;
+    padding: 10px 15px;
+    .article-top {
+        height: 100px;
+        text-align: center;
+        p {
+            &:first-child {
+                margin-left: 2px;
+            }
+            @include inline-block;
+            font-family: "宋体";
+            font-size: 14px;
+            margin-right: 3px;
+            line-height: 18px;
+        }
+    }
+    .article-bottom {
+        position: relative;
+        .arrowtxt-left {
+            @include inline-block;
+            text-align: center;
+        }
+        .bus-info {
+            @extend .arrowtxt-left;
+        }
+        .arrowtxt-right {
+            @extend .arrowtxt-left;
+        }
+    }
+}
+
+
+/*四字公交站样式*/
+
+.four-type {
+    line-height: 23px!important;
+}
+
+
+/*六字公交站样式*/
+
+.six-type {
+    font-size: 12px!important;
+    line-height: 14px!important;
+}
+
+
+/*七字公交站样式*/
+
+.seven-type {
+    font-size: 12px!important;
+    line-height: 12px!important;
+}
+
+.arrowtxt-left {
+    .arrowtxt {
+        position: relative;
+        margin-left: 23px;
+        margin-bottom: 7px;
+        p {
+            @include inline-block;
+            letter-spacing: 5px;
+            font-family: "Microsoft Yahei";
+            font-weight: bold;
+            color: $red;
+            margin-left: 10px;
+            font-size: 14px;
+            margin-bottom: 13px;
+        }
+    }
+    .arrow {
+        position: absolute;
+        bottom: 14px;
+        height: 3px;
+        width: 236px;
+        background: $red;
+    }
+}
+
+.bus-info {
+    margin-left: 30px;
+    p {
+        font-family: "Microsoft Yahei";
+        font-weight: bold;
+        color: $red;
+        font-size: 32px;
+    }
+}
+
+.arrowtxt-right {
+    .tri {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 8px solid $red;
+        border-right: 18px solid transparent;
+        right: 26px;
+        bottom: 14px;
+    }
+}
+
+
+/*footer样式*/
+
+footer {
+    width: 600px;
+    height: 60px;
+    margin-top: 15px;
+    .footer-wrap {
+        background: $blue;
+        width: 600px;
+        height: 45px;
+    }
+}
+
+.footer-wrap {
+    .footer-next {
+        @include inline-block;
+        height: 45px;
+        margin-right: 20px;
+        h2 {
+            display: block;
+            margin-left: 14px;
+            vertical-align: center;
+            width: 385px;
+            font-family: "Microsoft Yahei";
+            font-size: 30px;
+            letter-spacing: 25px;
+            color: $white;
+            font-weight: bold;
+            line-height: 45px;
+        }
+    }
+    .footer-begin {
+        @include inline-block;
+        height: 45px;
+        p {
+            display: block;
+            margin-top: 5px;
+            font-family: "Microsoft Yahei";
+            font-size: 12px;
+            color: $white;
+            font-weight: bold;
+        }
+    }
+    .footer-bus {
+        @include inline-block;
+        height: 45px;
+        p {
+            display: block;
+            margin-top: 5px;
+            font-family: "Microsoft Yahei";
+            font-size: 12px;
+            color: $white;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+    }
+    .footer-time {
+        @include inline-block;
+        height: 45px;
+        p {
+            display: block;
+            margin-top: 5px;
+            font-family: "Microsoft Yahei";
+            font-size: 18px;
+            color: $white;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+
+/*清除浮动*/
+
+.cf {
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
