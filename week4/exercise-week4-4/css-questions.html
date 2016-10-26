@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>初级前端面试题</title>
+    <!--===========引用bootstrapcss文件=========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--=========== 引用flat UI================= -->
+    <link rel="stylesheet" href="css/flat-ui.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 整个页面设置container -->
+    <div class="container-fluid">
+        <!-- 第一行： -->
+        <div class="row-fluid">
+            <!-- 大栅格系统，设置内边距为0 -->
+            <div class="col-lg-12 padding-none">
+                <!-- 导航栏 -->
+                <div class="navbar navbar-inverse navbar-embossed" role="navigation">
+                    <!-- 导航栏头部 -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collaspe-01">
+                            <span class="sr-only">Toggle-navigation</span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">Mywebsite</a>
+                    </div>
+                    <!-- 响应式布局的下拉菜单 -->
+                    <div class="navbar-collapse collapse in" id="navbar-collapse-01">
+                        <!-- 导航栏导航 -->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#">主页</a>
+                            </li>
+                            <li>
+                                <a href="#">最新文章</a>
+                            </li>
+                            <li>
+                                <a href="#">实时热点</a>
+                            </li>
+                        </ul>
+                        <!-- form表单 -->
+                        <form action="#" role="search" class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="navbarInput-01" placeholder="搜索" />
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn">
+                                            <span class="fui-search"></span>
+                                    </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第二行： -->
+        <div class="row-fluid">
+            <!-- 侧边栏 -->
+            <div class="col-lg-3">
+                <ul class="nav nav-pills nav-embossed nav-stacked col-lg-12">
+                    <li><a href="index.html">html面试题</a></li>
+                    <li class="active"><a href="css-questions.html">css面试题</a></li>
+                    <li><a href="#">javascript面试题</a></li>
+                </ul>
+            </div>
+            <!-- 主体 -->
+            <div class="col-lg-9">
+                <h4 class="text-center bg-info">前端面试题</h4>
+                <h5 class="demo-panel-titile demo-panel-headings">CSS部分</h5>
+                <h6 class="demo-panel-title demo-panel-headings">1.介绍一下CSS的盒子模型</h6>
+                <p class="font-size">
+                    （1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;
+                    <br /> （2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">2.CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？</h6>
+                <p class="font-size">
+                    （1） 1.id选择器（ # myid） 2.类选择器（.myclassname） 3.标签选择器（div, h1, p） 4.相邻选择器（h1 + p） 5.子选择器（ul > li） 6.后代选择器（li a） 7.通配符选择器（ * ） 8.属性选择器（a[rel = "external"]） 9.伪类选择器（a: hover, li: nth - child）
+                    <br /> （2）可继承的样式： font-size font-family color, UL LI DL DD DT;
+                    <br /> （3）不可继承样式：border padding margin width height ;
+                    <br /> （4）优先级就近原则，同权重情况下样式定义最近者为准;
+                    <br /> （5）载入样式以最后载入的定位为准；
+                    <br /> （6）优先级为: !important > id > class > tag important 比 内联优先级高。
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">3.CSS3新增伪类举例？</h6>
+                <p class="font-size">
+                    （1）p:first-of-type 选择属于其父元素的首个 &ltp&gt 元素的每个&ltp&gt元素。
+                    <br /> （2）p:last-of-type 选择属于其父元素的最后&ltp&gt元素的每个&ltp&gt元素。
+                    <br /> （3）p:only-of-type 选择属于其父元素唯一的&ltp&gt元素的每个&ltp&gt元素。
+                    <br /> （4）p:nth-child(2) 选择属于其父元素的第二个子元素的每个&ltp&gt 元素。
+                    <br /> （5）:enabled :disabled 控制表单控件的禁用状态。
+                    <br /> （6）:checked 单选框或复选框被选中。
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">4.如何居中一个div？如何居中一个浮动元素？</h6>
+                <p class="font-size">
+                    （1）给div设置一个宽度，然后添加margin:0 auto属性。div{width:200px; margin:0 auto; }
+                    <br /> （2）确定容器的宽高 宽500 高 300 的层 设置层的外边距 .div { Width:500px ; height:300px;//高度可以不设 Margin: -150px 0 0 -250px; position:relative;相对定位 background-color:pink;//方便看效果 left:50%; top:50%;}
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">5.列出display的值，说明他们的作用。position的值， relative和absolute定位原点是？</h6>
+                <p class="font-size">
+                    （1）. block 象块类型元素一样显示。 none 缺省值。象行内元素类型一样显示。 inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。 list-item 象块类型元素一样显示，并添加样式列表标记。
+                    <br /> （2）*absolute 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。 *fixed （老IE不支持）生成绝对定位的元素，相对于浏览器窗口进行定位。 *relative生成相对定位的元素，相对于其正常位置进行定位。 * static 默认值。没有定位，元素出现在正常的流中 *（忽略 top, bottom, left, right z-index 声明） * inherit 规定从父元素继承 position 属性的值。
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">6.CSS3有哪些新特性？</h6>
+                <p class="font-size">
+                    （1） CSS3实现圆角（border-radius:8px），阴影（box-shadow:10px）， 对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）
+                    <br /> （2）transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜 增加了更多的CSS选择器 多背景 rgba
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">7.为什么要初始化CSS样式?</h6>
+                <p class="font-size">
+                    因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。 当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">8.css定义的权重?</h6>
+                <p class="font-size">
+                    以下是权重的规则：标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值： /*权重为1*/ div{} /*权重为10*/ .class1{} /*权重为100*/ #id1{} /*权重为100+1=101*/ #id1 div{} /*权重为10+1=11*/ .class1 div{} /*权重为10+10+1=21*/ .class1 .class2 div{} 如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">9.请描述一下 cookies，sessionStorage 和 localStorage 的区别？</h6>
+                <p class="font-size">
+                    （1）cookie在浏览器和服务器间来回传递。 sessionStorage和localStorage不会；
+                    <br /> （2）sessionStorage和localStorage的存储空间更大；
+                    <br /> （3）sessionStorage和localStorage有更多丰富易用的接口；
+                    <br /> （4）sessionStorage和localStorage各自独立的存储空间；
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">10.如果需要手动写动画，你认为最小时间间隔是多久，为什么？</h6>
+                <p class="font-size">
+                    多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms
+                </p>
+                <h6 class="demo-panel-title demo-panel-headings">11.display:inline-block 什么时候会显示间隙？</h6>
+                <p class="font-size">
+                    移除空格、使用margin负值、使用font-size:0、letter-spacing、word-spacing
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

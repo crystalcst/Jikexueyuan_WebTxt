@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*用户自己的indexcss样式*/
+
+
+/*左右内边距设置为0*/
+
+.padding-none {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*白色的背景颜色*/
+
+.bg-white {
+    background: #fff;
+}
+
+
+/*设置body的背景颜色*/
+
+body {
+    color: #34495e;
+}
+
+
+/*设置内容正文的大小*/
+
+.font-size {
+    font-size: 16px;
+}
+
+.maincontent form{
+    margin-top: 5px;
+}
